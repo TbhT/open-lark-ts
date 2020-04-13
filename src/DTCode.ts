@@ -25,7 +25,7 @@ export interface User extends BaseUser {
   status: number
 }
 
-// 机器人信息
+// *机器人信息
 export interface BotInfo {
   // app 当前状态
   activate_status: number
@@ -43,7 +43,7 @@ export interface BotInfo {
   open_id: string
 }
 
-// 会话信息，包括和机器人的私聊 + 群聊
+// *会话信息，包括和机器人的私聊 + 群聊
 export interface Chat {
   // 群头像
   avatar: string
@@ -73,7 +73,7 @@ export interface Chat {
   owner_open_id: string
 }
 
-// 小程序 code 换取 session 对象
+// *小程序 code 换取 session 对象
 export interface MinaCodeToSessionResp {
   // 用户唯一标识,openid 用于在同一个应用中对用户进行标识，用户和应用可以确定一个唯一的 openid
   open_id: string
@@ -103,7 +103,7 @@ export interface MinaCodeToSessionResp {
   refresh_token: number
 }
 
-// 获取登录用户身份，OAuth code 换取 session 对象
+// *获取登录用户身份，OAuth code 换取 session 对象
 export interface OAuthCodeToSessionResp {
   // user_access_token，用于获取用户资源
   access_token: string
