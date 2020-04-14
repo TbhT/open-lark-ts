@@ -1,7 +1,7 @@
 export enum I18NTitle {
-  en_us,
-  zh_cn,
-  ja_jp
+  en_us = 'en_us',
+  zh_cn = 'zh_cn',
+  ja_jp = 'ja_jp'
 }
 
 export interface BaseUser {
