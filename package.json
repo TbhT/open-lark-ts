@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@types/moment": "^2.13.0",
+    "axios": "^0.19.2",
     "moment": "^2.24.0"
   }
 }

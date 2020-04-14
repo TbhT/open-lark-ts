@@ -1,4 +1,4 @@
-import moment, { max } from 'moment'
+import moment from 'moment'
 moment.locale('zh-cn')
 
 class Cache {
