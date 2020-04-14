@@ -9,7 +9,8 @@
     "declarationDir": "types/",
     "experimentalDecorators": true,
     "noImplicitAny": true,
-    "noImplicitThis": true
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
   },
   "exclude": ["node_modules/", "dist/"],
   "include": ["src/"]
