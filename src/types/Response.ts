@@ -1,17 +1,37 @@
-interface CommentError {
+import { UserAccessTokenData, UserInfo } from './Code'
+
+export interface CommonResponse {
   code: ErrorCode
   msg: string
 }
 
-export interface UploadImageResponse extends CommentError {
+export interface UploadImageResponse extends CommonResponse {
   data: { image_key: string }
 }
 
-export interface AppAccessTokenResponse extends CommentError {
+export interface AppAccessTokenResponse extends CommonResponse {
   app_access_token: string
   expire: number
   // 已废弃
   tenant_access_token?: string
+}
+
+export interface TenantAccessTokenResponse extends CommonResponse {
+  tenant_access_token: string
+  expire: number
+}
+
+export interface UserAccessTokenResponse extends CommonResponse {
+  data: UserAccessTokenData
+}
+
+export interface AuthResponse {
+  code: string
+  state: string
+}
+
+export interface UserInfoResponse extends CommonResponse {
+  data: UserInfo
 }
 
 export type ErrorCode =

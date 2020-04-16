@@ -17,12 +17,29 @@ export interface User extends BaseUser {
   avatar: string
 
   // 需要申请获取email权限才有
-  email: string
+  email?: string
 
   // 用户的employee_id
   employee_id: string
 
   status: number
+}
+
+export interface UserInfo {
+  // 用户姓名
+  name: string
+
+  // 用户头像
+  avatar_url: string
+
+  // 用户邮箱，拥有"获取用户邮箱"权限时返回
+  email?: string
+
+  // 用户的 user_id，企业自建应用返回
+  user_id: string
+
+  // 用户手机号，已申请"获取用户手机号"权限的企业自建应用返回该字段
+  mobile: string
 }
 
 // *机器人信息
@@ -104,7 +121,7 @@ export interface MinaCodeToSessionResp {
 }
 
 // *获取登录用户身份，OAuth code 换取 session 对象
-export interface OAuthCodeToSessionResp {
+export interface UserAccessTokenData {
   // user_access_token，用于获取用户资源
   access_token: string
 
@@ -125,6 +142,9 @@ export interface OAuthCodeToSessionResp {
 
   // 当前企业标识
   tenant_key: string
+
+  // refresh_token 的有效期，单位: 秒
+  refresh_expires_in: number
 
   // 刷新用户 access_token 时使用的 token
   refresh_token: number
