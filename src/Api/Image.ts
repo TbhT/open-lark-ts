@@ -2,8 +2,8 @@ import axios, { AxiosInstance } from 'axios'
 import { readFile } from 'fs'
 import { promisify } from 'util'
 import FormData from 'form-data'
-import { UPLOAD_PATH, GET_IMAGE_PATH } from './Constants'
-import { UploadImageResponse } from './types/Response'
+import { UPLOAD_PATH, GET_IMAGE_PATH } from '../Constants'
+import { UploadImageResponse } from '../types/Response'
 
 const readFileAsync = promisify(readFile)
 

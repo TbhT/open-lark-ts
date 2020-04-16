@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
-import { GET_APP_ACCESS_TOKEN } from './Constants'
-import { AppAccessTokenResponse } from './types/Response'
+import { GET_APP_ACCESS_TOKEN } from '../Constants'
+import { AppAccessTokenResponse } from '../types/Response'
 
 export async function getAppAccessToken({
   appId,
