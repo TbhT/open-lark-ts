@@ -24,23 +24,26 @@ import {
   EmployeeId2LarkIdResponse
 } from '../types/Response'
 
-const Headers = {
+const Headers = (tenantAccessToken: string): object => ({
   headers: {
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    Authorization: `Bearer ${tenantAccessToken}`
   }
-}
+})
 
 export async function openId2LarkId({
   openId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   openId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<OpenId2LarkIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<OpenId2LarkIdResponse>(
@@ -55,15 +58,17 @@ export async function openId2LarkId({
 
 export async function larkId2OpenId({
   larkId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   larkId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<LarkId2OpenIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<LarkId2OpenIdResponse>(
@@ -78,15 +83,17 @@ export async function larkId2OpenId({
 
 export async function messageId2OpenMessageId({
   messageId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   messageId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<MessageId2OpenIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<MessageId2OpenIdResponse>(
@@ -101,15 +108,17 @@ export async function messageId2OpenMessageId({
 
 export async function openMessageId2MessageId({
   openMessageId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   openMessageId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<OpenId2MessageIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<OpenId2MessageIdResponse>(
@@ -124,15 +133,17 @@ export async function openMessageId2MessageId({
 
 export async function departmentId2OpenDepartmentId({
   departmentId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   departmentId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<DepartmentId2OpenIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<DepartmentId2OpenIdResponse>(
@@ -147,15 +158,17 @@ export async function departmentId2OpenDepartmentId({
 
 export async function openDepartmentId2DepartmentId({
   openDepartmentId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   openDepartmentId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<OpenId2DepartmentIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<OpenId2DepartmentIdResponse>(
@@ -170,15 +183,17 @@ export async function openDepartmentId2DepartmentId({
 
 export async function chatId2OpenChatId({
   chatId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   chatId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<ChatId2OpenIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<ChatId2OpenIdResponse>(
@@ -193,15 +208,17 @@ export async function chatId2OpenChatId({
 
 export async function openChatId2ChatId({
   openChatId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   openChatId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<OpenId2ChatIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<OpenId2ChatIdResponse>(
@@ -216,15 +233,17 @@ export async function openChatId2ChatId({
 
 export async function larkId2EmployeeId({
   larkId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   larkId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<LarkId2EmployeeIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<LarkId2EmployeeIdResponse>(
@@ -239,15 +258,17 @@ export async function larkId2EmployeeId({
 
 export async function employeeId2LarkId({
   employeeId,
-  instance
+  instance,
+  tenantAccessToken
 }: {
   employeeId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
+  tenantAccessToken: string
 }): Promise<EmployeeId2LarkIdResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create(Headers)
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<EmployeeId2LarkIdResponse>(
