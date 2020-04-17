@@ -82,6 +82,14 @@ export interface EmployeeId2LarkIdResponse extends CommonResponse {
   user_id: string
 }
 
+export interface CreateChatResponse extends CommonResponse {
+  data: {
+    chat_id: string
+    invalid_open_ids: string[]
+    invalid_user_ids: string[]
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002

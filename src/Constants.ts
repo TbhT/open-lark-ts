@@ -47,3 +47,17 @@ export const ID_OPEN_TO_CHAT = `${baseURI}/exchange/v3/ocid2cid/`
 export const ID_LARK_TO_EMPLOYEE = `${baseURI}/exchange/v3/uid2eid/`
 
 export const ID_EMPLOYEE_TO_LARK = `${baseURI}/exchange/v3/eid2uid/`
+
+export const CREATE_CHAT = `${baseURI}/chat/v4/create/`
+
+export const CHAT_LIST = `${baseURI}/chat/v4/list`
+
+export const CHAT_INFO = `${baseURI}/chat/v4/info`
+
+export const UPDATE_CHAT = `${baseURI}/chat/v4/update/`
+
+export const ADD_USER_TO_CHAT = `${baseURI}/chat/v4/chatter/add/`
+
+export const REMOVE_USER_FROM_CHAT = `${baseURI}/chat/v4/chatter/delete/`
+
+export const DISCARD_CHAT = `${baseURI}/chat/v4/disband`
