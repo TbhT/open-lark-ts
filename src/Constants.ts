@@ -25,3 +25,5 @@ export const GET_USER_ACCESS_TOKEN = `${baseURI}/authen/v1/access_token`
 export const REFRESH_USER_ACCESS_TOKEN = `${baseURI}/authen/v1/user_info`
 
 export const GET_USER_INFO = `${baseURI}/authen/v1/user_info`
+
+export const GET_CONTACT_SCOPE = `${baseURI}/contact/v1/scope/get`

@@ -34,6 +34,14 @@ export interface UserInfoResponse extends CommonResponse {
   data: UserInfo
 }
 
+export interface ContactScopeResponse extends CommonResponse {
+  data: {
+    authed_departments: string[]
+    authed_employee_ids: string[]
+    authed_open_ids: string[]
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
