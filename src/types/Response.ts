@@ -90,6 +90,23 @@ export interface CreateChatResponse extends CommonResponse {
   }
 }
 
+export interface GroupInfo {
+  avatar: string
+  description: string
+  chat_id: string
+  name: string
+  owner_open_id: string
+  owner_user_id?: string
+}
+
+export interface ChatListResponse extends CommonResponse {
+  data: {
+    has_more: boolean
+    page_token: string
+    groups: GroupInfo[]
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
