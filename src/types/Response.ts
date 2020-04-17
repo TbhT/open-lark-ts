@@ -42,6 +42,46 @@ export interface ContactScopeResponse extends CommonResponse {
   }
 }
 
+export interface OpenId2LarkIdResponse extends CommonResponse {
+  user_id: string
+}
+
+export interface LarkId2OpenIdResponse extends CommonResponse {
+  open_id: string
+}
+
+export interface MessageId2OpenIdResponse extends CommonResponse {
+  open_message_id: string
+}
+
+export interface OpenId2MessageIdResponse extends CommonResponse {
+  message_id: string
+}
+
+export interface DepartmentId2OpenIdResponse extends CommonResponse {
+  open_department_id: string
+}
+
+export interface OpenId2DepartmentIdResponse extends CommonResponse {
+  department_id: string
+}
+
+export interface ChatId2OpenIdResponse extends CommonResponse {
+  open_chat_id: string
+}
+
+export interface OpenId2ChatIdResponse extends CommonResponse {
+  chat_id: string
+}
+
+export interface LarkId2EmployeeIdResponse extends CommonResponse {
+  employee_id: string
+}
+
+export interface EmployeeId2LarkIdResponse extends CommonResponse {
+  user_id: string
+}
+
 export type ErrorCode =
   | 0
   | 10002

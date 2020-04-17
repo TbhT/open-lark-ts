@@ -27,3 +27,23 @@ export const REFRESH_USER_ACCESS_TOKEN = `${baseURI}/authen/v1/user_info`
 export const GET_USER_INFO = `${baseURI}/authen/v1/user_info`
 
 export const GET_CONTACT_SCOPE = `${baseURI}/contact/v1/scope/get`
+
+export const ID_OPEN_TO_LARK = `${baseURI}/exchange/v3/openid2uid/`
+
+export const ID_LARK_TO_OPEN = `${baseURI}/exchange/v3/uid2openid/`
+
+export const ID_MESSAGE_TO_OPEN = `${baseURI}/exchange/v3/mid2omid/`
+
+export const ID_OPEN_TO_MESSAGE = `${baseURI}/exchange/v3/omid2mid/`
+
+export const ID_DEPARTMENT_TO_OPEN = `${baseURI}/exchange/v3/did2odid/`
+
+export const ID_OPEN_TO_DEPARTMENT = `${baseURI}/exchange/v3/odid2did/`
+
+export const ID_CHAT_TO_OPEN = `${baseURI}/exchange/v3/cid2ocid/`
+
+export const ID_OPEN_TO_CHAT = `${baseURI}/exchange/v3/ocid2cid/`
+
+export const ID_LARK_TO_EMPLOYEE = `${baseURI}/exchange/v3/uid2eid/`
+
+export const ID_EMPLOYEE_TO_LARK = `${baseURI}/exchange/v3/eid2uid/`
