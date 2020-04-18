@@ -1,26 +1,11 @@
 import axios, { AxiosInstance } from 'axios'
-import { CreateChatResponse, ChatListResponse } from '../types/Response'
-import { CREATE_CHAT, CHAT_LIST } from '../Constants'
-
-const Headers = (
-  tenantAccessToken: string,
-  accessToken = true
-): {
-  [key: string]: string
-} => {
-  const headers: {
-    [key: string]: string
-  } = {
-    'content-type': 'application/json'
-  }
-
-  if (accessToken) {
-    headers.Authorization = `Bearer ${tenantAccessToken}`
-    return headers
-  }
-
-  return headers
-}
+import {
+  CreateChatResponse,
+  ChatListResponse,
+  ChatInfoResponse
+} from '../types/Response'
+import { CREATE_CHAT, CHAT_LIST, CHAT_INFO } from '../Constants'
+import { Headers } from '../utils/headers'
 
 type createChatParams = {
   name?: string
@@ -85,6 +70,34 @@ export async function getChatList({
     params: {
       page_size: pageSize,
       page_token: pageToken
+    }
+  })
+
+  return data
+}
+
+export async function getChatInfo({
+  chatId,
+  instance,
+  tenantAccessToken
+}: {
+  chatId: string
+  tenantAccessToken: string
+  instance?: AxiosInstance
+}): Promise<ChatInfoResponse> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create({
+      headers: {
+        Authorization: `Bearer ${tenantAccessToken}`
+      }
+    })
+  }
+
+  const { data } = await axios.get<ChatInfoResponse>(CHAT_INFO, {
+    params: {
+      chat_id: chatId
     }
   })
 

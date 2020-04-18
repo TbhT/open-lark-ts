@@ -107,6 +107,17 @@ export interface ChatListResponse extends CommonResponse {
   }
 }
 
+export interface ChatInfoResponse extends CommonResponse {
+  data: {
+    avatar: string
+    chat_id: string
+    description: string
+    i18n_names: {
+      [key: string]: string
+    }
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
