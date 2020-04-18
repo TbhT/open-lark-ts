@@ -118,6 +118,12 @@ export interface ChatInfoResponse extends CommonResponse {
   }
 }
 
+export interface UpdateChatResponse extends CommonResponse {
+  data: {
+    chat_id: string
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002

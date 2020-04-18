@@ -2,9 +2,10 @@ import axios, { AxiosInstance } from 'axios'
 import {
   CreateChatResponse,
   ChatListResponse,
-  ChatInfoResponse
+  ChatInfoResponse,
+  UpdateChatResponse
 } from '../types/Response'
-import { CREATE_CHAT, CHAT_LIST, CHAT_INFO } from '../Constants'
+import { CREATE_CHAT, CHAT_LIST, CHAT_INFO, UPDATE_CHAT } from '../Constants'
 import { Headers } from '../utils/headers'
 
 type createChatParams = {
@@ -99,6 +100,57 @@ export async function getChatInfo({
     params: {
       chat_id: chatId
     }
+  })
+
+  return data
+}
+
+export async function updateChatInfo(params: {
+  chatId: string
+  owner_open_id?: string
+  owner_user_id?: string
+  name?: string
+  description?: string
+  i18n_names?: { [key: string]: string }
+  only_owner_add?: boolean
+  share_allowed?: boolean
+  only_owner_at_all?: boolean
+  only_owner_edit?: boolean
+  instance?: AxiosInstance
+  tenantAccessToken: string
+}): Promise<UpdateChatResponse> {
+  const {
+    tenantAccessToken,
+    instance,
+    chatId,
+    owner_open_id,
+    owner_user_id,
+    name,
+    i18n_names,
+    only_owner_add = false,
+    share_allowed = true,
+    only_owner_at_all = false,
+    only_owner_edit = false
+  } = params
+
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create({
+      headers: Headers(tenantAccessToken)
+    })
+  }
+
+  const { data } = await axios.post<UpdateChatResponse>(UPDATE_CHAT, {
+    chat_id: chatId,
+    owner_open_id,
+    owner_user_id,
+    name,
+    i18n_names,
+    only_owner_add,
+    only_owner_at_all,
+    share_allowed,
+    only_owner_edit
   })
 
   return data
