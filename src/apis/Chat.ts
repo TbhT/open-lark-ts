@@ -3,22 +3,31 @@ import {
   CreateChatResponse,
   ChatListResponse,
   ChatInfoResponse,
-  UpdateChatResponse
+  UpdateChatResponse,
+  AddUserToChatResponse
 } from '../types/Response'
-import { CREATE_CHAT, CHAT_LIST, CHAT_INFO, UPDATE_CHAT } from '../Constants'
+import {
+  CREATE_CHAT,
+  CHAT_LIST,
+  CHAT_INFO,
+  UPDATE_CHAT,
+  ADD_USER_TO_CHAT
+} from '../Constants'
 import { Headers } from '../utils/headers'
 
 type createChatParams = {
   name?: string
   description?: string
-  i18n_names?: { [key: string]: string }
-  only_owner_add?: boolean
-  share_allowed?: boolean
-  only_owner_at_all?: boolean
-  only_owner_edit?: boolean
+  i18nNames?: { [key: string]: string }
+  onlyOwnerAdd?: boolean
+  shareAllowed?: boolean
+  onlyOwnerAtAll?: boolean
+  onlyOwnerEdit?: boolean
   instance?: AxiosInstance
   tenantAccessToken: string
-} & ({ open_ids: string[] } | { user_ids: string[] })
+  userIds?: string[]
+  openIds?: string[]
+}
 
 export async function createChat(
   params: createChatParams
@@ -32,15 +41,17 @@ export async function createChat(
   const { data } = await $instance.post<CreateChatResponse>(CREATE_CHAT, {
     name: params.name || '',
     description: params.description || '',
-    i18n_names: params.i18n_names,
+    i18n_names: params.i18nNames,
     only_owner_add:
-      params.only_owner_add === undefined ? false : params.only_owner_add,
+      params.onlyOwnerAdd === undefined ? false : params.onlyOwnerAdd,
     share_allowed:
-      params.share_allowed === undefined ? true : params.share_allowed,
+      params.shareAllowed === undefined ? true : params.shareAllowed,
     only_owner_at_all:
-      params.only_owner_at_all === undefined ? false : params.only_owner_at_all,
+      params.onlyOwnerAtAll === undefined ? false : params.onlyOwnerAtAll,
     only_owner_edit:
-      params.only_owner_edit === undefined ? false : params.only_owner_edit
+      params.onlyOwnerEdit === undefined ? false : params.onlyOwnerEdit,
+    user_ids: params.userIds,
+    open_ids: params.openIds
   })
 
   return data
@@ -107,15 +118,15 @@ export async function getChatInfo({
 
 export async function updateChatInfo(params: {
   chatId: string
-  owner_open_id?: string
-  owner_user_id?: string
+  ownerOpenId?: string
+  ownerUserId?: string
   name?: string
   description?: string
-  i18n_names?: { [key: string]: string }
-  only_owner_add?: boolean
-  share_allowed?: boolean
-  only_owner_at_all?: boolean
-  only_owner_edit?: boolean
+  i18nNames?: { [key: string]: string }
+  onlyOwnerAdd?: boolean
+  shareAllowed?: boolean
+  onlyOwnerAtAll?: boolean
+  onlyOwnerEdit?: boolean
   instance?: AxiosInstance
   tenantAccessToken: string
 }): Promise<UpdateChatResponse> {
@@ -123,14 +134,14 @@ export async function updateChatInfo(params: {
     tenantAccessToken,
     instance,
     chatId,
-    owner_open_id,
-    owner_user_id,
+    ownerOpenId,
+    ownerUserId,
     name,
-    i18n_names,
-    only_owner_add = false,
-    share_allowed = true,
-    only_owner_at_all = false,
-    only_owner_edit = false
+    i18nNames,
+    onlyOwnerAdd = false,
+    shareAllowed = true,
+    onlyOwnerAtAll = false,
+    onlyOwnerEdit = false
   } = params
 
   let $instance: AxiosInstance | undefined = instance
@@ -143,14 +154,44 @@ export async function updateChatInfo(params: {
 
   const { data } = await axios.post<UpdateChatResponse>(UPDATE_CHAT, {
     chat_id: chatId,
-    owner_open_id,
-    owner_user_id,
+    owner_open_id: ownerOpenId,
+    owner_user_id: ownerUserId,
     name,
-    i18n_names,
-    only_owner_add,
-    only_owner_at_all,
-    share_allowed,
-    only_owner_edit
+    i18n_names: i18nNames,
+    only_owner_add: onlyOwnerAdd,
+    only_owner_at_all: onlyOwnerAtAll,
+    share_allowed: shareAllowed,
+    only_owner_edit: onlyOwnerEdit
+  })
+
+  return data
+}
+
+export async function AddUserToChat({
+  chatId,
+  instance,
+  tenantAccessToken,
+  openIds,
+  userIds
+}: {
+  chatId: string
+  instance?: AxiosInstance
+  tenantAccessToken: string
+  userIds?: string[]
+  openIds?: string[]
+}): Promise<AddUserToChatResponse> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create({
+      headers: Headers(tenantAccessToken)
+    })
+  }
+
+  const { data } = await axios.post<AddUserToChatResponse>(ADD_USER_TO_CHAT, {
+    chat_id: chatId,
+    user_ids: userIds,
+    open_ids: openIds
   })
 
   return data

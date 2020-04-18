@@ -124,6 +124,13 @@ export interface UpdateChatResponse extends CommonResponse {
   }
 }
 
+export interface AddUserToChatResponse extends CommonResponse {
+  data: {
+    invalid_open_ids: string[]
+    invalid_user_ids: string[]
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
