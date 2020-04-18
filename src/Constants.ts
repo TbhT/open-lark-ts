@@ -61,3 +61,9 @@ export const ADD_USER_TO_CHAT = `${baseURI}/chat/v4/chatter/add/`
 export const REMOVE_USER_FROM_CHAT = `${baseURI}/chat/v4/chatter/delete/`
 
 export const DISCARD_CHAT = `${baseURI}/chat/v4/disband`
+
+export const GET_BOT_INFO = `${baseURI}/bot/v3/info/`
+
+export const ADD_BOT_TO_CHAT = `${baseURI}/bot/v4/add`
+
+export const REMOVE_BOT_FROM_CHAT = `${baseURI}/bot/v4/remove`

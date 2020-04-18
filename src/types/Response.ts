@@ -131,6 +131,16 @@ export interface ModifyUserToChatResponse extends CommonResponse {
   }
 }
 
+export interface BotInfoResponse extends CommonResponse {
+  bot: {
+    activate_status: number
+    app_name: string
+    avatar_url: string
+    ip_white_list: string
+    open_id: string
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
