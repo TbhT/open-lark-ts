@@ -124,7 +124,7 @@ export interface UpdateChatResponse extends CommonResponse {
   }
 }
 
-export interface AddUserToChatResponse extends CommonResponse {
+export interface ModifyUserToChatResponse extends CommonResponse {
   data: {
     invalid_open_ids: string[]
     invalid_user_ids: string[]

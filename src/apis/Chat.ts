@@ -4,14 +4,17 @@ import {
   ChatListResponse,
   ChatInfoResponse,
   UpdateChatResponse,
-  AddUserToChatResponse
+  ModifyUserToChatResponse,
+  CommonResponse
 } from '../types/Response'
 import {
   CREATE_CHAT,
   CHAT_LIST,
   CHAT_INFO,
   UPDATE_CHAT,
-  ADD_USER_TO_CHAT
+  ADD_USER_TO_CHAT,
+  REMOVE_USER_FROM_CHAT,
+  DISCARD_CHAT
 } from '../Constants'
 import { Headers } from '../utils/headers'
 
@@ -167,19 +170,21 @@ export async function updateChatInfo(params: {
   return data
 }
 
+type ModifyUserInChat = {
+  chatId: string
+  instance?: AxiosInstance
+  tenantAccessToken: string
+  userIds?: string[]
+  openIds?: string[]
+}
+
 export async function AddUserToChat({
   chatId,
   instance,
   tenantAccessToken,
   openIds,
   userIds
-}: {
-  chatId: string
-  instance?: AxiosInstance
-  tenantAccessToken: string
-  userIds?: string[]
-  openIds?: string[]
-}): Promise<AddUserToChatResponse> {
+}: ModifyUserInChat): Promise<ModifyUserToChatResponse> {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
@@ -188,10 +193,64 @@ export async function AddUserToChat({
     })
   }
 
-  const { data } = await axios.post<AddUserToChatResponse>(ADD_USER_TO_CHAT, {
-    chat_id: chatId,
-    user_ids: userIds,
-    open_ids: openIds
+  const { data } = await axios.post<ModifyUserToChatResponse>(
+    ADD_USER_TO_CHAT,
+    {
+      chat_id: chatId,
+      user_ids: userIds,
+      open_ids: openIds
+    }
+  )
+
+  return data
+}
+
+export async function removeUserFromChat({
+  chatId,
+  instance,
+  tenantAccessToken,
+  openIds,
+  userIds
+}: ModifyUserInChat): Promise<ModifyUserToChatResponse> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create({
+      headers: Headers(tenantAccessToken)
+    })
+  }
+
+  const { data } = await axios.post<ModifyUserToChatResponse>(
+    REMOVE_USER_FROM_CHAT,
+    {
+      chat_id: chatId,
+      user_ids: userIds,
+      open_ids: openIds
+    }
+  )
+
+  return data
+}
+
+export async function discardChat({
+  chatId,
+  instance,
+  tenantAccessToken
+}: {
+  chatId: string
+  instance?: AxiosInstance
+  tenantAccessToken: string
+}): Promise<CommonResponse> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create({
+      headers: Headers(tenantAccessToken)
+    })
+  }
+
+  const { data } = await axios.post<CommonResponse>(DISCARD_CHAT, {
+    chat_id: chatId
   })
 
   return data
