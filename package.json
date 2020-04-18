@@ -12,6 +12,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@types/moment": "^2.13.0",
     "@types/node": "^13.11.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
@@ -41,7 +42,6 @@
     ]
   },
   "dependencies": {
-    "@types/moment": "^2.13.0",
     "axios": "^0.19.2",
     "form-data": "^3.0.0",
     "moment": "^2.24.0"
