@@ -147,7 +147,7 @@ export interface UserAccessTokenData {
   refresh_expires_in: number
 
   // 刷新用户 access_token 时使用的 token
-  refresh_token: number
+  refresh_token: string
 
   // 此处为Bearer
   token_type: string
