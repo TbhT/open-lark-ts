@@ -67,3 +67,9 @@ export const GET_BOT_INFO = `${baseURI}/bot/v3/info/`
 export const ADD_BOT_TO_CHAT = `${baseURI}/bot/v4/add`
 
 export const REMOVE_BOT_FROM_CHAT = `${baseURI}/bot/v4/remove`
+
+export const GET_USER_CHAT_ID = `${baseURI}/chat/v4/p2p/id`
+
+export const GET_USER_ID = `${baseURI}/user/v4/email2id`
+
+export const GET_USER_BASE_INFO = `${baseURI}/user/v4/info`

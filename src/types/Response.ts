@@ -141,6 +141,29 @@ export interface BotInfoResponse extends CommonResponse {
   }
 }
 
+export interface UserChatIdResponse extends CommonResponse {
+  data: {
+    chat_id: string
+  }
+}
+
+export interface UserIdResponse extends CommonResponse {
+  data: {
+    open_id: string
+    user_id: string
+  }
+}
+
+export interface BasicUserInfoResponse extends CommonResponse {
+  data: {
+    avatar: string
+    name: string
+    open_id: string
+    user_id: string
+    email: string
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
