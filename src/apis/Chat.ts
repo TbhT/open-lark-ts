@@ -81,7 +81,7 @@ export async function getChatList({
     })
   }
 
-  const { data } = await axios.get<ChatListResponse>(CHAT_LIST, {
+  const { data } = await $instance.get<ChatListResponse>(CHAT_LIST, {
     params: {
       page_size: pageSize,
       page_token: pageToken
@@ -110,7 +110,7 @@ export async function getChatInfo({
     })
   }
 
-  const { data } = await axios.get<ChatInfoResponse>(CHAT_INFO, {
+  const { data } = await $instance.get<ChatInfoResponse>(CHAT_INFO, {
     params: {
       chat_id: chatId
     }
@@ -155,7 +155,7 @@ export async function updateChatInfo(params: {
     })
   }
 
-  const { data } = await axios.post<UpdateChatResponse>(UPDATE_CHAT, {
+  const { data } = await $instance.post<UpdateChatResponse>(UPDATE_CHAT, {
     chat_id: chatId,
     owner_open_id: ownerOpenId,
     owner_user_id: ownerUserId,
@@ -193,7 +193,7 @@ export async function AddUserToChat({
     })
   }
 
-  const { data } = await axios.post<ModifyUserToChatResponse>(
+  const { data } = await $instance.post<ModifyUserToChatResponse>(
     ADD_USER_TO_CHAT,
     {
       chat_id: chatId,
@@ -220,7 +220,7 @@ export async function removeUserFromChat({
     })
   }
 
-  const { data } = await axios.post<ModifyUserToChatResponse>(
+  const { data } = await $instance.post<ModifyUserToChatResponse>(
     REMOVE_USER_FROM_CHAT,
     {
       chat_id: chatId,
@@ -249,7 +249,7 @@ export async function discardChat({
     })
   }
 
-  const { data } = await axios.post<CommonResponse>(DISCARD_CHAT, {
+  const { data } = await $instance.post<CommonResponse>(DISCARD_CHAT, {
     chat_id: chatId
   })
 

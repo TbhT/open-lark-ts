@@ -14,7 +14,7 @@ debug.enable('test*')
 
 const D = debug('test:oauth')
 
-describe('OAuth', () => {
+describe.skip('OAuth', () => {
   describe('获取 app_access_token', () => {
     it('should return correct data', async () => {
       const data = await getAppAccessToken({

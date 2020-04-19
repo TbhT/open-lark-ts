@@ -24,7 +24,7 @@ export async function getBotInfo({
     })
   }
 
-  const { data } = await axios.get<BotInfoResponse>(GET_BOT_INFO)
+  const { data } = await $instance.get<BotInfoResponse>(GET_BOT_INFO)
 
   return data
 }
@@ -44,7 +44,7 @@ export async function addBotToChat({
     $instance = axios.create(Headers(tenantAccessToken))
   }
 
-  const { data } = await axios.post<CommonResponse>(ADD_BOT_TO_CHAT, {
+  const { data } = await $instance.post<CommonResponse>(ADD_BOT_TO_CHAT, {
     chat_id: chatId
   })
 
@@ -66,7 +66,7 @@ export async function removeBotFromChat({
     $instance = axios.create(Headers(tenantAccessToken))
   }
 
-  const { data } = await axios.post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
+  const { data } = await $instance.post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
     chat_id: chatId
   })
 

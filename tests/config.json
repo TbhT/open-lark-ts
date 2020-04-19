@@ -1,6 +1,10 @@
 {
-    "bot": {
-        "appId": "cli_9e1293c372f6d00e",
-        "appSecret": "WeRiqtdCWOcOA0S29d8Gdcn27ZVPhum7"
-    }
+  "bot": {
+    "appId": "cli_9e1293c372f6d00e",
+    "appSecret": "WeRiqtdCWOcOA0S29d8Gdcn27ZVPhum7"
+  },
+  "development": {
+    "user_id": "1999cdbd",
+    "open_id": "ou_6d995b717a775fc8a61eff173d6625e5"
+  }
 }

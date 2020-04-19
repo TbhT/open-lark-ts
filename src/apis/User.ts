@@ -28,7 +28,7 @@ export async function getUserChatId({
     })
   }
 
-  const { data } = await axios.get<UserChatIdResponse>(GET_USER_BASE_INFO, {
+  const { data } = await $instance.get<UserChatIdResponse>(GET_USER_BASE_INFO, {
     params: {
       open_id: openId,
       user_id: userId
@@ -58,7 +58,7 @@ export async function getUserId({
     })
   }
 
-  const { data } = await axios.post<UserIdResponse>(GET_USER_ID, {
+  const { data } = await $instance.post<UserIdResponse>(GET_USER_ID, {
     email
   })
 
@@ -87,12 +87,15 @@ export async function getBasicUserInfo({
     })
   }
 
-  const { data } = await axios.get<BasicUserInfoResponse>(GET_USER_BASE_INFO, {
-    params: {
-      open_id: openId,
-      user_id: userId
+  const { data } = await $instance.get<BasicUserInfoResponse>(
+    GET_USER_BASE_INFO,
+    {
+      params: {
+        open_id: openId,
+        user_id: userId
+      }
     }
-  })
+  )
 
   return data
 }
