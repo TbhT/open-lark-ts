@@ -124,7 +124,6 @@ export async function updateChatInfo(params: {
   ownerOpenId?: string
   ownerUserId?: string
   name?: string
-  description?: string
   i18nNames?: { [key: string]: string }
   onlyOwnerAdd?: boolean
   shareAllowed?: boolean
@@ -150,9 +149,7 @@ export async function updateChatInfo(params: {
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create({
-      headers: Headers(tenantAccessToken)
-    })
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<UpdateChatResponse>(UPDATE_CHAT, {
@@ -244,9 +241,7 @@ export async function discardChat({
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create({
-      headers: Headers(tenantAccessToken)
-    })
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<CommonResponse>(DISCARD_CHAT, {
