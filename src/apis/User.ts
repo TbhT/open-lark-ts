@@ -4,7 +4,7 @@ import {
   UserIdResponse,
   BasicUserInfoResponse
 } from '../types/Response'
-import { GET_USER_BASE_INFO, GET_USER_ID } from '../Constants'
+import { GET_USER_BASE_INFO, GET_USER_ID, GET_USER_CHAT_ID } from '../Constants'
 
 export async function getUserChatId({
   tenantAccessToken,
@@ -28,7 +28,7 @@ export async function getUserChatId({
     })
   }
 
-  const { data } = await $instance.get<UserChatIdResponse>(GET_USER_BASE_INFO, {
+  const { data } = await $instance.get<UserChatIdResponse>(GET_USER_CHAT_ID, {
     params: {
       open_id: openId,
       user_id: userId
