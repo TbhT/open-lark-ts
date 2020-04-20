@@ -7,5 +7,9 @@
     "user_id": "1999cdbd",
     "open_id": "ou_6d995b717a775fc8a61eff173d6625e5",
     "chat_id": "oc_6a7c7d941553bc1ebbb2a102b5336f76"
+  },
+  "wingman": {
+    "appId": "cli_9e170ad3c0aed00d",
+    "appSecret": "iKlee2msaI4q9am6JThbegKgHI5KRpK4"
   }
 }

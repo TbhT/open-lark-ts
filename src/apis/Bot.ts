@@ -12,7 +12,7 @@ export async function getBotInfo({
   instance
 }: {
   tenantAccessToken: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
 }): Promise<BotInfoResponse> {
   let $instance: AxiosInstance | undefined = instance
 
@@ -57,7 +57,7 @@ export async function removeBotFromChat({
   tenantAccessToken
 }: {
   chatId: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
   tenantAccessToken: string
 }): Promise<CommonResponse> {
   let $instance: AxiosInstance | undefined = instance
