@@ -5,9 +5,12 @@ import {
   getChatInfo,
   updateChatInfo,
   getChatList,
-  discardChat
+  discardChat,
+  addUserToChat,
+  removeUserFromChat
 } from '../../src/apis/Chat'
 import * as Config from '../config.json'
+import { getUserId } from '../../src/apis/User'
 
 debug.enable('test*')
 
@@ -134,6 +137,78 @@ describe('群信息和群管理', () => {
       })
 
       expect(data.groups.length).toBe(0)
+    }
+  })
+
+  test('will add user to chat', async () => {
+    const { data } = await getUserId({
+      email: 'wangbinghua@bytedance.com',
+      tenantAccessToken
+    })
+
+    const userId = data.user_id
+
+    D('user id %o', data)
+
+    {
+      const { data } = await createChat({
+        tenantAccessToken,
+        name: 'jest unit test',
+        openIds: [Config.development.open_id]
+      })
+
+      const { data: addData } = await addUserToChat({
+        tenantAccessToken,
+        userIds: [userId],
+        chatId: data.chat_id
+      })
+
+      D('add user to chat %o', addData)
+      expect(addData).toHaveProperty('invalid_open_ids')
+      expect(addData).toHaveProperty('invalid_user_ids')
+      expect(addData.invalid_open_ids.length).toBe(0)
+      expect(addData.invalid_user_ids.length).toBe(0)
+
+      await discardChat({
+        tenantAccessToken,
+        chatId: data.chat_id
+      })
+    }
+  })
+
+  test('will remove user to chat', async () => {
+    const { data } = await getUserId({
+      email: 'wangbinghua@bytedance.com',
+      tenantAccessToken
+    })
+
+    const userId = data.user_id
+
+    D('user id %o', data)
+
+    {
+      const { data } = await createChat({
+        tenantAccessToken,
+        name: 'jest unit test',
+        openIds: [Config.development.open_id]
+      })
+
+      await addUserToChat({
+        tenantAccessToken,
+        userIds: [userId],
+        chatId: data.chat_id
+      })
+
+      const { data: removeData } = await removeUserFromChat({
+        tenantAccessToken,
+        userIds: [userId],
+        chatId: data.chat_id
+      })
+
+      D('remove data %o', removeData)
+
+      expect(removeData).toHaveProperty('invalid_open_ids')
+      expect(removeData).toHaveProperty('invalid_user_ids')
     }
   })
 })

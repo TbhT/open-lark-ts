@@ -175,7 +175,7 @@ type ModifyUserInChat = {
   openIds?: string[]
 }
 
-export async function AddUserToChat({
+export async function addUserToChat({
   chatId,
   instance,
   tenantAccessToken,
@@ -185,9 +185,7 @@ export async function AddUserToChat({
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create({
-      headers: Headers(tenantAccessToken)
-    })
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<ModifyUserToChatResponse>(
@@ -212,9 +210,7 @@ export async function removeUserFromChat({
   let $instance: AxiosInstance | undefined = instance
 
   if (!$instance) {
-    $instance = axios.create({
-      headers: Headers(tenantAccessToken)
-    })
+    $instance = axios.create(Headers(tenantAccessToken))
   }
 
   const { data } = await $instance.post<ModifyUserToChatResponse>(
