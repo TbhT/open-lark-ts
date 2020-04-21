@@ -207,7 +207,7 @@ export async function getUserInfo({
   instance
 }: {
   userAccessToken: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
 }): Promise<UserInfoResponse> {
   let $instance: AxiosInstance | undefined = instance
 

@@ -6,6 +6,10 @@ import {
 } from '../types/Response'
 import { GET_USER_BASE_INFO, GET_USER_ID, GET_USER_CHAT_ID } from '../Constants'
 
+/**
+ * 获取用户和机器人的 ChatID
+ * @param param0
+ */
 export async function getUserChatId({
   tenantAccessToken,
   instance,
@@ -38,6 +42,10 @@ export async function getUserChatId({
   return data
 }
 
+/**
+ * 根据用户邮箱获取用户 open_id 和 user_id。
+ * @param param0
+ */
 export async function getUserId({
   tenantAccessToken,
   instance,
@@ -65,6 +73,10 @@ export async function getUserId({
   return data
 }
 
+/**
+ * 获取用户基础信息
+ * @param param0
+ */
 export async function getBasicUserInfo({
   tenantAccessToken,
   openId,
