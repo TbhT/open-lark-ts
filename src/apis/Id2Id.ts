@@ -74,7 +74,7 @@ export async function larkId2OpenId({
   const { data } = await $instance.post<LarkId2OpenIdResponse>(
     ID_LARK_TO_OPEN,
     {
-      lark_id: larkId
+      user_id: larkId
     }
   )
 
@@ -249,7 +249,7 @@ export async function larkId2EmployeeId({
   const { data } = await $instance.post<LarkId2EmployeeIdResponse>(
     ID_LARK_TO_EMPLOYEE,
     {
-      lark_id: larkId
+      user_id: larkId
     }
   )
 
