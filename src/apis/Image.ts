@@ -89,22 +89,25 @@ export async function uploadLocalImage({
   let file: Stream[]
 
   if (Array.isArray(filePath)) {
-    file = await Promise.all(filePath.map(f => createReadStream(f)))
+    file = filePath.map(f => createReadStream(f))
   } else {
     file = [createReadStream(filePath)]
   }
 
-  const res: UploadImageResponse[] = []
+  const fileArray: Promise<UploadImageResponse>[] = []
 
   for (const iterator of file) {
-    const r = await uploadImage({
-      file: iterator,
-      imageType,
-      instance,
-      tenantAccessToken
-    })
-    res.push(r)
+    fileArray.push(
+      uploadImage({
+        file: iterator,
+        imageType,
+        instance,
+        tenantAccessToken
+      })
+    )
   }
+
+  const res: UploadImageResponse[] = await Promise.all(fileArray)
 
   return res
 }
