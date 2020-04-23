@@ -73,3 +73,7 @@ export const GET_USER_CHAT_ID = `${baseURI}/chat/v4/p2p/id`
 export const GET_USER_ID = `${baseURI}/user/v4/email2id`
 
 export const GET_USER_BASE_INFO = `${baseURI}/user/v4/info`
+
+export const SEND_MESSAGE_BATCH = `${baseURI}/message/v4/batch_send/`
+
+export const SEND_MESSAGE = `${baseURI}/message/v4/send/`

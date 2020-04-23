@@ -164,6 +164,21 @@ export interface BasicUserInfoResponse extends CommonResponse {
   }
 }
 
+export interface SendMessageBatchResponse extends CommonResponse {
+  data: {
+    invalid_department_ids: string[]
+    invalid_open_ids: string[]
+    invalid_user_ids: string[]
+    message_id: string
+  }
+}
+
+export interface SendMessageResponse extends CommonResponse {
+  data: {
+    message_id: string
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002
