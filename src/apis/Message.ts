@@ -23,7 +23,7 @@ export async function sendMessageBatch({
   openIds?: string[]
   userIds?: string[]
   msgType: string
-  content: { text: string }
+  content: string
   instance?: AxiosInstance
   tenantAccessToken: string
 }): Promise<SendMessageBatchResponse> {
@@ -40,7 +40,9 @@ export async function sendMessageBatch({
       open_ids: openIds,
       user_ids: userIds,
       msg_type: msgType,
-      content
+      content: {
+        text: content
+      }
     }
   )
 
