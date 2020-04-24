@@ -230,7 +230,6 @@ export async function sendRichTextMessage({
   post,
   instance
 }: MessageParamCommon & {
-  content: string
   post: RichTextMessage
 }): Promise<SendMessageResponse> {
   let $instance: AxiosInstance | undefined = instance
@@ -351,10 +350,10 @@ export async function urgentMessage({
   instance
 }: {
   messageId: string
-  urgentType: string
+  urgentType: 'app' | 'sms' | 'phone'
   openIds: string[]
   tenantAccessToken: string
-  instance: AxiosInstance
+  instance?: AxiosInstance
 }): Promise<UrgentMessageResponse> {
   let $instance: AxiosInstance | undefined = instance
 

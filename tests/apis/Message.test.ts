@@ -2,7 +2,16 @@ import debug from 'debug'
 import axios, { AxiosInstance } from 'axios'
 import { getTenantAccessToken } from '../../src/apis/OAuth'
 import * as Config from '../config.json'
-import { sendMessage, sendMessageBatch } from '../../src/apis/Message'
+import {
+  sendMessage,
+  sendMessageBatch,
+  sendImageMessage,
+  recallMessage,
+  readMessage,
+  sendRichTextMessage,
+  shareChatCard,
+  urgentMessage
+} from '../../src/apis/Message'
 
 debug.enable('test*')
 
@@ -52,5 +61,145 @@ describe('批量发送消息', () => {
     expect(data.invalid_open_ids.length).toBe(0)
     expect(data).toHaveProperty('invalid_user_ids')
     expect(data.invalid_user_ids.length).toBe(0)
+  })
+})
+
+describe('发送图片消息｜撤回消息｜查询消息已读状态', () => {
+  test('should send a image message', async () => {
+    const { data, code } = await sendImageMessage({
+      userId: Config.development.user_id,
+      tenantAccessToken,
+      imageKey: Config.development.image_key
+    })
+
+    D('发送图片消息 %o', data)
+    expect(data).toHaveProperty('message_id')
+    expect(code).toBe(0)
+
+    await new Promise(r => {
+      setTimeout(() => {
+        r()
+      }, 1000)
+    })
+
+    {
+      // read message status
+      const { code, data: readData } = await readMessage({
+        messageId: data.message_id,
+        tenantAccessToken
+      })
+
+      D('read message %o', readData)
+      expect(code).toBe(0)
+      expect(readData).toHaveProperty('read_users')
+      expect(readData.read_users.length).toBeLessThanOrEqual(1)
+    }
+
+    {
+      // recall message
+      const { code } = await recallMessage({
+        tenantAccessToken,
+        messageId: data.message_id
+      })
+
+      D('recall message %o', code)
+      expect(code).toBe(0)
+    }
+  })
+})
+
+describe('转发监听的富文本消息', () => {
+  test.todo('todo')
+})
+
+describe('发送富文本消息', () => {
+  test('should send rich text message', async () => {
+    const message = {
+      zh_cn: {
+        title: '我是一个标题',
+        content: [
+          [
+            {
+              tag: 'text' as 'text',
+              un_escape: true,
+              text: '第一行&nbsp;:'
+            },
+            {
+              tag: 'a' as 'a',
+              text: '超链接',
+              href: 'http://www.feishu.cn'
+            },
+            {
+              tag: 'at' as 'at',
+              user_id: Config.development.user_id
+            }
+          ],
+          [
+            {
+              tag: 'text' as 'text',
+              text: '第二行 :'
+            },
+            {
+              tag: 'text' as 'text',
+              text: '文本测试'
+            }
+          ],
+          [
+            {
+              tag: 'img' as 'img',
+              image_key: Config.development.image_key,
+              width: 300,
+              height: 300
+            }
+          ]
+        ]
+      }
+    }
+
+    const { code, data } = await sendRichTextMessage({
+      tenantAccessToken,
+      post: message,
+      userId: Config.development.user_id
+    })
+
+    D('send rich text message %o', data)
+    expect(code).toBe(0)
+    expect(data).toHaveProperty('message_id')
+  })
+})
+
+describe('发送群名片', () => {
+  test('should send a chat card', async () => {
+    const { data, code } = await shareChatCard({
+      tenantAccessToken,
+      shareChatId: Config.development.chat_id,
+      userId: Config.development.user_id
+    })
+
+    D('chat card %o', data)
+    expect(code).toBe(0)
+    expect(data).toHaveProperty('message_id')
+  })
+})
+
+describe('加急消息', () => {
+  test('should send a urgent message', async () => {
+    const { data, code } = await sendImageMessage({
+      userId: Config.development.user_id,
+      tenantAccessToken,
+      imageKey: Config.development.image_key
+    })
+
+    {
+      const { code, invalid_open_ids } = await urgentMessage({
+        tenantAccessToken,
+        messageId: data.message_id,
+        urgentType: 'sms',
+        openIds: [Config.development.open_id]
+      })
+
+      D('urgent message %o', invalid_open_ids)
+      expect(code).toBe(0)
+    }
   })
 })
