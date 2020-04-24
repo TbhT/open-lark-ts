@@ -33,7 +33,7 @@ describe('发送单条消息', () => {
   })
 })
 
-describe.only('批量发送消息', () => {
+describe('批量发送消息', () => {
   test('should send a batch message', async () => {
     const { data, code } = await sendMessageBatch({
       userIds: [Config.development.user_id],

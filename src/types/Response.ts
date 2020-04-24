@@ -179,6 +179,23 @@ export interface SendMessageResponse extends CommonResponse {
   }
 }
 
+interface ReadMessageUser {
+  open_id: string
+  timestamp: string
+  user_id: string
+}
+
+export interface ReadMessageResponse extends CommonResponse {
+  data: {
+    read_users: ReadMessageUser[]
+  }
+}
+
+export interface UrgentMessageResponse {
+  code: ErrorCode
+  invalid_open_ids: string[]
+}
+
 export type ErrorCode =
   | 0
   | 10002

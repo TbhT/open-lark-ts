@@ -77,3 +77,9 @@ export const GET_USER_BASE_INFO = `${baseURI}/user/v4/info`
 export const SEND_MESSAGE_BATCH = `${baseURI}/message/v4/batch_send/`
 
 export const SEND_MESSAGE = `${baseURI}/message/v4/send/`
+
+export const RECALL_MESSAGE = `${baseURI}/message/v4/recall/`
+
+export const READ_MESSAGE = `${baseURI}/message/v4/read_info/`
+
+export const URGENT_MESSAGE = `${baseURI}/message/v4/urgent/`
