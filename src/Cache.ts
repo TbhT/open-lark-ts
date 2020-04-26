@@ -6,7 +6,7 @@ class Cache {
 
   public readonly ttl: number
 
-  private cache: Map<string, number>
+  private cache: Map<string, unknown>
 
   private expiredTime: Map<string, number>
 
@@ -40,26 +40,26 @@ class Cache {
     return this.cache.size > this.maxSize
   }
 
-  get(key: string): number {
+  get(key: string): unknown {
     if (this.has(key)) {
       const value = this.cache.get(key)
       if (this.expired(key)) {
         this.delete(key)
       }
 
-      return value as number
+      return value
     }
 
-    return -1
+    return null
   }
 
-  add(key: string, value: number, ttl?: number): void {
+  add(key: string, value: unknown, ttl?: number): void {
     if (!this.cache.has(key)) {
       this.set(key, value, ttl)
     }
   }
 
-  set(key: string, value: number, ttl?: number): void {
+  set(key: string, value: unknown, ttl?: number): void {
     if (!ttl) {
       ttl = this.ttl
     }
@@ -103,12 +103,12 @@ class Cache {
     return count
   }
 
-  pop(): [string, number] | [] {
+  pop(): [string, unknown] | [] {
     const keys = [...this.keys()]
     const popKey = keys.pop()
 
     if (popKey) {
-      const popValue = this.cache.get(popKey) as number
+      const popValue = this.cache.get(popKey)
       this.delete(popKey)
       return [popKey, popValue]
     }
