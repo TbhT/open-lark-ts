@@ -17,34 +17,34 @@ export interface EventMessageMergeForward {
 export interface EventMessage {
   app_id: string
   tenant_key: string
-  type: string
+  type: 'message'
 
   // *消息事件公共
   root_id: string
   parent_id: string
   open_chat_id: string
-  chat_type: string
-  msg_type: string
+  chat_type: 'private' | 'group'
+  msg_type: 'text' | 'post' | 'image' | 'file' | 'merge_forward'
   open_id: string
   open_message_id: string
   is_mention: boolean
 
   //   *文本消息、富文本消息含有的
-  text: string
-  text_without_at_bot: string
+  text?: string
+  text_without_at_bot?: string
 
   //   *富文本消息
-  image_keys: string[]
-  title: string
+  image_keys?: string[]
+  title?: string
 
   // *图片消息独有的
-  image_height: string
-  image_width: string
-  image_url: string
-  image_key: string
+  image_height?: string
+  image_width?: string
+  image_url?: string
+  image_key?: string
 
   //   *合并转发消息，（日历卡片、投票消息、会话记录等不支持合并转发）
-  msg_list: EventMessageMergeForward[]
+  msg_list?: EventMessageMergeForward[]
 }
 
 // *请假审批

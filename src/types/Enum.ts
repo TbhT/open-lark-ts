@@ -78,8 +78,13 @@ export enum EventType {
   APP_TICKET = 'app_ticket',
   // 当企业管理员在管理员后台开通应用时推送事件
   APP_OPEN = 'app_open',
-  // 通讯录变更
+  // 当企业管理员在管理员后台启用、停用应用，或应用被平台停用时
+  APP_STATUS_CHANGE = 'app_status_change',
+  // 消息类型，不同类型消息字段有差异
   MESSAGE = 'message',
+  // 机器人单聊消息已读
+  MESSAGE_READ = 'message_read',
+  // 通讯录变更
   USER_ADD = 'user_add',
   USER_UPDATE = 'user_update',
   USER_LEAVE = 'user_leave',
@@ -87,7 +92,9 @@ export enum EventType {
   DEPT_UPDATE = 'dept_update',
   DEPT_DELETE = 'dept_delete',
   CONTACT_SCOPE_CHANGE = 'contact_scope_change',
-  //   审批通过
+  // 用户相关状态
+  USER_STATUS_CHANGE = 'user_status_change',
+  // 审批通过
   APPROVAL = 'approval',
   // 请假审批
   LEAVE_APPROVAL = 'leave_approval',
@@ -111,6 +118,14 @@ export enum EventType {
   REMOVE_USER_FROM_CHAT = 'remove_user_from_chat',
   // 撤销加人
   REVOKE_ADD_USER_FROM_CHAT = 'revoke_add_user_from_chat',
+  // 解散群通知
+  CHAT_DISBAND = 'chat_disband',
+  // 群配置修改事件
+  GROUP_SETTING_UPDATE = 'group_setting_update',
+  // 创建小组件实例事件
+  CREATE_WIDGET_INSTANCE = 'create_widget_instance',
+  // 删除小组件实例事件
+  DELETE_WIDGET_INSTANCE = 'delete_widget_instance',
   UNKNOWN = 'unknown'
 }
 
