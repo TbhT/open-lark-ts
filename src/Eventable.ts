@@ -8,11 +8,11 @@ import {
   EventUserInAndOutChat
 } from './types/CallbackEvent'
 
-export default interface Eventable extends EventEmitter {
+export default abstract class Eventable extends EventEmitter {
   /**
    * 当企业管理员在管理员后台首次开通应用时，开放平台推送 app_open 事件到请求网址。
    */
-  on(event: EventType.APP_OPEN, fn: (data: EventAppOpen) => void): this
+  abstract on(event: EventType.APP_OPEN, fn: (data: EventAppOpen) => void): this
 
   /**
    * 会话消息事件包括与机器人直接对话和在群聊中与机器人交流。
@@ -21,7 +21,7 @@ export default interface Eventable extends EventEmitter {
    * @param event
    * @param fn
    */
-  on(event: EventType.MESSAGE, fn: (data: EventMessage) => void): this
+  abstract on(event: EventType.MESSAGE, fn: (data: EventMessage) => void): this
 
   /**
    * 机器人被从群聊中移除时，开放平台推送 remove_bot 通知事件到请求网址。
@@ -29,7 +29,7 @@ export default interface Eventable extends EventEmitter {
    * @param event
    * @param fn
    */
-  on(
+  abstract on(
     event: EventType.REMOVE_BOT | EventType.ADD_BOT,
     fn: (data: EventRemoveAddBot) => void
   ): this
@@ -39,7 +39,7 @@ export default interface Eventable extends EventEmitter {
    * @param event
    * @param fn
    */
-  on(
+  abstract on(
     event: EventType.P2P_CHAT_CREATE,
     fn: (data: EventP2PCreateChat) => void
   ): this
@@ -51,7 +51,7 @@ export default interface Eventable extends EventEmitter {
    * @param event
    * @param fn
    */
-  on(
+  abstract on(
     event:
       | EventType.ADD_USER_TO_CHAT
       | EventType.REMOVE_USER_FROM_CHAT

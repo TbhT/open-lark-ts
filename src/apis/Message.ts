@@ -211,7 +211,7 @@ interface RichTextMessageInner {
   content: (ATag | AtTag | TextTag | ImgTag)[][]
 }
 
-interface RichTextMessage {
+export interface RichTextMessage {
   zh_cn?: RichTextMessageInner
   ja_jp?: RichTextMessageInner
   en_us?: RichTextMessageInner
@@ -339,6 +339,14 @@ export async function readMessage({
   return data
 }
 
+// 消息加急类型
+// *支持：飞书内部、短信、电话
+export enum UrgentType {
+  APP = 'app',
+  SMS = 'sms',
+  PHONE = 'phone'
+}
+
 /**
  * 对指定消息进行加急。
  */
@@ -350,7 +358,7 @@ export async function urgentMessage({
   instance
 }: {
   messageId: string
-  urgentType: 'app' | 'sms' | 'phone'
+  urgentType: UrgentType
   openIds: string[]
   tenantAccessToken: string
   instance?: AxiosInstance
