@@ -47,8 +47,8 @@ export type ShareChatCardParams = {
 }
 
 export default interface Sayable {
-  tenantAccessToken: string
-  instance: AxiosInstance
+  tenantAccessToken: string | undefined
+  instance: AxiosInstance | undefined
   sayTextMessage(params: TextMessageParams): Promise<SendMessageResponse>
   sayImageMessage(params: ImageMessageParams): Promise<SendMessageResponse>
   sayRichTextMessage(
