@@ -23,5 +23,11 @@
     "quotes": ["warn", "single"],
     "semi": ["warn", "never"],
     "@typescript-eslint/camelcase": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["src/*/**.ts", "src/*/**.js"],
+      "excludedFiles": ["dist/*.js", "types/*.ts"]
+    }
+  ]
 }
