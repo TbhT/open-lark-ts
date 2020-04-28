@@ -14,6 +14,7 @@ import {
   READ_MESSAGE,
   URGENT_MESSAGE
 } from '../Constants'
+import { UrgentType } from '../types/Enum'
 
 interface MessageParamCommon {
   tenantAccessToken: string
@@ -337,14 +338,6 @@ export async function readMessage({
   })
 
   return data
-}
-
-// 消息加急类型
-// *支持：飞书内部、短信、电话
-export enum UrgentType {
-  APP = 'app',
-  SMS = 'sms',
-  PHONE = 'phone'
 }
 
 /**

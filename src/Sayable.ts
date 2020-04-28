@@ -5,7 +5,8 @@ import {
   UrgentMessageResponse
 } from './types/Response'
 import { AxiosInstance } from 'axios'
-import { RichTextMessage, UrgentType } from './apis/Message'
+import { RichTextMessage } from './apis/Message'
+import { UrgentType } from './types/Enum'
 
 /**
  * 接受消息方的通用参数
@@ -44,6 +45,7 @@ export type RichTextMessageParams = {
  */
 export type ShareChatCardParams = {
   shareChatId: string
+  userId: string
 }
 
 export default interface Sayable {
@@ -57,7 +59,7 @@ export default interface Sayable {
   sayChatCard(params: ShareChatCardParams): Promise<SendMessageResponse>
   recallMessage(params: { messageId: string }): Promise<CommonResponse>
   readMessage(params: { messageId: string }): Promise<ReadMessageResponse>
-  urgentMessage(params: {
+  sayUrgentMessage(params: {
     messageId: string
     urgentType: UrgentType
     openIds: string[]

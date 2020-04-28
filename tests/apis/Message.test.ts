@@ -12,6 +12,7 @@ import {
   shareChatCard,
   urgentMessage
 } from '../../src/apis/Message'
+import { UrgentType } from '../../src/types/Enum'
 
 debug.enable('test*')
 
@@ -194,7 +195,7 @@ describe('加急消息', () => {
       const { code, invalid_open_ids } = await urgentMessage({
         tenantAccessToken,
         messageId: data.message_id,
-        urgentType: 'sms',
+        urgentType: UrgentType.SMS,
         openIds: [Config.development.open_id]
       })
 

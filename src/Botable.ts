@@ -1,5 +1,12 @@
 import { EventEmitter } from 'events'
 import { AxiosInstance } from 'axios'
+import {
+  EventAppOpen,
+  EventMessage,
+  EventRemoveAddBot,
+  EventP2PCreateChat,
+  EventUserInAndOutChat
+} from './types/CallbackEvent'
 import Sayable, {
   TextMessageParams,
   ImageMessageParams,
@@ -22,21 +29,6 @@ import {
   ReadMessageResponse,
   UrgentMessageResponse
 } from './types/Response'
-import {
-  EventAppOpen,
-  EventMessage,
-  EventRemoveAddBot,
-  EventP2PCreateChat,
-  EventUserInAndOutChat
-} from './types/CallbackEvent'
-
-export function beforeUsed(value: string): Function {
-  return function (target: any): void {
-    if (!target[value]) {
-      throw Error(`class instance should init property ${value}`)
-    }
-  }
-}
 
 export type EventTypeSupported =
   | EventType.APP_OPEN
@@ -57,6 +49,8 @@ export default abstract class Botable extends EventEmitter implements Sayable {
 
   protected readonly appSecret: string
 
+  protected initFlag = false
+
   constructor({ appId, appSecret }: { appId: string; appSecret: string }) {
     super()
     this.appId = appId
@@ -65,11 +59,17 @@ export default abstract class Botable extends EventEmitter implements Sayable {
 
   abstract async init(): Promise<unknown>
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
+  protected checkParamsBefore(): void {
+    if (!this.initFlag) {
+      throw new Error('Bot init failed, please re-init')
+    }
+  }
+
   async sayTextMessage(
     params: TextMessageParams
   ): Promise<SendMessageResponse> {
+    this.checkParamsBefore()
+
     return await sendMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -77,11 +77,11 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
   async sayImageMessage(
     params: ImageMessageParams
   ): Promise<SendMessageResponse> {
+    this.checkParamsBefore()
+
     return await sendImageMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -89,11 +89,11 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
   async sayRichTextMessage(
     params: RichTextMessageParams
   ): Promise<SendMessageResponse> {
+    this.checkParamsBefore()
+
     return await sendRichTextMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -101,9 +101,9 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
   async sayChatCard(params: ShareChatCardParams): Promise<SendMessageResponse> {
+    this.checkParamsBefore()
+
     return await shareChatCard({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -111,9 +111,9 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
   async recallMessage(params: { messageId: string }): Promise<CommonResponse> {
+    this.checkParamsBefore()
+
     return await recallMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -121,11 +121,11 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
   async readMessage(params: {
     messageId: string
   }): Promise<ReadMessageResponse> {
+    this.checkParamsBefore()
+
     return await readMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
@@ -133,13 +133,13 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     })
   }
 
-  @beforeUsed('tenantAccessToken')
-  @beforeUsed('instance')
-  async urgentMessage(params: {
+  async sayUrgentMessage(params: {
     messageId: string
     urgentType: UrgentType
     openIds: string[]
   }): Promise<UrgentMessageResponse> {
+    this.checkParamsBefore()
+
     return await urgentMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,

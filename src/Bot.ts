@@ -11,8 +11,6 @@ export default class Bot extends Botable {
 
   instance: AxiosInstance | undefined
 
-  private initFlag = false
-
   constructor({ appId, appSecret }: { appId: string; appSecret: string }) {
     super({ appId, appSecret })
   }
