@@ -16,7 +16,7 @@ import {
 } from '../Constants'
 import { UrgentType } from '../types/Enum'
 
-interface MessageParamCommon {
+export interface MessageParamCommon {
   tenantAccessToken: string
   openId?: string
   userId?: string
