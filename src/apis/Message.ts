@@ -370,3 +370,44 @@ export async function urgentMessage({
 
   return data
 }
+
+/**
+ * 发送消息卡片
+ */
+export async function sendCardMessage({
+  tenantAccessToken,
+  instance,
+  openId,
+  userId,
+  email,
+  chatId,
+  rootId,
+  updateMulti = false
+}: {
+  tenantAccessToken: string
+  instance?: AxiosInstance
+  openId?: string
+  userId?: string
+  email?: string
+  chatId?: string
+  rootId?: string
+  updateMulti?: boolean
+}): Promise<SendMessageResponse> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create(Headers(tenantAccessToken))
+  }
+
+  const { data } = await $instance.post<SendMessageResponse>(SEND_MESSAGE, {
+    open_id: openId,
+    user_id: userId,
+    email,
+    chat_id: chatId,
+    msg_type: 'interactive',
+    root_id: rootId,
+    update_multi: updateMulti
+  })
+
+  return data
+}
