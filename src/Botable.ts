@@ -11,7 +11,8 @@ import Sayable, {
   TextMessageParams,
   ImageMessageParams,
   RichTextMessageParams,
-  ShareChatCardParams
+  ShareChatCardParams,
+  CardMessageParams
 } from './Sayable'
 import { UrgentType, EventType } from './types/Enum'
 import {
@@ -21,7 +22,8 @@ import {
   shareChatCard,
   recallMessage,
   readMessage,
-  urgentMessage
+  urgentMessage,
+  sendCardMessage
 } from './apis/Message'
 import {
   SendMessageResponse,
@@ -141,6 +143,18 @@ export default abstract class Botable extends EventEmitter implements Sayable {
     this.checkParamsBefore()
 
     return await urgentMessage({
+      ...params,
+      tenantAccessToken: this.tenantAccessToken as string,
+      instance: this.instance
+    })
+  }
+
+  async sayCardMessage(
+    params: CardMessageParams
+  ): Promise<SendMessageResponse> {
+    this.checkParamsBefore()
+
+    return await sendCardMessage({
       ...params,
       tenantAccessToken: this.tenantAccessToken as string,
       instance: this.instance

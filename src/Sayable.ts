@@ -7,6 +7,7 @@ import {
 import { AxiosInstance } from 'axios'
 import { RichTextMessage } from './apis/Message'
 import { UrgentType } from './types/Enum'
+import { CardMessage } from './types/CardMessage'
 
 /**
  * 接受消息方的通用参数
@@ -48,6 +49,11 @@ export type ShareChatCardParams = {
   userId: string
 }
 
+export type CardMessageParams = {
+  card: CardMessage
+  update_multi?: boolean
+} & ReceiverParams
+
 export default interface Sayable {
   tenantAccessToken: string | undefined
   instance: AxiosInstance | undefined
@@ -64,4 +70,5 @@ export default interface Sayable {
     urgentType: UrgentType
     openIds: string[]
   }): Promise<UrgentMessageResponse>
+  sayCardMessage(params: CardMessageParams): Promise<SendMessageResponse>
 }
