@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "description": "lark bot sdk",
   "main": "dist/index.js",
+  "types": "types",
   "repository": "git@github.com:TbhT/lark-sdk.git",
   "author": "TbhT <hustapple132@gmail.com>",
   "license": "MIT",
   "scripts": {
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "set DEBUG=* & jest"
+    "test": "set DEBUG=* && jest",
+    "build": "tsc"
   },
+  "files": [
+    "dist",
+    "types",
+    "src"
+  ],
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
