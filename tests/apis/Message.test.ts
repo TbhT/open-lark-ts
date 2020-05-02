@@ -1,5 +1,4 @@
 import debug from 'debug'
-import axios, { AxiosInstance } from 'axios'
 import { getTenantAccessToken } from '../../src/apis/OAuth'
 import * as Config from '../config.json'
 import {
@@ -10,7 +9,8 @@ import {
   readMessage,
   sendRichTextMessage,
   shareChatCard,
-  urgentMessage
+  urgentMessage,
+  sendCardMessage
 } from '../../src/apis/Message'
 import { UrgentType } from '../../src/types/Enum'
 
@@ -202,5 +202,50 @@ describe('加急消息', () => {
       D('urgent message %o', invalid_open_ids)
       expect(code).toBe(0)
     }
+  })
+})
+
+const CardContent = {
+  config: {
+    wide_screen_mode: true
+  },
+  header: {
+    title: {
+      tag: 'plain_text' as 'plain_text',
+      content: 'This is header'
+    },
+    template: 'red' as 'red'
+  },
+  elements: [
+    {
+      tag: 'div',
+      text: {
+        tag: 'plain_text' as 'plain_text',
+        content: 'This is a very very very very very very very long text;'
+      }
+    },
+    {
+      tag: 'action',
+      actions: [
+        {
+          tag: 'button',
+          text: {
+            tag: 'plain_text' as 'plain_text',
+            content: 'Read'
+          },
+          type: 'default'
+        }
+      ]
+    }
+  ]
+}
+
+describe.only('发送消息卡片', () => {
+  test('should send a card message', async () => {
+    const {} = await sendCardMessage({
+      tenantAccessToken,
+      userId: Config.development.user_id,
+      card: CardContent as any
+    })
   })
 })

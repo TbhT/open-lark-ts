@@ -78,7 +78,6 @@ interface I18NPlainTextObject {
     en_us: string
     ja_jp: string
   }
-  content?: string
   lines?: number
 }
 
@@ -212,23 +211,25 @@ export type Element =
   | DatePickerElement
 
 export interface CardHeader {
-  title: I18NPlainTextObject
+  title: I18NPlainTextObject | PlainTextObject
 }
 
+type TemplateColor =
+  | 'blue'
+  | 'wathet'
+  | 'turquoise'
+  | 'green'
+  | 'yellow'
+  | 'orange'
+  | 'red'
+  | 'carmine'
+  | 'violet'
+  | 'purple'
+  | 'indigo'
+  | 'grey'
+
 export interface CardHeaderInner extends CardHeader {
-  template?:
-    | 'Blue'
-    | 'Wathet'
-    | 'Turquoise'
-    | 'Green'
-    | 'Yellow'
-    | 'Orange'
-    | 'Red'
-    | 'Carmine'
-    | 'Violet'
-    | 'Purple'
-    | 'Indigo'
-    | 'Grey'
+  template?: TemplateColor
 }
 
 export interface CardContentElements {
