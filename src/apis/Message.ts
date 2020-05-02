@@ -15,6 +15,7 @@ import {
   URGENT_MESSAGE
 } from '../Constants'
 import { UrgentType } from '../types/Enum'
+import { CardMessage } from '../types/CardMessage'
 
 export interface MessageParamCommon {
   tenantAccessToken: string
@@ -382,7 +383,8 @@ export async function sendCardMessage({
   email,
   chatId,
   rootId,
-  updateMulti = false
+  updateMulti = false,
+  card
 }: {
   tenantAccessToken: string
   instance?: AxiosInstance
@@ -392,6 +394,7 @@ export async function sendCardMessage({
   chatId?: string
   rootId?: string
   updateMulti?: boolean
+  card: CardMessage
 }): Promise<SendMessageResponse> {
   let $instance: AxiosInstance | undefined = instance
 
@@ -406,7 +409,8 @@ export async function sendCardMessage({
     chat_id: chatId,
     msg_type: 'interactive',
     root_id: rootId,
-    update_multi: updateMulti
+    update_multi: updateMulti,
+    card
   })
 
   return data
