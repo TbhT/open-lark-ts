@@ -1,4 +1,4 @@
-import Bot from '../src/Bot'
+import { Bot } from '../src/Bot'
 import * as Config from './config.json'
 import { UrgentType } from '../src/types/Enum'
 

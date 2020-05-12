@@ -1,7 +1,7 @@
 import * as moment from 'moment'
 moment.locale('zh-cn')
 
-class Cache {
+export class Cache {
   public readonly maxSize: number
 
   public readonly ttl: number
@@ -147,5 +147,3 @@ class Cache {
     return this.cache.has(key)
   }
 }
-
-export default Cache

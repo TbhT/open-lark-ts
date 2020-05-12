@@ -1,12 +1,12 @@
 import axios, { AxiosInstance } from 'axios'
-import Botable from './Botable'
-import Cache from './Cache'
+import { Botable } from './Botable'
+import { Cache } from './Cache'
 import { getTenantAccessToken } from './apis/OAuth'
 import Headers from './utils/headers'
 
 const tokenCache = new Cache(10, 3600 * 1.9)
 
-export default class Bot extends Botable {
+export class Bot extends Botable {
   tenantAccessToken: string | undefined
 
   instance: AxiosInstance | undefined

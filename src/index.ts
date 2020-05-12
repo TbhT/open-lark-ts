@@ -1,14 +1,8 @@
-import * as MessageApi from './apis/Message'
-import * as $Bot from './Bot'
-import * as $Botable from './Botable'
-import * as $Sayable from './Sayable'
-
+import * as $Api from './apis/Message'
+export { Bot } from './Bot'
+export { Botable } from './Botable'
+export { Sayable } from './Sayable'
+export { Cache } from './Cache'
 export const Api = {
-  ...MessageApi
-}
-
-export const Bot = {
-  ...$Bot,
-  ...$Botable,
-  ...$Sayable
+  ...$Api
 }

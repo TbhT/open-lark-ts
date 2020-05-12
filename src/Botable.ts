@@ -7,12 +7,13 @@ import {
   EventP2PCreateChat,
   EventUserInAndOutChat
 } from './types/CallbackEvent'
-import Sayable, {
+import {
   TextMessageParams,
   ImageMessageParams,
   RichTextMessageParams,
   ShareChatCardParams,
-  CardMessageParams
+  CardMessageParams,
+  Sayable
 } from './Sayable'
 import { UrgentType, EventType } from './types/Enum'
 import {
@@ -42,7 +43,7 @@ export type EventTypeSupported =
   | EventType.REMOVE_USER_FROM_CHAT
   | EventType.REVOKE_ADD_USER_FROM_CHAT
 
-export default abstract class Botable extends EventEmitter implements Sayable {
+export abstract class Botable extends EventEmitter implements Sayable {
   tenantAccessToken: string | undefined
 
   instance: AxiosInstance | undefined
