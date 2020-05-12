@@ -2,11 +2,11 @@
 import { EventEmitter } from 'events';
 import { AxiosInstance } from 'axios';
 import { EventAppOpen, EventMessage, EventRemoveAddBot, EventP2PCreateChat, EventUserInAndOutChat } from './types/CallbackEvent';
-import Sayable, { TextMessageParams, ImageMessageParams, RichTextMessageParams, ShareChatCardParams, CardMessageParams } from './Sayable';
+import { TextMessageParams, ImageMessageParams, RichTextMessageParams, ShareChatCardParams, CardMessageParams, Sayable } from './Sayable';
 import { UrgentType, EventType } from './types/Enum';
 import { SendMessageResponse, CommonResponse, ReadMessageResponse, UrgentMessageResponse } from './types/Response';
 export declare type EventTypeSupported = EventType.APP_OPEN | EventType.MESSAGE | EventType.REMOVE_BOT | EventType.ADD_BOT | EventType.P2P_CHAT_CREATE | EventType.ADD_USER_TO_CHAT | EventType.REMOVE_USER_FROM_CHAT | EventType.REVOKE_ADD_USER_FROM_CHAT;
-export default abstract class Botable extends EventEmitter implements Sayable {
+export declare abstract class Botable extends EventEmitter implements Sayable {
     tenantAccessToken: string | undefined;
     instance: AxiosInstance | undefined;
     protected readonly appId: string;

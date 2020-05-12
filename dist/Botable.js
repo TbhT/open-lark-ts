@@ -73,4 +73,4 @@ class Botable extends events_1.EventEmitter {
         return this;
     }
 }
-exports.default = Botable;
+exports.Botable = Botable;

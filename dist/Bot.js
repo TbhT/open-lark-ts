@@ -5,8 +5,8 @@ const Botable_1 = require("./Botable");
 const Cache_1 = require("./Cache");
 const OAuth_1 = require("./apis/OAuth");
 const headers_1 = require("./utils/headers");
-const tokenCache = new Cache_1.default(10, 3600 * 1.9);
-class Bot extends Botable_1.default {
+const tokenCache = new Cache_1.Cache(10, 3600 * 1.9);
+class Bot extends Botable_1.Botable {
     constructor({ appId, appSecret }) {
         super({ appId, appSecret });
     }
@@ -33,4 +33,4 @@ class Bot extends Botable_1.default {
         return tokenCache.add(key, value, ttl);
     }
 }
-exports.default = Bot;
+exports.Bot = Bot;

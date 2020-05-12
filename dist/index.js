@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const MessageApi = require("./apis/Message");
-const $Bot = require("./Bot");
-const $Botable = require("./Botable");
-const $Sayable = require("./Sayable");
-exports.Api = Object.assign({}, MessageApi);
-exports.Bot = Object.assign(Object.assign(Object.assign({}, $Bot), $Botable), $Sayable);
+const $Api = require("./apis/Message");
+var Bot_1 = require("./Bot");
+exports.Bot = Bot_1.Bot;
+var Botable_1 = require("./Botable");
+exports.Botable = Botable_1.Botable;
+var Cache_1 = require("./Cache");
+exports.Cache = Cache_1.Cache;
+exports.Api = Object.assign({}, $Api);

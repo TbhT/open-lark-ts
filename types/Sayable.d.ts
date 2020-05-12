@@ -42,7 +42,7 @@ export declare type CardMessageParams = {
     card: CardMessage;
     update_multi?: boolean;
 } & ReceiverParams;
-export default interface Sayable {
+export interface Sayable {
     tenantAccessToken: string | undefined;
     instance: AxiosInstance | undefined;
     sayTextMessage(params: TextMessageParams): Promise<SendMessageResponse>;

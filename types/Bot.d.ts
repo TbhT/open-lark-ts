@@ -1,6 +1,6 @@
 import { AxiosInstance } from 'axios';
-import Botable from './Botable';
-export default class Bot extends Botable {
+import { Botable } from './Botable';
+export declare class Bot extends Botable {
     tenantAccessToken: string | undefined;
     instance: AxiosInstance | undefined;
     constructor({ appId, appSecret }: {

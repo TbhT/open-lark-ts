@@ -1,4 +1,4 @@
-declare class Cache {
+export declare class Cache {
     readonly maxSize: number;
     readonly ttl: number;
     private cache;
@@ -18,4 +18,3 @@ declare class Cache {
     private deleteExpired;
     expired(key: string, expiredOn?: number): boolean;
 }
-export default Cache;

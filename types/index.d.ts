@@ -1,5 +1,8 @@
-import * as MessageApi from './apis/Message';
-import * as $Botable from './Botable';
+import * as $Api from './apis/Message';
+export { Bot } from './Bot';
+export { Botable } from './Botable';
+export { Sayable } from './Sayable';
+export { Cache } from './Cache';
 export declare const Api: {
     sendMessageBatch({ departmentIds, openIds, userIds, msgType, content, instance, tenantAccessToken }: {
         departmentIds?: string[] | undefined;
@@ -10,20 +13,20 @@ export declare const Api: {
         instance?: import("axios").AxiosInstance | undefined;
         tenantAccessToken: string;
     }): Promise<import("./types/Response").SendMessageBatchResponse>;
-    sendMessage({ openId, userId, email, chatId, rootId, content, instance, tenantAccessToken }: MessageApi.MessageParamCommon & {
+    sendMessage({ openId, userId, email, chatId, rootId, content, instance, tenantAccessToken }: $Api.MessageParamCommon & {
         content: string;
     }): Promise<import("./types/Response").SendMessageResponse>;
-    forwardRichTextMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, content, title, instance }: MessageApi.MessageParamCommon & {
+    forwardRichTextMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, content, title, instance }: $Api.MessageParamCommon & {
         content: string;
         title: string;
     }): Promise<import("./types/Response").SendMessageResponse>;
-    sendImageMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, imageKey, instance }: MessageApi.MessageParamCommon & {
+    sendImageMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, imageKey, instance }: $Api.MessageParamCommon & {
         imageKey: string;
     }): Promise<import("./types/Response").SendMessageResponse>;
-    sendRichTextMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, post, instance }: MessageApi.MessageParamCommon & {
-        post: MessageApi.RichTextMessage;
+    sendRichTextMessage({ tenantAccessToken, openId, userId, email, chatId, rootId, post, instance }: $Api.MessageParamCommon & {
+        post: $Api.RichTextMessage;
     }): Promise<import("./types/Response").SendMessageResponse>;
-    shareChatCard({ tenantAccessToken, openId, userId, email, chatId, rootId, instance, shareChatId }: MessageApi.MessageParamCommon & {
+    shareChatCard({ tenantAccessToken, openId, userId, email, chatId, rootId, instance, shareChatId }: $Api.MessageParamCommon & {
         shareChatId: string;
     }): Promise<import("./types/Response").SendMessageResponse>;
     recallMessage({ messageId, tenantAccessToken, instance }: {
@@ -54,7 +57,4 @@ export declare const Api: {
         updateMulti?: boolean | undefined;
         card: import("./types/CardMessage").CardMessage;
     }): Promise<import("./types/Response").SendMessageResponse>;
-};
-export declare const Bot: {
-    default: typeof $Botable.default;
 };

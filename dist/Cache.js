@@ -108,4 +108,4 @@ class Cache {
         return this.cache.has(key);
     }
 }
-exports.default = Cache;
+exports.Cache = Cache;
