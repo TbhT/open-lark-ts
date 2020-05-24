@@ -10,41 +10,41 @@ class Botable extends events_1.EventEmitter {
         this.appId = appId;
         this.appSecret = appSecret;
     }
-    checkParamsBefore() {
+    beforeSay() {
         if (!this.initFlag) {
             throw new Error('Bot init failed, please re-init');
         }
     }
     async sayTextMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.sendMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async sayImageMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.sendImageMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async sayRichTextMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.sendRichTextMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async sayChatCard(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.shareChatCard(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async recallMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.recallMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async readMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.readMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async sayUrgentMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.urgentMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     async sayCardMessage(params) {
-        this.checkParamsBefore();
+        await this.beforeSay();
         return await Message_1.sendCardMessage(Object.assign(Object.assign({}, params), { tenantAccessToken: this.tenantAccessToken, instance: this.instance }));
     }
     on(event, fn) {

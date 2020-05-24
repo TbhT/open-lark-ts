@@ -17,7 +17,7 @@ export declare abstract class Botable extends EventEmitter implements Sayable {
         appSecret: string;
     });
     abstract init(): Promise<unknown>;
-    protected checkParamsBefore(): void;
+    protected beforeSay(): void;
     sayTextMessage(params: TextMessageParams): Promise<SendMessageResponse>;
     sayImageMessage(params: ImageMessageParams): Promise<SendMessageResponse>;
     sayRichTextMessage(params: RichTextMessageParams): Promise<SendMessageResponse>;
