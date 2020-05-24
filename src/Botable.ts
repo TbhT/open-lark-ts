@@ -62,7 +62,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
 
   abstract async init(): Promise<unknown>
 
-  protected checkParamsBefore(): void {
+  protected beforeSay(): void {
     if (!this.initFlag) {
       throw new Error('Bot init failed, please re-init')
     }
@@ -71,7 +71,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   async sayTextMessage(
     params: TextMessageParams
   ): Promise<SendMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await sendMessage({
       ...params,
@@ -83,7 +83,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   async sayImageMessage(
     params: ImageMessageParams
   ): Promise<SendMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await sendImageMessage({
       ...params,
@@ -95,7 +95,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   async sayRichTextMessage(
     params: RichTextMessageParams
   ): Promise<SendMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await sendRichTextMessage({
       ...params,
@@ -105,7 +105,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   }
 
   async sayChatCard(params: ShareChatCardParams): Promise<SendMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await shareChatCard({
       ...params,
@@ -115,7 +115,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   }
 
   async recallMessage(params: { messageId: string }): Promise<CommonResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await recallMessage({
       ...params,
@@ -127,7 +127,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   async readMessage(params: {
     messageId: string
   }): Promise<ReadMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await readMessage({
       ...params,
@@ -141,7 +141,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
     urgentType: UrgentType
     openIds: string[]
   }): Promise<UrgentMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await urgentMessage({
       ...params,
@@ -153,7 +153,7 @@ export abstract class Botable extends EventEmitter implements Sayable {
   async sayCardMessage(
     params: CardMessageParams
   ): Promise<SendMessageResponse> {
-    this.checkParamsBefore()
+    await this.beforeSay()
 
     return await sendCardMessage({
       ...params,
