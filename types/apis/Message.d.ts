@@ -1,7 +1,7 @@
 import { AxiosInstance } from 'axios';
 import { SendMessageBatchResponse, SendMessageResponse, CommonResponse, ReadMessageResponse, UrgentMessageResponse } from '../types/Response';
 import { UrgentType } from '../types/Enum';
-import { CardMessage } from '../types/CardMessage';
+import { CardMessage, CardContentElements } from '../types/CardMessage';
 export interface MessageParamCommon {
     tenantAccessToken: string;
     openId?: string;
@@ -127,4 +127,14 @@ export declare function sendCardMessage({ tenantAccessToken, instance, openId, u
     updateMulti?: boolean;
     card: CardMessage;
 }): Promise<SendMessageResponse>;
+/**
+ * 刷新卡片
+ */
+export declare function refreshCardMessage({ tenantAccessToken, instance, openIds, token, cardContent }: {
+    tenantAccessToken: string;
+    instance?: AxiosInstance;
+    openIds: string[];
+    token: string;
+    cardContent: CardContentElements;
+}): Promise<any>;
 export {};

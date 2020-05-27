@@ -57,4 +57,11 @@ export declare const Api: {
         updateMulti?: boolean | undefined;
         card: import("./types/CardMessage").CardMessage;
     }): Promise<import("./types/Response").SendMessageResponse>;
+    refreshCardMessage({ tenantAccessToken, instance, openIds, token, cardContent }: {
+        tenantAccessToken: string;
+        instance?: import("axios").AxiosInstance | undefined;
+        openIds: string[];
+        token: string;
+        cardContent: import("./types/CardMessage").CardContentElements;
+    }): Promise<any>;
 };

@@ -10,7 +10,8 @@ import {
   sendRichTextMessage,
   shareChatCard,
   urgentMessage,
-  sendCardMessage
+  sendCardMessage,
+  refreshCardMessage
 } from '../../src/apis/Message'
 import { UrgentType } from '../../src/types/Enum'
 
@@ -242,10 +243,31 @@ const CardContent = {
 
 describe.only('发送消息卡片', () => {
   test('should send a card message', async () => {
-    const {} = await sendCardMessage({
+    await sendCardMessage({
       tenantAccessToken,
       userId: Config.development.user_id,
       card: CardContent as any
     })
+
+    // setTimeout(async () => {
+    // const data = await refreshCardMessage({
+    //   tenantAccessToken,
+    //   token: 'c-318cd054babd8eb6e4ca57c5f37cb9cfbca639df',
+    //   openIds: [Config.development.open_id],
+    //   cardContent: {
+    //     elements: [
+    //       {
+    //         tag: 'div',
+    //         text: {
+    //           tag: 'plain_text' as 'plain_text',
+    //           content: 'this is a refresh card response'
+    //         }
+    //       }
+    //     ]
+    //   }
+    // })
+
+    // console.log('-----------', data)
+    // }, 2000)
   })
 })

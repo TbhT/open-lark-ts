@@ -1,6 +1,6 @@
 {
   "name": "lark-sdk",
-  "version": "0.1.3",
+  "version": "0.2.3",
   "description": "lark bot sdk",
   "main": "dist/index.js",
   "types": "types",

@@ -83,3 +83,5 @@ export const RECALL_MESSAGE = `${baseURI}/message/v4/recall/`
 export const READ_MESSAGE = `${baseURI}/message/v4/read_info/`
 
 export const URGENT_MESSAGE = `${baseURI}/message/v4/urgent/`
+
+export const REFRESH_CARD_MESSAGE = `${baseURI}/interactive/v1/card/update/`

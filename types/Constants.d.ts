@@ -38,3 +38,4 @@ export declare const SEND_MESSAGE: string;
 export declare const RECALL_MESSAGE: string;
 export declare const READ_MESSAGE: string;
 export declare const URGENT_MESSAGE: string;
+export declare const REFRESH_CARD_MESSAGE: string;

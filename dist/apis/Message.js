@@ -201,3 +201,18 @@ async function sendCardMessage({ tenantAccessToken, instance, openId, userId, em
     return data;
 }
 exports.sendCardMessage = sendCardMessage;
+/**
+ * 刷新卡片
+ */
+async function refreshCardMessage({ tenantAccessToken, instance, openIds, token, cardContent }) {
+    let $instance = instance;
+    if (!$instance) {
+        $instance = axios_1.default.create(headers_1.default(tenantAccessToken));
+    }
+    const { data } = await $instance.post(Constants_1.REFRESH_CARD_MESSAGE, {
+        token,
+        card: Object.assign(Object.assign({}, cardContent), { open_ids: openIds })
+    });
+    return data;
+}
+exports.refreshCardMessage = refreshCardMessage;

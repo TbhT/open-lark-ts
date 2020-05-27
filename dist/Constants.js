@@ -45,3 +45,4 @@ exports.SEND_MESSAGE = `${baseURI}/message/v4/send/`;
 exports.RECALL_MESSAGE = `${baseURI}/message/v4/recall/`;
 exports.READ_MESSAGE = `${baseURI}/message/v4/read_info/`;
 exports.URGENT_MESSAGE = `${baseURI}/message/v4/urgent/`;
+exports.REFRESH_CARD_MESSAGE = `${baseURI}/interactive/v1/card/update/`;

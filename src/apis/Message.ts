@@ -12,10 +12,11 @@ import {
   SEND_MESSAGE,
   RECALL_MESSAGE,
   READ_MESSAGE,
-  URGENT_MESSAGE
+  URGENT_MESSAGE,
+  REFRESH_CARD_MESSAGE
 } from '../Constants'
 import { UrgentType } from '../types/Enum'
-import { CardMessage } from '../types/CardMessage'
+import { CardMessage, CardContentElements } from '../types/CardMessage'
 
 export interface MessageParamCommon {
   tenantAccessToken: string
@@ -411,6 +412,39 @@ export async function sendCardMessage({
     root_id: rootId,
     update_multi: updateMulti,
     card
+  })
+
+  return data
+}
+
+/**
+ * 刷新卡片
+ */
+export async function refreshCardMessage({
+  tenantAccessToken,
+  instance,
+  openIds,
+  token,
+  cardContent
+}: {
+  tenantAccessToken: string
+  instance?: AxiosInstance
+  openIds: string[]
+  token: string
+  cardContent: CardContentElements
+}): Promise<any> {
+  let $instance: AxiosInstance | undefined = instance
+
+  if (!$instance) {
+    $instance = axios.create(Headers(tenantAccessToken))
+  }
+
+  const { data } = await $instance.post<any>(REFRESH_CARD_MESSAGE, {
+    token,
+    card: {
+      ...cardContent,
+      open_ids: openIds
+    }
   })
 
   return data
