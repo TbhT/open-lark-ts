@@ -9,7 +9,6 @@
   "license": "MIT",
   "scripts": {
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "set DEBUG=* && jest",
     "build": "tsc"
   },
   "files": [
