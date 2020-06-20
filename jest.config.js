@@ -13,5 +13,6 @@ module.exports = {
   collectCoverage: true,
   rootDir: path.resolve('.'),
   //   ?@link https://github.com/axios/axios/issues/1418
-  testEnvironment: 'node'
+  testEnvironment: 'node',
+  coverageReporters: ['json-summary', 'text', 'lcov']
 }

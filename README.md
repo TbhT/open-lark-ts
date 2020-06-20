@@ -1,4 +1,9 @@
-# open-lark-sdk for Nodejs ![open-lark-sdk CI](https://github.com/TbhT/lark-sdk/workflows/open-lark-sdk%20CI/badge.svg?branch=master)
+# open-lark-sdk for Nodejs 
+![open-lark-sdk CI](https://github.com/TbhT/lark-sdk/workflows/open-lark-sdk%20CI/badge.svg?branch=master)
+![](./coverage/badge-branches.svg)
+![](./coverage/badge-functions.svg)
+![](./coverage/badge-lines.svg)
+![](./coverage/badge-statements.svg)
 
 >  lark sdk有两种使用方式，一种是直接使用api，也即简单的http请求；另一种是使用sdk分装好的bot。
 >想见api

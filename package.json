@@ -11,7 +11,9 @@
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "pre-build": "tsc",
     "doc": "./node_modules/.bin/typedoc",
-    "build": "npm run pre-build && npm run doc"
+    "build": "npm run pre-build && npm run doc",
+    "test": "./node_modules/.bin/jest tests/apis/Callback.test.ts -- --coverage && npm run test:badges",
+    "test:badges": "./node_modules/.bin/jest-coverage-badges"
   },
   "files": [
     "dist",
@@ -32,6 +34,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
+    "jest-coverage-badges": "^1.1.2",
     "lint-staged": "^10.1.3",
     "prettier": "^2.0.4",
     "ts-jest": "^25.4.0",
