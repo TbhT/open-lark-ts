@@ -12,7 +12,7 @@
     "pre-build": "tsc",
     "doc": "./node_modules/.bin/typedoc",
     "build": "npm run pre-build && npm run doc",
-    "test": "./node_modules/.bin/jest tests/apis/Callback.test.ts -- --coverage && npm run test:badges",
+    "test": "./node_modules/.bin/jest tests -- --coverage; npm run test:badges",
     "test:badges": "./node_modules/.bin/jest-coverage-badges"
   },
   "files": [
