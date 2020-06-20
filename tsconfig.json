@@ -14,5 +14,10 @@
     "resolveJsonModule": true
   },
   "exclude": ["node_modules/", "dist/"],
-  "include": ["src/"]
+  "include": ["src/"],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "./documents",
+    "readme": "readme"
+  }
 }

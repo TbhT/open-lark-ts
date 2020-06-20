@@ -9,7 +9,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "build": "tsc"
+    "pre-build": "tsc",
+    "doc": "./node_modules/.bin/typedoc",
+    "build": "npm run pre-build && npm run doc"
   },
   "files": [
     "dist",
@@ -34,6 +36,8 @@
     "prettier": "^2.0.4",
     "ts-jest": "^25.4.0",
     "ts-node": "^8.8.2",
+    "typedoc": "^0.17.7",
+    "typedoc-plugin-markdown": "^2.3.1",
     "typescript": "^3.8.3"
   },
   "husky": {
