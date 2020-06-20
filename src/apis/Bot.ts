@@ -1,3 +1,13 @@
+/**
+ * Bot模块的api有以下功能：
+ * - 获取机器人信息
+ * - 拉机器人进群
+ * - 将机器人移出群
+ *
+ * @packageDocumentation
+ * @module Api
+ * @preferred
+ */
 import axios, { AxiosInstance } from 'axios'
 import { BotInfoResponse, CommonResponse } from '../types/Response'
 import {
@@ -7,6 +17,27 @@ import {
 } from '../Constants'
 import { Headers } from '../utils/headers'
 
+/**
+ * 获取机器人信息
+ * > **权限说明：** 需要启用机器人能力
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, getBotInfo  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { bot } = await getBotInfo({
+ *    tenantAccessToken
+ *  })
+ * ```
+ *
+ * @param tenantAccessToken 访问 token
+ * @param instance {AxiosInstance}
+ * @category Bot
+ */
 export async function getBotInfo({
   tenantAccessToken,
   instance
@@ -29,6 +60,28 @@ export async function getBotInfo({
   return data
 }
 
+/**
+ * 拉机器人进群
+ * > **权限说明:** 需要启用机器人能力；机器人的owner需要已经在群里
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, getBotInfo  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId,
+ *    appSecret
+ *  })
+ *
+ *  const { code } = await addBotToChat({
+ *     tenantAccessToken,
+ *     chatId
+ *  })
+ * ```
+ * @param chatId 群的id
+ * @param instance {AxiosInstance}
+ * @param tenantAccessToken  访问 token
+ * @category Bot
+ */
 export async function addBotToChat({
   chatId,
   instance,
@@ -51,6 +104,29 @@ export async function addBotToChat({
   return data
 }
 
+/**
+ * 将机器人移出群
+ * > **权限说明：** 需要启用机器人能力
+ *
+ * ```typescript
+ * import { Api: { getTenantAccessToken, getBotInfo  } } from "@lark-sdk";
+ *
+ * const { tenant_access_token } = await getTenantAccessToken({
+ *   appId,
+ *   appSecret
+ * })
+ *
+ * const { code } = await removeBotFromChat({
+ *    tenantAccessToken,
+ *    chatId
+ * })
+ * ```
+ *
+ * @param chatId 群的id
+ * @param instance {AxiosInstance}
+ * @param tenantAccessToken 访问 token
+ * @category Bot
+ */
 export async function removeBotFromChat({
   chatId,
   instance,
