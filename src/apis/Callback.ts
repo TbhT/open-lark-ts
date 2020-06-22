@@ -8,7 +8,7 @@ import {
 const ALGORITHM = 'aes-256-cbc'
 
 export class AES256 {
-  private key: Buffer
+  private readonly key: Buffer
 
   constructor(key: string) {
     const HASH_SHA_256 = createHash('sha256')
