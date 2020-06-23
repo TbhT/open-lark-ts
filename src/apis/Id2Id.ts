@@ -1,3 +1,16 @@
+/**
+ * Id2Id模块的api有以下功能：
+ * - open_id -> lark_id
+ * - lark_id -> open_id
+ * - message_id -> open_message_id
+ * - open_message_id -> message_id
+ * - department_id -> open_department_id
+ * - open_department_id -> department_id
+ * - chat_id -> open_chat_id
+ * - open_chat_id -> chat_id
+ * - lark_id -> employeeId
+ * - employeeId -> lark_id
+ */
 import axios, { AxiosInstance } from 'axios'
 import {
   ID_OPEN_TO_LARK,
@@ -31,6 +44,26 @@ const Headers = (tenantAccessToken: string): object => ({
   }
 })
 
+/**
+ * open_id 转 lark_id
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, openId2LarkId  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ * const { code, user_id, msg } = await openId2LarkId({
+ *  tenantAccessToken,
+ *  openId: Config.development.open_id
+ * })
+ * ```
+ * @param openId
+ * @param instance
+ * @param tenantAccessToken
+ */
 export async function openId2LarkId({
   openId,
   instance,
@@ -56,6 +89,27 @@ export async function openId2LarkId({
   return data
 }
 
+/**
+ * lark_id 转 open_id
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, openId2LarkId  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { code, msg, open_id } = await larkId2OpenId({
+ *    tenantAccessToken,
+ *    larkId: Config.development.lark_id
+ *  })
+ *
+ * ```
+ * @param larkId
+ * @param instance
+ * @param tenantAccessToken
+ */
 export async function larkId2OpenId({
   larkId,
   instance,
