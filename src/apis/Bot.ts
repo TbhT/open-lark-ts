@@ -5,7 +5,7 @@
  * - 将机器人移出群
  *
  * @packageDocumentation
- * @module Api
+ * @module Api.Bot
  * @preferred
  */
 import axios, { AxiosInstance } from 'axios'

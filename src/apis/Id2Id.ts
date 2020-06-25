@@ -13,7 +13,7 @@
  *
  *
  * @packageDocumentation
- * @module Api
+ * @module Api.Id2Id
  * @preferred
  */
 import axios, { AxiosInstance } from 'axios'

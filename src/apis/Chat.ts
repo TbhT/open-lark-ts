@@ -9,7 +9,7 @@
  * - 机器人解散群
  *
  * @packageDocumentation
- * @module Api
+ * @module Api.Chat
  * @preferred
  */
 import axios, { AxiosInstance } from 'axios'

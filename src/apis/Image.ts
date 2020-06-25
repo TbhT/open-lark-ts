@@ -4,7 +4,7 @@
  * - 获取上传的图片流
  *
  * @packageDocumentation
- * @module Api
+ * @module Api.Image
  * @preferred
  */
 
