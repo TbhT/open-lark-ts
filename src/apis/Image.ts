@@ -1,3 +1,13 @@
+/**
+ * Image 模块有以下功能：
+ * - 上传本地图片
+ * - 获取上传的图片流
+ *
+ * @packageDocumentation
+ * @module Api
+ * @preferred
+ */
+
 import axios, { AxiosInstance } from 'axios'
 import { createReadStream } from 'fs'
 /**
@@ -72,8 +82,26 @@ export async function getImage({
 }
 
 /**
- * 图片类型只能为 message
- * @param param0
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, uploadImage  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const res = await uploadLocalImage({
+ *    tenantAccessToken,
+ *    filePath: resolve('tests/images/avatar.png'),
+ *    imageType: 'message'
+ *  })
+ * ```
+ *
+ * @param instance {AxiosInstance}
+ * @param file {Stream} 文件流
+ * @param imageType 图片类型只能为 'message'
+ * @param tenantAccessToken
  */
 export async function uploadLocalImage({
   filePath,

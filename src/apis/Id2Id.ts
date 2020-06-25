@@ -10,6 +10,11 @@
  * - open_chat_id -> chat_id
  * - lark_id -> employeeId
  * - employeeId -> lark_id
+ *
+ *
+ * @packageDocumentation
+ * @module Api
+ * @preferred
  */
 import axios, { AxiosInstance } from 'axios'
 import {

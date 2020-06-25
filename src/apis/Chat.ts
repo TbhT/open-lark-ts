@@ -7,6 +7,10 @@
  * - 机器人拉用户进群，机器人必须在群里
  * - 机器人移除用户出群
  * - 机器人解散群
+ *
+ * @packageDocumentation
+ * @module Api
+ * @preferred
  */
 import axios, { AxiosInstance } from 'axios'
 import {
