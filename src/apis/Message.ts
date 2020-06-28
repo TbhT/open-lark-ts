@@ -1,3 +1,17 @@
+/**
+ * Message模块的api有以下功能：
+ * - 给多个用户或者多个部门发送消息
+ * - 给指定用户或者会话发送文本消息，其中会话包括私聊会话和群会话
+ * - 用于转发 订阅事件 - 接收富文本消息 中的内容
+ * - 给指定用户或者会话发送图片消息，其中会话包括私聊会话和群会话
+ * - 给指定用户或者会话发送群名片，其中会话包括私聊会话和群会话
+ * - 撤回指定消息。仅能撤回机器人消息
+ * - 查询消息已读信息,仅能查看机器人自己发的消息
+ * - 对指定消息进行加急
+ * - 发送消息卡片
+ * - 刷新卡片
+ */
+
 import axios, { AxiosInstance } from 'axios'
 import Headers from '../utils/headers'
 import {
@@ -29,8 +43,27 @@ export interface MessageParamCommon {
 }
 
 /**
- * 给多个用户或者多个部门发送消息。
- * @param param0
+ * 给多个用户或者多个部门发送消息
+ * > **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 机器人需要拥有批量发送消息权限；
+ * - 机器人需要拥有对用户或部门的可见性
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, sendMessageBatch  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { data, code } = await sendMessageBatch({
+      userIds: [Config.development.user_id],
+      tenantAccessToken,
+      msgType: 'text',
+      content: 'this is a batch message'
+    })
+ *  ```
  */
 export async function sendMessageBatch({
   departmentIds,
@@ -72,8 +105,26 @@ export async function sendMessageBatch({
 }
 
 /**
- * 给指定用户或者会话发送文本消息，其中会话包括私聊会话和群会话。
- * @param param0
+ * 给指定用户或者会话发送文本消息，其中会话包括私聊会话和群会话
+ *
+ * **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, sendMessage  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { data, code } = await sendMessage({
+ *    tenantAccessToken,
+ *    userId: Config.development.user_id,
+ *    content: 'this is a test message'
+ *  })
+ * ```
  */
 export async function sendMessage({
   openId,
@@ -148,7 +199,27 @@ export async function forwardRichTextMessage({
 }
 
 /**
- * 给指定用户或者会话发送图片消息，其中会话包括私聊会话和群会话。
+ * 给指定用户或者会话发送图片消息，其中会话包括私聊会话和群会话
+ *
+ * **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, sendImageMessage  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { data, code } = await sendImageMessage({
+ *    userId: Config.development.user_id,
+ *    tenantAccessToken,
+ *    imageKey: Config.development.image_key
+ *  })
+ *
+ * ```
  */
 export async function sendImageMessage({
   tenantAccessToken,
@@ -221,7 +292,26 @@ export interface RichTextMessage {
 }
 
 /**
- * 给指定用户或者会话发送富文本消息，其中会话包括私聊会话和群会话。
+ * 给指定用户或者会话发送富文本消息，其中会话包括私聊会话和群会话
+ *
+ * **权限说明 ：**
+ * - 需要启用机器人能力
+ * - 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, sendRichTextMessage  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { code, data } = await sendRichTextMessage({
+ *    tenantAccessToken,
+ *    post: message,
+ *    userId: Config.development.user_id
+ *  })
+ * ```
  */
 export async function sendRichTextMessage({
   tenantAccessToken,
@@ -257,7 +347,28 @@ export async function sendRichTextMessage({
 }
 
 /**
- * 给指定用户或者会话发送群名片，其中会话包括私聊会话和群会话。
+ * 给指定用户或者会话发送群名片，其中会话包括私聊会话和群会话
+ *
+ * **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里；
+ * - 群名片对应的群组需要被设置为允许分享
+ *
+ * ```typescript
+ *  import { Api: { getTenantAccessToken, shareChatCard  } } from "@lark-sdk";
+ *
+ *  const { tenant_access_token } = await getTenantAccessToken({
+ *    appId: Config.bot.appId,
+ *    appSecret: Config.bot.appSecret
+ *  })
+ *
+ *  const { data, code } = await shareChatCard({
+ *    tenantAccessToken,
+ *    shareChatId: Config.development.chat_id,
+ *    userId: Config.development.user_id
+ *  })
+ *
+ * ```
  */
 export async function shareChatCard({
   tenantAccessToken,
