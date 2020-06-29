@@ -405,6 +405,25 @@ export async function shareChatCard({
 
 /**
  * 撤回指定消息。仅能撤回机器人消息
+ *
+ *  **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 消息发出时间不能超过一天；
+ * - 只能撤回机器人自己的消息
+ *
+ * ```typescript
+ * import { Api: { getTenantAccessToken, recallMessage  } } from "@lark-sdk";
+ *
+ * const { tenant_access_token } = await getTenantAccessToken({
+ *   appId: Config.bot.appId,
+ *   appSecret: Config.bot.appSecret
+ * })
+ *
+ * const { code } = await recallMessage({
+ *   tenantAccessToken,
+ *   messageId: data.message_id
+ * })
+ * ```
  */
 export async function recallMessage({
   messageId,
@@ -430,6 +449,25 @@ export async function recallMessage({
 
 /**
  * 查询消息已读信息,仅能查看机器人自己发的消息
+ *
+ * **权限说明 ：**
+ * - 需要启用机器人能力；
+ * - 只能查询机器人自身发送消息的已读信息
+ *
+ * ```typescript
+ * import { Api: { getTenantAccessToken, readMessage  } } from "@lark-sdk";
+ *
+ * const { tenant_access_token } = await getTenantAccessToken({
+ *   appId: Config.bot.appId,
+ *   appSecret: Config.bot.appSecret
+ * })
+ *
+ * const { code, data: readData } = await readMessage({
+ *   messageId: data.message_id,
+ *   tenantAccessToken
+ * })
+ *
+ * ```
  */
 export async function readMessage({
   messageId,
