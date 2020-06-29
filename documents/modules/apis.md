@@ -53,7 +53,7 @@
 
 • **ALGORITHM**: *"aes-256-cbc"* = "aes-256-cbc"
 
-*Defined in [src/apis/Callback.ts:8](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Callback.ts#L8)*
+*Defined in [src/apis/Callback.ts:8](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Callback.ts#L8)*
 
 ## Functions
 
@@ -61,7 +61,7 @@
 
 ▸ **forwardRichTextMessage**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:114](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L114)*
+*Defined in [src/apis/Message.ts:165](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L165)*
 
 用于转发 订阅事件 - 接收富文本消息 中的内容
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **getAppAccessToken**(`__namedParameters`: object): *Promise‹[AppAccessTokenResponse](../interfaces/types.appaccesstokenresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:24](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L24)*
+*Defined in [src/apis/OAuth.ts:24](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L24)*
 
 **Parameters:**
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **getAppTicket**(`__namedParameters`: object): *Promise‹[CommonResponse](../interfaces/types.commonresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:84](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L84)*
+*Defined in [src/apis/OAuth.ts:84](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L84)*
 
 **Parameters:**
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **getAuth**(`__namedParameters`: object): *Promise‹[AuthResponse](../interfaces/types.authresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:112](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L112)*
+*Defined in [src/apis/OAuth.ts:112](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L112)*
 
 **Parameters:**
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **getBasicUserInfo**(`__namedParameters`: object): *Promise‹[BasicUserInfoResponse](../interfaces/types.basicuserinforesponse.md)›*
 
-*Defined in [src/apis/User.ts:80](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/User.ts#L80)*
+*Defined in [src/apis/User.ts:80](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/User.ts#L80)*
 
 获取用户基础信息
 
@@ -173,7 +173,7 @@ ___
 
 ▸ **getContactScope**(`__namedParameters`: object): *Promise‹[ContactScopeResponse](../interfaces/types.contactscoperesponse.md)›*
 
-*Defined in [src/apis/Contact.ts:6](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Contact.ts#L6)*
+*Defined in [src/apis/Contact.ts:6](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Contact.ts#L6)*
 
 **Parameters:**
 
@@ -192,7 +192,7 @@ ___
 
 ▸ **getTenantAccessToken**(`__namedParameters`: object): *Promise‹[TenantAccessTokenResponse](../interfaces/types.tenantaccesstokenresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:54](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L54)*
+*Defined in [src/apis/OAuth.ts:54](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L54)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 ▸ **getUserAccessToken**(`__namedParameters`: object): *Promise‹[UserAccessTokenResponse](../interfaces/types.useraccesstokenresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:141](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L141)*
+*Defined in [src/apis/OAuth.ts:141](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L141)*
 
 **Parameters:**
 
@@ -232,7 +232,7 @@ ___
 
 ▸ **getUserChatId**(`__namedParameters`: object): *Promise‹[UserChatIdResponse](../interfaces/types.userchatidresponse.md)›*
 
-*Defined in [src/apis/User.ts:13](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/User.ts#L13)*
+*Defined in [src/apis/User.ts:13](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/User.ts#L13)*
 
 获取用户和机器人的 ChatID
 
@@ -255,7 +255,7 @@ ___
 
 ▸ **getUserId**(`__namedParameters`: object): *Promise‹[UserIdResponse](../interfaces/types.useridresponse.md)›*
 
-*Defined in [src/apis/User.ts:49](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/User.ts#L49)*
+*Defined in [src/apis/User.ts:49](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/User.ts#L49)*
 
 根据用户邮箱获取用户 open_id 和 user_id。
 
@@ -277,7 +277,7 @@ ___
 
 ▸ **getUserInfo**(`__namedParameters`: object): *Promise‹[UserInfoResponse](../interfaces/types.userinforesponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:205](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L205)*
+*Defined in [src/apis/OAuth.ts:205](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L205)*
 
 **Parameters:**
 
@@ -296,9 +296,28 @@ ___
 
 ▸ **readMessage**(`__namedParameters`: object): *Promise‹[ReadMessageResponse](../interfaces/types.readmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:323](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L323)*
+*Defined in [src/apis/Message.ts:472](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L472)*
 
 查询消息已读信息,仅能查看机器人自己发的消息
+
+**权限说明 ：**
+- 需要启用机器人能力；
+- 只能查询机器人自身发送消息的已读信息
+
+```typescript
+import { Api: { getTenantAccessToken, readMessage  } } from "@lark-sdk";
+
+const { tenant_access_token } = await getTenantAccessToken({
+  appId: Config.bot.appId,
+  appSecret: Config.bot.appSecret
+})
+
+const { code, data: readData } = await readMessage({
+  messageId: data.message_id,
+  tenantAccessToken
+})
+
+```
 
 **Parameters:**
 
@@ -318,9 +337,28 @@ ___
 
 ▸ **recallMessage**(`__namedParameters`: object): *Promise‹[CommonResponse](../interfaces/types.commonresponse.md)›*
 
-*Defined in [src/apis/Message.ts:298](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L298)*
+*Defined in [src/apis/Message.ts:428](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L428)*
 
 撤回指定消息。仅能撤回机器人消息
+
+ **权限说明 ：**
+- 需要启用机器人能力；
+- 消息发出时间不能超过一天；
+- 只能撤回机器人自己的消息
+
+```typescript
+import { Api: { getTenantAccessToken, recallMessage  } } from "@lark-sdk";
+
+const { tenant_access_token } = await getTenantAccessToken({
+  appId: Config.bot.appId,
+  appSecret: Config.bot.appSecret
+})
+
+const { code } = await recallMessage({
+  tenantAccessToken,
+  messageId: data.message_id
+})
+```
 
 **Parameters:**
 
@@ -340,7 +378,7 @@ ___
 
 ▸ **refreshCardMessage**(`__namedParameters`: object): *Promise‹any›*
 
-*Defined in [src/apis/Message.ts:423](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L423)*
+*Defined in [src/apis/Message.ts:572](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L572)*
 
 刷新卡片
 
@@ -364,7 +402,7 @@ ___
 
 ▸ **refreshUserAccessToken**(`__namedParameters`: object): *Promise‹[UserAccessTokenResponse](../interfaces/types.useraccesstokenresponse.md)›*
 
-*Defined in [src/apis/OAuth.ts:173](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/OAuth.ts#L173)*
+*Defined in [src/apis/OAuth.ts:173](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/OAuth.ts#L173)*
 
 **Parameters:**
 
@@ -384,7 +422,7 @@ ___
 
 ▸ **sendCardMessage**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:379](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L379)*
+*Defined in [src/apis/Message.ts:528](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L528)*
 
 发送消息卡片
 
@@ -412,9 +450,29 @@ ___
 
 ▸ **sendImageMessage**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:153](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L153)*
+*Defined in [src/apis/Message.ts:224](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L224)*
 
-给指定用户或者会话发送图片消息，其中会话包括私聊会话和群会话。
+给指定用户或者会话发送图片消息，其中会话包括私聊会话和群会话
+
+**权限说明 ：**
+- 需要启用机器人能力；
+- 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+
+```typescript
+ import { Api: { getTenantAccessToken, sendImageMessage  } } from "@lark-sdk";
+
+ const { tenant_access_token } = await getTenantAccessToken({
+   appId: Config.bot.appId,
+   appSecret: Config.bot.appSecret
+ })
+
+ const { data, code } = await sendImageMessage({
+   userId: Config.development.user_id,
+   tenantAccessToken,
+   imageKey: Config.development.image_key
+ })
+
+```
 
 **Parameters:**
 
@@ -439,9 +497,28 @@ ___
 
 ▸ **sendMessage**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:78](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L78)*
+*Defined in [src/apis/Message.ts:129](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L129)*
 
-给指定用户或者会话发送文本消息，其中会话包括私聊会话和群会话。
+给指定用户或者会话发送文本消息，其中会话包括私聊会话和群会话
+
+**权限说明 ：**
+- 需要启用机器人能力；
+- 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+
+```typescript
+ import { Api: { getTenantAccessToken, sendMessage  } } from "@lark-sdk";
+
+ const { tenant_access_token } = await getTenantAccessToken({
+   appId: Config.bot.appId,
+   appSecret: Config.bot.appSecret
+ })
+
+ const { data, code } = await sendMessage({
+   tenantAccessToken,
+   userId: Config.development.user_id,
+   content: 'this is a test message'
+ })
+```
 
 **Parameters:**
 
@@ -466,9 +543,29 @@ ___
 
 ▸ **sendMessageBatch**(`__namedParameters`: object): *Promise‹[SendMessageBatchResponse](../interfaces/types.sendmessagebatchresponse.md)›*
 
-*Defined in [src/apis/Message.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L35)*
+*Defined in [src/apis/Message.ts:68](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L68)*
 
-给多个用户或者多个部门发送消息。
+给多个用户或者多个部门发送消息
+> **权限说明 ：**
+- 需要启用机器人能力；
+- 机器人需要拥有批量发送消息权限；
+- 机器人需要拥有对用户或部门的可见性
+
+```typescript
+ import { Api: { getTenantAccessToken, sendMessageBatch  } } from "@lark-sdk";
+
+ const { tenant_access_token } = await getTenantAccessToken({
+   appId: Config.bot.appId,
+   appSecret: Config.bot.appSecret
+ })
+
+ const { data, code } = await sendMessageBatch({
+userIds: [Config.development.user_id],
+tenantAccessToken,
+msgType: 'text',
+content: 'this is a batch message'
+})
+ ```
 
 **Parameters:**
 
@@ -492,9 +589,28 @@ ___
 
 ▸ **sendRichTextMessage**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:226](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L226)*
+*Defined in [src/apis/Message.ts:316](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L316)*
 
-给指定用户或者会话发送富文本消息，其中会话包括私聊会话和群会话。
+给指定用户或者会话发送富文本消息，其中会话包括私聊会话和群会话
+
+**权限说明 ：**
+- 需要启用机器人能力
+- 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里
+
+```typescript
+ import { Api: { getTenantAccessToken, sendRichTextMessage  } } from "@lark-sdk";
+
+ const { tenant_access_token } = await getTenantAccessToken({
+   appId: Config.bot.appId,
+   appSecret: Config.bot.appSecret
+ })
+
+ const { code, data } = await sendRichTextMessage({
+   tenantAccessToken,
+   post: message,
+   userId: Config.development.user_id
+ })
+```
 
 **Parameters:**
 
@@ -519,9 +635,30 @@ ___
 
 ▸ **shareChatCard**(`__namedParameters`: object): *Promise‹[SendMessageResponse](../interfaces/types.sendmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:262](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L262)*
+*Defined in [src/apis/Message.ts:373](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L373)*
 
-给指定用户或者会话发送群名片，其中会话包括私聊会话和群会话。
+给指定用户或者会话发送群名片，其中会话包括私聊会话和群会话
+
+**权限说明 ：**
+- 需要启用机器人能力；
+- 私聊会话时机器人需要拥有对用户的可见性，群会话需要机器人在群里；
+- 群名片对应的群组需要被设置为允许分享
+
+```typescript
+ import { Api: { getTenantAccessToken, shareChatCard  } } from "@lark-sdk";
+
+ const { tenant_access_token } = await getTenantAccessToken({
+   appId: Config.bot.appId,
+   appSecret: Config.bot.appSecret
+ })
+
+ const { data, code } = await shareChatCard({
+   tenantAccessToken,
+   shareChatId: Config.development.chat_id,
+   userId: Config.development.user_id
+ })
+
+```
 
 **Parameters:**
 
@@ -546,7 +683,7 @@ ___
 
 ▸ **urgentMessage**(`__namedParameters`: object): *Promise‹[UrgentMessageResponse](../interfaces/types.urgentmessageresponse.md)›*
 
-*Defined in [src/apis/Message.ts:348](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L348)*
+*Defined in [src/apis/Message.ts:497](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L497)*
 
 对指定消息进行加急。
 

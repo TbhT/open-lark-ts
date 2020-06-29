@@ -23,7 +23,7 @@
 
 • **multi_url**? : *[UrlObject](types.urlobject.md)*
 
-*Defined in [src/types/CardMessage.ts:120](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L120)*
+*Defined in [src/types/CardMessage.ts:120](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L120)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 *Inherited from [BaseOptionObject](types.baseoptionobject.md).[text](types.baseoptionobject.md#optional-text)*
 
-*Defined in [src/types/CardMessage.ts:113](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L113)*
+*Defined in [src/types/CardMessage.ts:113](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L113)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **url**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:119](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L119)*
+*Defined in [src/types/CardMessage.ts:119](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L119)*
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 *Inherited from [BaseOptionObject](types.baseoptionobject.md).[value](types.baseoptionobject.md#value)*
 
-*Defined in [src/types/CardMessage.ts:114](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L114)*
+*Defined in [src/types/CardMessage.ts:114](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L114)*

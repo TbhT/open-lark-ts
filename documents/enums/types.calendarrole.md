@@ -15,7 +15,7 @@
 
 • **FREE_BUSY_READER**: = "free_busy_reader"
 
-*Defined in [src/types/Enum.ts:54](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L54)*
+*Defined in [src/types/Enum.ts:54](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L54)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **READER**: = "reader"
 
-*Defined in [src/types/Enum.ts:52](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L52)*
+*Defined in [src/types/Enum.ts:52](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L52)*

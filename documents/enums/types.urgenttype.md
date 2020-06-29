@@ -16,7 +16,7 @@
 
 • **APP**: = "app"
 
-*Defined in [src/types/Enum.ts:19](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L19)*
+*Defined in [src/types/Enum.ts:19](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L19)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **PHONE**: = "phone"
 
-*Defined in [src/types/Enum.ts:21](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L21)*
+*Defined in [src/types/Enum.ts:21](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L21)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **SMS**: = "sms"
 
-*Defined in [src/types/Enum.ts:20](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L20)*
+*Defined in [src/types/Enum.ts:20](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L20)*

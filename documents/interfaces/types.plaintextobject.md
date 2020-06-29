@@ -24,7 +24,7 @@
 
 *Inherited from [BaseTextObject](types.basetextobject.md).[content](types.basetextobject.md#content)*
 
-*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L66)*
+*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L66)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **lines**? : *undefined | number*
 
-*Defined in [src/types/CardMessage.ts:71](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L71)*
+*Defined in [src/types/CardMessage.ts:71](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L71)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **tag**: *"plain_text"*
 
-*Defined in [src/types/CardMessage.ts:70](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L70)*
+*Defined in [src/types/CardMessage.ts:70](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L70)*

@@ -16,7 +16,7 @@
 
 • **en_us**: = "en_us"
 
-*Defined in [src/types/Code.ts:2](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L2)*
+*Defined in [src/types/Code.ts:2](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L2)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **ja_jp**: = "ja_jp"
 
-*Defined in [src/types/Code.ts:4](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L4)*
+*Defined in [src/types/Code.ts:4](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L4)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **zh_cn**: = "zh_cn"
 
-*Defined in [src/types/Code.ts:3](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L3)*
+*Defined in [src/types/Code.ts:3](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L3)*

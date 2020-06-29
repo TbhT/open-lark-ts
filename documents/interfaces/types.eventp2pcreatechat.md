@@ -23,7 +23,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:283](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L283)*
+*Defined in [src/types/CallbackEvent.ts:283](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L283)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **chat_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:287](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L287)*
+*Defined in [src/types/CallbackEvent.ts:287](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L287)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **operator**: *[EventP2PCreateChatUser](types.eventp2pcreatechatuser.md)*
 
-*Defined in [src/types/CallbackEvent.ts:289](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L289)*
+*Defined in [src/types/CallbackEvent.ts:289](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L289)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:284](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L284)*
+*Defined in [src/types/CallbackEvent.ts:284](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L284)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:285](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L285)*
+*Defined in [src/types/CallbackEvent.ts:285](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L285)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **user**: *[EventP2PCreateChatUser](types.eventp2pcreatechatuser.md)*
 
-*Defined in [src/types/CallbackEvent.ts:290](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L290)*
+*Defined in [src/types/CallbackEvent.ts:290](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L290)*

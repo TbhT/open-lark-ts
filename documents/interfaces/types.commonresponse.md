@@ -75,7 +75,7 @@
 
 • **code**: *[ErrorCode](../modules/types.md#errorcode)*
 
-*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L4)*
+*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L4)*
 
 ___
 
@@ -83,4 +83,4 @@ ___
 
 • **msg**: *string*
 
-*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L5)*
+*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L5)*

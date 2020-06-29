@@ -44,7 +44,7 @@
 
 \+ **new Cache**(`maxSize`: number, `ttl`: number): *[Cache](reflection-1716.reflection-437.cache.md)*
 
-*Defined in [src/Cache.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L11)*
+*Defined in [src/Cache.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L11)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ Name | Type | Default |
 
 • **cache**: *Map‹string, unknown›*
 
-*Defined in [src/Cache.ts:9](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L9)*
+*Defined in [src/Cache.ts:9](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L9)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **expiredTime**: *Map‹string, number›*
 
-*Defined in [src/Cache.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L11)*
+*Defined in [src/Cache.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L11)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **maxSize**: *number*
 
-*Defined in [src/Cache.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L5)*
+*Defined in [src/Cache.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L5)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **ttl**: *number*
 
-*Defined in [src/Cache.ts:7](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L7)*
+*Defined in [src/Cache.ts:7](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L7)*
 
 ## Accessors
 
@@ -93,7 +93,7 @@ ___
 
 • **get full**(): *boolean*
 
-*Defined in [src/Cache.ts:39](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L39)*
+*Defined in [src/Cache.ts:39](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L39)*
 
 **Returns:** *boolean*
 
@@ -103,7 +103,7 @@ ___
 
 • **get length**(): *number*
 
-*Defined in [src/Cache.ts:20](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L20)*
+*Defined in [src/Cache.ts:20](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L20)*
 
 **Returns:** *number*
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **[Symbol.iterator]**(): *Generator*
 
-*Defined in [src/Cache.ts:28](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L28)*
+*Defined in [src/Cache.ts:28](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L28)*
 
 **Returns:** *Generator*
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **add**(`key`: string, `value`: unknown, `ttl?`: undefined | number): *void*
 
-*Defined in [src/Cache.ts:56](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L56)*
+*Defined in [src/Cache.ts:56](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L56)*
 
 **Parameters:**
 
@@ -141,7 +141,7 @@ ___
 
 ▸ **delete**(`key`: string): *boolean*
 
-*Defined in [src/Cache.ts:79](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L79)*
+*Defined in [src/Cache.ts:79](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L79)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 ▸ **deleteExpired**(): *number*
 
-*Defined in [src/Cache.ts:119](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L119)*
+*Defined in [src/Cache.ts:119](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L119)*
 
 **Returns:** *number*
 
@@ -167,7 +167,7 @@ ___
 
 ▸ **evict**(): *number*
 
-*Defined in [src/Cache.ts:93](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L93)*
+*Defined in [src/Cache.ts:93](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L93)*
 
 **Returns:** *number*
 
@@ -177,7 +177,7 @@ ___
 
 ▸ **expired**(`key`: string, `expiredOn?`: undefined | number): *boolean*
 
-*Defined in [src/Cache.ts:138](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L138)*
+*Defined in [src/Cache.ts:138](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L138)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **get**(`key`: string): *unknown*
 
-*Defined in [src/Cache.ts:43](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L43)*
+*Defined in [src/Cache.ts:43](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L43)*
 
 **Parameters:**
 
@@ -210,7 +210,7 @@ ___
 
 ▸ **has**(`key`: string): *boolean*
 
-*Defined in [src/Cache.ts:24](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L24)*
+*Defined in [src/Cache.ts:24](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L24)*
 
 **Parameters:**
 
@@ -226,7 +226,7 @@ ___
 
 ▸ **keys**(): *IterableIterator‹string›*
 
-*Defined in [src/Cache.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L35)*
+*Defined in [src/Cache.ts:35](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L35)*
 
 **Returns:** *IterableIterator‹string›*
 
@@ -236,7 +236,7 @@ ___
 
 ▸ **pop**(): *[string, unknown] | []*
 
-*Defined in [src/Cache.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L106)*
+*Defined in [src/Cache.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L106)*
 
 **Returns:** *[string, unknown] | []*
 
@@ -246,7 +246,7 @@ ___
 
 ▸ **set**(`key`: string, `value`: unknown, `ttl?`: undefined | number): *void*
 
-*Defined in [src/Cache.ts:62](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Cache.ts#L62)*
+*Defined in [src/Cache.ts:62](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Cache.ts#L62)*
 
 **Parameters:**
 

@@ -30,7 +30,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:259](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L259)*
+*Defined in [src/types/CallbackEvent.ts:259](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L259)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **chat_i18n_names**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:271](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L271)*
+*Defined in [src/types/CallbackEvent.ts:271](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L271)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **chat_name**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:262](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L262)*
+*Defined in [src/types/CallbackEvent.ts:262](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L262)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **chat_owner_employee_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:263](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L263)*
+*Defined in [src/types/CallbackEvent.ts:263](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L263)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **chat_owner_name**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:264](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L264)*
+*Defined in [src/types/CallbackEvent.ts:264](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L264)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **chat_owner_open_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:265](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L265)*
+*Defined in [src/types/CallbackEvent.ts:265](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L265)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **open_chat_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:266](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L266)*
+*Defined in [src/types/CallbackEvent.ts:266](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L266)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **operator_employee_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:267](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L267)*
+*Defined in [src/types/CallbackEvent.ts:267](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L267)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **operator_name**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:268](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L268)*
+*Defined in [src/types/CallbackEvent.ts:268](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L268)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **operator_open_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:269](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L269)*
+*Defined in [src/types/CallbackEvent.ts:269](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L269)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **owner_is_bot**: *boolean*
 
-*Defined in [src/types/CallbackEvent.ts:270](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L270)*
+*Defined in [src/types/CallbackEvent.ts:270](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L270)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:260](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L260)*
+*Defined in [src/types/CallbackEvent.ts:260](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L260)*
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:261](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L261)*
+*Defined in [src/types/CallbackEvent.ts:261](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L261)*

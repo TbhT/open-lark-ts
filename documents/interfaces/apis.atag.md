@@ -21,7 +21,7 @@
 
 • **href**: *string*
 
-*Defined in [src/apis/Message.ts:197](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L197)*
+*Defined in [src/apis/Message.ts:268](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L268)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **tag**: *"a"*
 
-*Defined in [src/apis/Message.ts:194](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L194)*
+*Defined in [src/apis/Message.ts:265](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L265)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [src/apis/Message.ts:195](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L195)*
+*Defined in [src/apis/Message.ts:266](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L266)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **un_escape**? : *undefined | false | true*
 
-*Defined in [src/apis/Message.ts:196](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L196)*
+*Defined in [src/apis/Message.ts:267](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L267)*

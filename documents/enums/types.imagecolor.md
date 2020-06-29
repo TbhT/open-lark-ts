@@ -19,7 +19,7 @@
 
 • **BLUE**: = "blue"
 
-*Defined in [src/types/Enum.ts:38](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L38)*
+*Defined in [src/types/Enum.ts:38](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L38)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **GRAY**: = "gray"
 
-*Defined in [src/types/Enum.ts:37](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L37)*
+*Defined in [src/types/Enum.ts:37](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L37)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **GREEN**: = "green"
 
-*Defined in [src/types/Enum.ts:39](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L39)*
+*Defined in [src/types/Enum.ts:39](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L39)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **ORANGE**: = "orange"
 
-*Defined in [src/types/Enum.ts:34](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L34)*
+*Defined in [src/types/Enum.ts:34](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L34)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **RED**: = "red"
 
-*Defined in [src/types/Enum.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L35)*
+*Defined in [src/types/Enum.ts:35](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L35)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **YELLOW**: = "yellow"
 
-*Defined in [src/types/Enum.ts:36](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L36)*
+*Defined in [src/types/Enum.ts:36](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L36)*

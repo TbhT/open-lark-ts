@@ -18,4 +18,4 @@
 
 • **fields**: *[ApprovalFormField](types.approvalformfield.md)[]*
 
-*Defined in [src/types/Approval.ts:47](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L47)*
+*Defined in [src/types/Approval.ts:47](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L47)*

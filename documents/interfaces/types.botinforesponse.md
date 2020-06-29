@@ -22,7 +22,7 @@
 
 • **bot**: *object*
 
-*Defined in [src/types/Response.ts:135](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L135)*
+*Defined in [src/types/Response.ts:135](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L135)*
 
 #### Type declaration:
 
@@ -44,7 +44,7 @@ ___
 
 *Inherited from [CommonResponse](types.commonresponse.md).[code](types.commonresponse.md#code)*
 
-*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L4)*
+*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L4)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 *Inherited from [CommonResponse](types.commonresponse.md).[msg](types.commonresponse.md#msg)*
 
-*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L5)*
+*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L5)*

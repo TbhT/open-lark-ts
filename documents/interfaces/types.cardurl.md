@@ -21,7 +21,7 @@
 
 • **android_href**: *string*
 
-*Defined in [src/types/Message.ts:68](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L68)*
+*Defined in [src/types/Message.ts:68](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L68)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **href**: *string*
 
-*Defined in [src/types/Message.ts:62](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L62)*
+*Defined in [src/types/Message.ts:62](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L62)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **ios_href**: *string*
 
-*Defined in [src/types/Message.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L66)*
+*Defined in [src/types/Message.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L66)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **pc_href**: *string*
 
-*Defined in [src/types/Message.ts:64](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L64)*
+*Defined in [src/types/Message.ts:64](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L64)*

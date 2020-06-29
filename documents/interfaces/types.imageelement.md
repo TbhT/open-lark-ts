@@ -22,7 +22,7 @@ image 元素
 
 • **alt**: *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:139](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L139)*
+*Defined in [src/types/CardMessage.ts:139](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L139)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **img_key**: *string*
 
-*Defined in [src/types/CardMessage.ts:138](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L138)*
+*Defined in [src/types/CardMessage.ts:138](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L138)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **tag**: *"img"*
 
-*Defined in [src/types/CardMessage.ts:137](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L137)*
+*Defined in [src/types/CardMessage.ts:137](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L137)*

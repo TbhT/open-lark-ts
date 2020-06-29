@@ -20,7 +20,7 @@
 
 • **i18n**: *object*
 
-*Defined in [src/types/CardMessage.ts:76](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L76)*
+*Defined in [src/types/CardMessage.ts:76](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L76)*
 
 #### Type declaration:
 
@@ -36,7 +36,7 @@ ___
 
 • **lines**? : *undefined | number*
 
-*Defined in [src/types/CardMessage.ts:81](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L81)*
+*Defined in [src/types/CardMessage.ts:81](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L81)*
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 • **tag**: *"plain_text"*
 
-*Defined in [src/types/CardMessage.ts:75](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L75)*
+*Defined in [src/types/CardMessage.ts:75](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L75)*

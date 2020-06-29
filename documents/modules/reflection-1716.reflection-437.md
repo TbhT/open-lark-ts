@@ -111,7 +111,7 @@ ___
 
 Ƭ **CardMessageParams**: *object & [ReceiverParams](../interfaces/reflection-1716.reflection-437.receiverparams.md)*
 
-*Defined in [src/Sayable.ts:52](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L52)*
+*Defined in [src/Sayable.ts:52](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L52)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 Ƭ **EventTypeSupported**: *[APP_OPEN](../enums/types.eventtype.md#app_open) | [MESSAGE](../enums/types.eventtype.md#message) | [REMOVE_BOT](../enums/types.eventtype.md#remove_bot) | [ADD_BOT](../enums/types.eventtype.md#add_bot) | [P2P_CHAT_CREATE](../enums/types.eventtype.md#p2p_chat_create) | [ADD_USER_TO_CHAT](../enums/types.eventtype.md#add_user_to_chat) | [REMOVE_USER_FROM_CHAT](../enums/types.eventtype.md#remove_user_from_chat) | [REVOKE_ADD_USER_FROM_CHAT](../enums/types.eventtype.md#revoke_add_user_from_chat)*
 
-*Defined in [src/Botable.ts:36](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L36)*
+*Defined in [src/Botable.ts:36](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L36)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 Ƭ **ImageMessageParams**: *object & [ReceiverParams](../interfaces/reflection-1716.reflection-437.receiverparams.md)*
 
-*Defined in [src/Sayable.ts:33](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L33)*
+*Defined in [src/Sayable.ts:33](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L33)*
 
 图片消息
 
@@ -137,7 +137,7 @@ ___
 
 Ƭ **RichTextMessageParams**: *object & [ReceiverParams](../interfaces/reflection-1716.reflection-437.receiverparams.md)*
 
-*Defined in [src/Sayable.ts:40](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L40)*
+*Defined in [src/Sayable.ts:40](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L40)*
 
 富文本消息
 
@@ -147,7 +147,7 @@ ___
 
 Ƭ **ShareChatCardParams**: *object*
 
-*Defined in [src/Sayable.ts:47](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L47)*
+*Defined in [src/Sayable.ts:47](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L47)*
 
 分享群名片
 
@@ -163,7 +163,7 @@ ___
 
 Ƭ **TextMessageParams**: *object & [ReceiverParams](../interfaces/reflection-1716.reflection-437.receiverparams.md)*
 
-*Defined in [src/Sayable.ts:26](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L26)*
+*Defined in [src/Sayable.ts:26](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L26)*
 
 文本消息参数
 
@@ -173,7 +173,7 @@ ___
 
 • **ADD_BOT_TO_CHAT**: *string* = `${baseURI}/bot/v4/add`
 
-*Defined in [src/Constants.ts:98](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L98)*
+*Defined in [src/Constants.ts:98](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L98)*
 
 **`internal`** 
 
@@ -183,7 +183,7 @@ ___
 
 • **ADD_USER_TO_CHAT**: *string* = `${baseURI}/chat/v4/chatter/add/`
 
-*Defined in [src/Constants.ts:86](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L86)*
+*Defined in [src/Constants.ts:86](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L86)*
 
 **`internal`** 
 
@@ -193,7 +193,7 @@ ___
 
 • **CHAT_INFO**: *string* = `${baseURI}/chat/v4/info`
 
-*Defined in [src/Constants.ts:80](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L80)*
+*Defined in [src/Constants.ts:80](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L80)*
 
 **`internal`** 
 
@@ -203,7 +203,7 @@ ___
 
 • **CHAT_LIST**: *string* = `${baseURI}/chat/v4/list`
 
-*Defined in [src/Constants.ts:77](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L77)*
+*Defined in [src/Constants.ts:77](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L77)*
 
 **`internal`** 
 
@@ -213,7 +213,7 @@ ___
 
 • **CREATE_CHAT**: *string* = `${baseURI}/chat/v4/create/`
 
-*Defined in [src/Constants.ts:74](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L74)*
+*Defined in [src/Constants.ts:74](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L74)*
 
 **`internal`** 
 
@@ -223,7 +223,7 @@ ___
 
 • **DISCARD_CHAT**: *string* = `${baseURI}/chat/v4/disband`
 
-*Defined in [src/Constants.ts:92](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L92)*
+*Defined in [src/Constants.ts:92](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L92)*
 
 **`internal`** 
 
@@ -233,7 +233,7 @@ ___
 
 • **GET_APP_ACCESS_TOKEN**: *string* = `${baseURI}/auth/v3/app_access_token/internal/`
 
-*Defined in [src/Constants.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L11)*
+*Defined in [src/Constants.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L11)*
 
 **`internal`** 
 
@@ -243,7 +243,7 @@ ___
 
 • **GET_APP_ACCESS_TOKEN_APP_STORE**: *string* = `${baseURI}/auth/v3/app_access_token/`
 
-*Defined in [src/Constants.ts:15](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L15)*
+*Defined in [src/Constants.ts:15](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L15)*
 
 **`internal`** 
 
@@ -253,7 +253,7 @@ ___
 
 • **GET_APP_TICKET**: *string* = `${baseURI}/auth/v3/app_ticket/resend/`
 
-*Defined in [src/Constants.ts:26](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L26)*
+*Defined in [src/Constants.ts:26](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L26)*
 
 **`internal`** 
 
@@ -263,7 +263,7 @@ ___
 
 • **GET_AUTH**: *string* = `${baseURI}/authen/v1/index`
 
-*Defined in [src/Constants.ts:29](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L29)*
+*Defined in [src/Constants.ts:29](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L29)*
 
 **`internal`** 
 
@@ -273,7 +273,7 @@ ___
 
 • **GET_BOT_INFO**: *string* = `${baseURI}/bot/v3/info/`
 
-*Defined in [src/Constants.ts:95](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L95)*
+*Defined in [src/Constants.ts:95](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L95)*
 
 **`internal`** 
 
@@ -283,7 +283,7 @@ ___
 
 • **GET_CONTACT_SCOPE**: *string* = `${baseURI}/contact/v1/scope/get`
 
-*Defined in [src/Constants.ts:41](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L41)*
+*Defined in [src/Constants.ts:41](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L41)*
 
 **`internal`** 
 
@@ -293,7 +293,7 @@ ___
 
 • **GET_IMAGE_PATH**: *string* = `${baseURI}/image/v4/get`
 
-*Defined in [src/Constants.ts:7](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L7)*
+*Defined in [src/Constants.ts:7](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L7)*
 
 **`internal`** 
 
@@ -303,7 +303,7 @@ ___
 
 • **GET_TENANT_ACCESS_TOKEN**: *string* = `${baseURI}/auth/v3/tenant_access_token/internal/`
 
-*Defined in [src/Constants.ts:19](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L19)*
+*Defined in [src/Constants.ts:19](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L19)*
 
 **`internal`** 
 
@@ -313,7 +313,7 @@ ___
 
 • **GET_TENANT_ACCESS_TOKEN_APP_STORE**: *string* = `${baseURI}/auth/v3/tenant_access_token/`
 
-*Defined in [src/Constants.ts:23](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L23)*
+*Defined in [src/Constants.ts:23](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L23)*
 
 **`internal`** 
 
@@ -323,7 +323,7 @@ ___
 
 • **GET_USER_ACCESS_TOKEN**: *string* = `${baseURI}/authen/v1/access_token`
 
-*Defined in [src/Constants.ts:32](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L32)*
+*Defined in [src/Constants.ts:32](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L32)*
 
 **`internal`** 
 
@@ -333,7 +333,7 @@ ___
 
 • **GET_USER_BASE_INFO**: *string* = `${baseURI}/user/v4/info`
 
-*Defined in [src/Constants.ts:110](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L110)*
+*Defined in [src/Constants.ts:110](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L110)*
 
 **`internal`** 
 
@@ -343,7 +343,7 @@ ___
 
 • **GET_USER_CHAT_ID**: *string* = `${baseURI}/chat/v4/p2p/id`
 
-*Defined in [src/Constants.ts:104](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L104)*
+*Defined in [src/Constants.ts:104](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L104)*
 
 **`internal`** 
 
@@ -353,7 +353,7 @@ ___
 
 • **GET_USER_ID**: *string* = `${baseURI}/user/v4/email2id`
 
-*Defined in [src/Constants.ts:107](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L107)*
+*Defined in [src/Constants.ts:107](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L107)*
 
 **`internal`** 
 
@@ -363,7 +363,7 @@ ___
 
 • **GET_USER_INFO**: *string* = `${baseURI}/authen/v1/user_info`
 
-*Defined in [src/Constants.ts:38](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L38)*
+*Defined in [src/Constants.ts:38](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L38)*
 
 **`internal`** 
 
@@ -373,7 +373,7 @@ ___
 
 • **ID_CHAT_TO_OPEN**: *string* = `${baseURI}/exchange/v3/cid2ocid/`
 
-*Defined in [src/Constants.ts:62](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L62)*
+*Defined in [src/Constants.ts:62](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L62)*
 
 **`internal`** 
 
@@ -383,7 +383,7 @@ ___
 
 • **ID_DEPARTMENT_TO_OPEN**: *string* = `${baseURI}/exchange/v3/did2odid/`
 
-*Defined in [src/Constants.ts:56](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L56)*
+*Defined in [src/Constants.ts:56](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L56)*
 
 **`internal`** 
 
@@ -393,7 +393,7 @@ ___
 
 • **ID_EMPLOYEE_TO_LARK**: *string* = `${baseURI}/exchange/v3/eid2uid/`
 
-*Defined in [src/Constants.ts:71](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L71)*
+*Defined in [src/Constants.ts:71](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L71)*
 
 **`internal`** 
 
@@ -403,7 +403,7 @@ ___
 
 • **ID_LARK_TO_EMPLOYEE**: *string* = `${baseURI}/exchange/v3/uid2eid/`
 
-*Defined in [src/Constants.ts:68](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L68)*
+*Defined in [src/Constants.ts:68](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L68)*
 
 **`internal`** 
 
@@ -413,7 +413,7 @@ ___
 
 • **ID_LARK_TO_OPEN**: *string* = `${baseURI}/exchange/v3/uid2openid/`
 
-*Defined in [src/Constants.ts:47](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L47)*
+*Defined in [src/Constants.ts:47](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L47)*
 
 **`internal`** 
 
@@ -423,7 +423,7 @@ ___
 
 • **ID_MESSAGE_TO_OPEN**: *string* = `${baseURI}/exchange/v3/mid2omid/`
 
-*Defined in [src/Constants.ts:50](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L50)*
+*Defined in [src/Constants.ts:50](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L50)*
 
 **`internal`** 
 
@@ -433,7 +433,7 @@ ___
 
 • **ID_OPEN_TO_CHAT**: *string* = `${baseURI}/exchange/v3/ocid2cid/`
 
-*Defined in [src/Constants.ts:65](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L65)*
+*Defined in [src/Constants.ts:65](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L65)*
 
 **`internal`** 
 
@@ -443,7 +443,7 @@ ___
 
 • **ID_OPEN_TO_DEPARTMENT**: *string* = `${baseURI}/exchange/v3/odid2did/`
 
-*Defined in [src/Constants.ts:59](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L59)*
+*Defined in [src/Constants.ts:59](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L59)*
 
 **`internal`** 
 
@@ -453,7 +453,7 @@ ___
 
 • **ID_OPEN_TO_LARK**: *string* = `${baseURI}/exchange/v3/openid2uid/`
 
-*Defined in [src/Constants.ts:44](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L44)*
+*Defined in [src/Constants.ts:44](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L44)*
 
 **`internal`** 
 
@@ -463,7 +463,7 @@ ___
 
 • **ID_OPEN_TO_MESSAGE**: *string* = `${baseURI}/exchange/v3/omid2mid/`
 
-*Defined in [src/Constants.ts:53](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L53)*
+*Defined in [src/Constants.ts:53](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L53)*
 
 **`internal`** 
 
@@ -473,7 +473,7 @@ ___
 
 • **READ_MESSAGE**: *string* = `${baseURI}/message/v4/read_info/`
 
-*Defined in [src/Constants.ts:122](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L122)*
+*Defined in [src/Constants.ts:122](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L122)*
 
 **`internal`** 
 
@@ -483,7 +483,7 @@ ___
 
 • **RECALL_MESSAGE**: *string* = `${baseURI}/message/v4/recall/`
 
-*Defined in [src/Constants.ts:119](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L119)*
+*Defined in [src/Constants.ts:119](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L119)*
 
 **`internal`** 
 
@@ -493,7 +493,7 @@ ___
 
 • **REFRESH_CARD_MESSAGE**: *string* = `${baseURI}/interactive/v1/card/update/`
 
-*Defined in [src/Constants.ts:128](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L128)*
+*Defined in [src/Constants.ts:128](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L128)*
 
 **`internal`** 
 
@@ -503,7 +503,7 @@ ___
 
 • **REFRESH_USER_ACCESS_TOKEN**: *string* = `${baseURI}/authen/v1/user_info`
 
-*Defined in [src/Constants.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L35)*
+*Defined in [src/Constants.ts:35](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L35)*
 
 **`internal`** 
 
@@ -513,7 +513,7 @@ ___
 
 • **REMOVE_BOT_FROM_CHAT**: *string* = `${baseURI}/bot/v4/remove`
 
-*Defined in [src/Constants.ts:101](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L101)*
+*Defined in [src/Constants.ts:101](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L101)*
 
 **`internal`** 
 
@@ -523,7 +523,7 @@ ___
 
 • **REMOVE_USER_FROM_CHAT**: *string* = `${baseURI}/chat/v4/chatter/delete/`
 
-*Defined in [src/Constants.ts:89](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L89)*
+*Defined in [src/Constants.ts:89](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L89)*
 
 **`internal`** 
 
@@ -533,7 +533,7 @@ ___
 
 • **SEND_MESSAGE**: *string* = `${baseURI}/message/v4/send/`
 
-*Defined in [src/Constants.ts:116](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L116)*
+*Defined in [src/Constants.ts:116](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L116)*
 
 **`internal`** 
 
@@ -543,7 +543,7 @@ ___
 
 • **SEND_MESSAGE_BATCH**: *string* = `${baseURI}/message/v4/batch_send/`
 
-*Defined in [src/Constants.ts:113](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L113)*
+*Defined in [src/Constants.ts:113](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L113)*
 
 **`internal`** 
 
@@ -553,7 +553,7 @@ ___
 
 • **UPDATE_CHAT**: *string* = `${baseURI}/chat/v4/update/`
 
-*Defined in [src/Constants.ts:83](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L83)*
+*Defined in [src/Constants.ts:83](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L83)*
 
 **`internal`** 
 
@@ -563,7 +563,7 @@ ___
 
 • **UPLOAD_PATH**: *string* = `${baseURI}/image/v4/put/`
 
-*Defined in [src/Constants.ts:4](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L4)*
+*Defined in [src/Constants.ts:4](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L4)*
 
 **`internal`** 
 
@@ -573,7 +573,7 @@ ___
 
 • **URGENT_MESSAGE**: *string* = `${baseURI}/message/v4/urgent/`
 
-*Defined in [src/Constants.ts:125](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L125)*
+*Defined in [src/Constants.ts:125](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L125)*
 
 **`internal`** 
 
@@ -583,7 +583,7 @@ ___
 
 • **baseURI**: *"https://open.feishu.cn/open-apis"* = "https://open.feishu.cn/open-apis"
 
-*Defined in [src/Constants.ts:1](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Constants.ts#L1)*
+*Defined in [src/Constants.ts:1](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Constants.ts#L1)*
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 • **tokenCache**: *[Cache](../classes/reflection-1716.reflection-437.cache.md)‹›* = new Cache(10, 3600 * 1.9)
 
-*Defined in [src/Bot.ts:7](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L7)*
+*Defined in [src/Bot.ts:7](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L7)*
 
 ## Object literals
 
@@ -599,4 +599,4 @@ ___
 
 ### ▪ **Api**: *object*
 
-*Defined in [src/index.ts:6](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/index.ts#L6)*
+*Defined in [src/index.ts:6](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/index.ts#L6)*

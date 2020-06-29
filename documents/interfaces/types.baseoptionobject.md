@@ -23,7 +23,7 @@ option 对象
 
 • **text**? : *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:113](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L113)*
+*Defined in [src/types/CardMessage.ts:113](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L113)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/types/CardMessage.ts:114](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L114)*
+*Defined in [src/types/CardMessage.ts:114](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L114)*

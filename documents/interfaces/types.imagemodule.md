@@ -23,7 +23,7 @@
 
 • **alt**: *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:32](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L32)*
+*Defined in [src/types/CardMessage.ts:32](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L32)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **img_key**: *string*
 
-*Defined in [src/types/CardMessage.ts:31](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L31)*
+*Defined in [src/types/CardMessage.ts:31](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L31)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **tag**: *"img"*
 
-*Defined in [src/types/CardMessage.ts:30](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L30)*
+*Defined in [src/types/CardMessage.ts:30](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L30)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **title**? : *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:33](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L33)*
+*Defined in [src/types/CardMessage.ts:33](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L33)*

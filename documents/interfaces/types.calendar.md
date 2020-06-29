@@ -22,7 +22,7 @@
 
 • **default_access_role**: *[CalendarRole](../enums/types.calendarrole.md)*
 
-*Defined in [src/types/Calendar.ts:8](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L8)*
+*Defined in [src/types/Calendar.ts:8](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L8)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **description**: *string*
 
-*Defined in [src/types/Calendar.ts:7](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L7)*
+*Defined in [src/types/Calendar.ts:7](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L7)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/Calendar.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L5)*
+*Defined in [src/types/Calendar.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L5)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **is_private**: *boolean*
 
-*Defined in [src/types/Calendar.ts:9](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L9)*
+*Defined in [src/types/Calendar.ts:9](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L9)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **summary**: *string*
 
-*Defined in [src/types/Calendar.ts:6](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L6)*
+*Defined in [src/types/Calendar.ts:6](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L6)*

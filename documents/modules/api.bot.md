@@ -21,7 +21,7 @@ Bot模块的api有以下功能：
 
 ▸ **addBotToChat**(`__namedParameters`: object): *Promise‹[CommonResponse](../interfaces/types.commonresponse.md)›*
 
-*Defined in [src/apis/Bot.ts:85](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Bot.ts#L85)*
+*Defined in [src/apis/Bot.ts:85](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Bot.ts#L85)*
 
 拉机器人进群
 > **权限说明:** 需要启用机器人能力；机器人的owner需要已经在群里
@@ -58,7 +58,7 @@ ___
 
 ▸ **getBotInfo**(`__namedParameters`: object): *Promise‹[BotInfoResponse](../interfaces/types.botinforesponse.md)›*
 
-*Defined in [src/apis/Bot.ts:41](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Bot.ts#L41)*
+*Defined in [src/apis/Bot.ts:41](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Bot.ts#L41)*
 
 获取机器人信息
 > **权限说明：** 需要启用机器人能力
@@ -93,7 +93,7 @@ ___
 
 ▸ **removeBotFromChat**(`__namedParameters`: object): *Promise‹[CommonResponse](../interfaces/types.commonresponse.md)›*
 
-*Defined in [src/apis/Bot.ts:130](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Bot.ts#L130)*
+*Defined in [src/apis/Bot.ts:130](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Bot.ts#L130)*
 
 将机器人移出群
 > **权限说明：** 需要启用机器人能力

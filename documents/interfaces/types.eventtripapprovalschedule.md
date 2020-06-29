@@ -25,7 +25,7 @@
 
 • **departure**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:152](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L152)*
+*Defined in [src/types/CallbackEvent.ts:152](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L152)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **destination**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:154](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L154)*
+*Defined in [src/types/CallbackEvent.ts:154](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L154)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **remark**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:160](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L160)*
+*Defined in [src/types/CallbackEvent.ts:160](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L160)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **transportation**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:156](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L156)*
+*Defined in [src/types/CallbackEvent.ts:156](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L156)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **trip_end_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:148](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L148)*
+*Defined in [src/types/CallbackEvent.ts:148](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L148)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **trip_interval**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:150](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L150)*
+*Defined in [src/types/CallbackEvent.ts:150](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L150)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **trip_start_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:146](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L146)*
+*Defined in [src/types/CallbackEvent.ts:146](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L146)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **trip_type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:158](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L158)*
+*Defined in [src/types/CallbackEvent.ts:158](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L158)*

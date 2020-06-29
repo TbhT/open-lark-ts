@@ -19,7 +19,7 @@
 
 • **CARD**: = "interactive"
 
-*Defined in [src/types/Enum.ts:13](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L13)*
+*Defined in [src/types/Enum.ts:13](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L13)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **FORWARD**: = "forward"
 
-*Defined in [src/types/Enum.ts:15](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L15)*
+*Defined in [src/types/Enum.ts:15](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L15)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **IMAGE**: = "image"
 
-*Defined in [src/types/Enum.ts:7](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L7)*
+*Defined in [src/types/Enum.ts:7](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L7)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **POST**: = "post"
 
-*Defined in [src/types/Enum.ts:9](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L9)*
+*Defined in [src/types/Enum.ts:9](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L9)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **SHARE_CHAT**: = "share_chat"
 
-*Defined in [src/types/Enum.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L11)*
+*Defined in [src/types/Enum.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L11)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **TEXT**: = "text"
 
-*Defined in [src/types/Enum.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L5)*
+*Defined in [src/types/Enum.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L5)*

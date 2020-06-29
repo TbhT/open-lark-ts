@@ -23,7 +23,7 @@
 
 *Inherited from [BaseTextObject](types.basetextobject.md).[content](types.basetextobject.md#content)*
 
-*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L66)*
+*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L66)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **tag**: *"lark_md"*
 
-*Defined in [src/types/CardMessage.ts:85](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L85)*
+*Defined in [src/types/CardMessage.ts:85](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L85)*

@@ -24,7 +24,7 @@
 
 *Inherited from [BaseContentModule](types.basecontentmodule.md).[extra](types.basecontentmodule.md#optional-extra)*
 
-*Defined in [src/types/CardMessage.ts:6](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L6)*
+*Defined in [src/types/CardMessage.ts:6](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L6)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **field**: *[FieldObject](types.fieldobject.md)*
 
-*Defined in [src/types/CardMessage.ts:14](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L14)*
+*Defined in [src/types/CardMessage.ts:14](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L14)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 *Inherited from [BaseContentModule](types.basecontentmodule.md).[tag](types.basecontentmodule.md#tag)*
 
-*Defined in [src/types/CardMessage.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L5)*
+*Defined in [src/types/CardMessage.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L5)*

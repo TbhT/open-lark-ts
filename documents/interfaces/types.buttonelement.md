@@ -39,7 +39,7 @@ button 元素
 
 • **confirm**? : *[ConfirmObject](types.confirmobject.md)*
 
-*Defined in [src/types/CardMessage.ts:165](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L165)*
+*Defined in [src/types/CardMessage.ts:165](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L165)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **multi_url**? : *[UrlObject](types.urlobject.md)*
 
-*Defined in [src/types/CardMessage.ts:162](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L162)*
+*Defined in [src/types/CardMessage.ts:162](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L162)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **tag**: *"button"*
 
-*Defined in [src/types/CardMessage.ts:159](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L159)*
+*Defined in [src/types/CardMessage.ts:159](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L159)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **text**: *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:160](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L160)*
+*Defined in [src/types/CardMessage.ts:160](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L160)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **type**? : *"default" | "primary" | "danger"*
 
-*Defined in [src/types/CardMessage.ts:163](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L163)*
+*Defined in [src/types/CardMessage.ts:163](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L163)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **url**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:161](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L161)*
+*Defined in [src/types/CardMessage.ts:161](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L161)*
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 • **value**? : *Record‹string, string›*
 
-*Defined in [src/types/CardMessage.ts:164](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L164)*
+*Defined in [src/types/CardMessage.ts:164](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L164)*

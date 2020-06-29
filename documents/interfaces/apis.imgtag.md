@@ -21,7 +21,7 @@
 
 • **height**: *number*
 
-*Defined in [src/apis/Message.ts:208](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L208)*
+*Defined in [src/apis/Message.ts:279](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L279)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **image_key**: *string*
 
-*Defined in [src/apis/Message.ts:207](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L207)*
+*Defined in [src/apis/Message.ts:278](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L278)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **tag**: *"img"*
 
-*Defined in [src/apis/Message.ts:206](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L206)*
+*Defined in [src/apis/Message.ts:277](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L277)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [src/apis/Message.ts:209](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L209)*
+*Defined in [src/apis/Message.ts:280](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L280)*

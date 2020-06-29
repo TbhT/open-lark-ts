@@ -19,7 +19,7 @@
 
 • **open_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:188](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L188)*
+*Defined in [src/types/CallbackEvent.ts:188](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L188)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:190](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L190)*
+*Defined in [src/types/CallbackEvent.ts:190](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L190)*

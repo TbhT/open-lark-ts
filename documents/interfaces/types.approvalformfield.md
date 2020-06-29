@@ -34,7 +34,7 @@
 
 • **customId**: *string*
 
-*Defined in [src/types/Approval.ts:30](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L30)*
+*Defined in [src/types/Approval.ts:30](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L30)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **displayCondStatus**: *boolean*
 
-*Defined in [src/types/Approval.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L35)*
+*Defined in [src/types/Approval.ts:35](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L35)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **displayCondition**: *string*
 
-*Defined in [src/types/Approval.ts:34](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L34)*
+*Defined in [src/types/Approval.ts:34](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L34)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **edited**: *boolean*
 
-*Defined in [src/types/Approval.ts:38](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L38)*
+*Defined in [src/types/Approval.ts:38](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L38)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **ext**: *unknown*
 
-*Defined in [src/types/Approval.ts:37](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L37)*
+*Defined in [src/types/Approval.ts:37](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L37)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **externalUrl**: *string*
 
-*Defined in [src/types/Approval.ts:42](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L42)*
+*Defined in [src/types/Approval.ts:42](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L42)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/Approval.ts:21](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L21)*
+*Defined in [src/types/Approval.ts:21](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L21)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 • **key**: *string*
 
-*Defined in [src/types/Approval.ts:40](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L40)*
+*Defined in [src/types/Approval.ts:40](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L40)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/Approval.ts:25](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L25)*
+*Defined in [src/types/Approval.ts:25](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L25)*
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 • **option**: *unknown*
 
-*Defined in [src/types/Approval.ts:36](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L36)*
+*Defined in [src/types/Approval.ts:36](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L36)*
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 • **placeholder**: *string*
 
-*Defined in [src/types/Approval.ts:31](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L31)*
+*Defined in [src/types/Approval.ts:31](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L31)*
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 • **printable**: *boolean*
 
-*Defined in [src/types/Approval.ts:33](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L33)*
+*Defined in [src/types/Approval.ts:33](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L33)*
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 • **required**: *boolean*
 
-*Defined in [src/types/Approval.ts:32](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L32)*
+*Defined in [src/types/Approval.ts:32](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L32)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 • **token**: *string*
 
-*Defined in [src/types/Approval.ts:41](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L41)*
+*Defined in [src/types/Approval.ts:41](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L41)*
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/Approval.ts:23](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L23)*
+*Defined in [src/types/Approval.ts:23](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L23)*
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 • **useExternalData**: *boolean*
 
-*Defined in [src/types/Approval.ts:39](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L39)*
+*Defined in [src/types/Approval.ts:39](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L39)*
 
 ___
 
@@ -162,4 +162,4 @@ ___
 
 • **value**: *unknown*
 
-*Defined in [src/types/Approval.ts:27](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L27)*
+*Defined in [src/types/Approval.ts:27](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L27)*

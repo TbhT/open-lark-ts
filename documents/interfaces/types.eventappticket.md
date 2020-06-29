@@ -20,7 +20,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:251](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L251)*
+*Defined in [src/types/CallbackEvent.ts:251](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L251)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **app_ticket**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:252](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L252)*
+*Defined in [src/types/CallbackEvent.ts:252](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L252)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:253](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L253)*
+*Defined in [src/types/CallbackEvent.ts:253](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L253)*

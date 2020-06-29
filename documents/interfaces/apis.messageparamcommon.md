@@ -24,7 +24,7 @@
 
 • **chatId**? : *undefined | string*
 
-*Defined in [src/apis/Message.ts:26](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L26)*
+*Defined in [src/apis/Message.ts:40](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L40)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/apis/Message.ts:25](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L25)*
+*Defined in [src/apis/Message.ts:39](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L39)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **instance**? : *AxiosInstance*
 
-*Defined in [src/apis/Message.ts:28](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L28)*
+*Defined in [src/apis/Message.ts:42](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L42)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **openId**? : *undefined | string*
 
-*Defined in [src/apis/Message.ts:23](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L23)*
+*Defined in [src/apis/Message.ts:37](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L37)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **rootId**? : *undefined | string*
 
-*Defined in [src/apis/Message.ts:27](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L27)*
+*Defined in [src/apis/Message.ts:41](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L41)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **tenantAccessToken**: *string*
 
-*Defined in [src/apis/Message.ts:22](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L22)*
+*Defined in [src/apis/Message.ts:36](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L36)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **userId**? : *undefined | string*
 
-*Defined in [src/apis/Message.ts:24](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L24)*
+*Defined in [src/apis/Message.ts:38](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L38)*

@@ -20,7 +20,7 @@
 
 • **en_us**? : *[RichTextMessageInner](apis.richtextmessageinner.md)*
 
-*Defined in [src/apis/Message.ts:220](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L220)*
+*Defined in [src/apis/Message.ts:291](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L291)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **ja_jp**? : *[RichTextMessageInner](apis.richtextmessageinner.md)*
 
-*Defined in [src/apis/Message.ts:219](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L219)*
+*Defined in [src/apis/Message.ts:290](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L290)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **zh_cn**? : *[RichTextMessageInner](apis.richtextmessageinner.md)*
 
-*Defined in [src/apis/Message.ts:218](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L218)*
+*Defined in [src/apis/Message.ts:289](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L289)*

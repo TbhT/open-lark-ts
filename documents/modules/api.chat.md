@@ -34,7 +34,7 @@ Chat模块的api有以下功能：
 
 Ƭ **ModifyUserInChat**: *object*
 
-*Defined in [src/apis/Chat.ts:274](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L274)*
+*Defined in [src/apis/Chat.ts:274](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L274)*
 
 #### Type declaration:
 
@@ -54,7 +54,7 @@ ___
 
 Ƭ **createChatParams**: *object*
 
-*Defined in [src/apis/Chat.ts:35](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L35)*
+*Defined in [src/apis/Chat.ts:35](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L35)*
 
 #### Type declaration:
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **addUserToChat**(`__namedParameters`: object): *Promise‹[ModifyUserToChatResponse](../interfaces/types.modifyusertochatresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:309](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L309)*
+*Defined in [src/apis/Chat.ts:309](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L309)*
 
 机器人拉用户进群，机器人必须在群里
 **权限说明 ：** 需要启用机器人能力；机器人必须在群里
@@ -127,7 +127,7 @@ ___
 
 ▸ **createChat**(`params`: [createChatParams](api.chat.md#createchatparams)): *Promise‹[CreateChatResponse](../interfaces/types.createchatresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:69](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L69)*
+*Defined in [src/apis/Chat.ts:69](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L69)*
 
 机器人创建群并拉指定用户进群
 > **权限说明 ：** 需要启用机器人能力
@@ -161,7 +161,7 @@ ___
 
 ▸ **discardChat**(`__namedParameters`: object): *Promise‹[CommonResponse](../interfaces/types.commonresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:407](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L407)*
+*Defined in [src/apis/Chat.ts:407](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L407)*
 
 机器人解散群
 **权限说明 ：** 需要启用机器人能力；机器人必须是群主（机器人创建的群，机器人默认是群主。）
@@ -199,7 +199,7 @@ ___
 
 ▸ **getChatInfo**(`__namedParameters`: object): *Promise‹[ChatInfoResponse](../interfaces/types.chatinforesponse.md)›*
 
-*Defined in [src/apis/Chat.ts:173](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L173)*
+*Defined in [src/apis/Chat.ts:173](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L173)*
 
 获取群名称、群主 ID、成员列表 ID 等群基本信息
 > **权限说明 ：** 需要启用机器人能力
@@ -236,7 +236,7 @@ ___
 
 ▸ **getChatList**(`__namedParameters`: object): *Promise‹[ChatListResponse](../interfaces/types.chatlistresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:120](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L120)*
+*Defined in [src/apis/Chat.ts:120](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L120)*
 
 获取机器人所在的群列表
 > **权限说明 ：** 需要启用机器人能力
@@ -273,7 +273,7 @@ ___
 
 ▸ **removeUserFromChat**(`__namedParameters`: object): *Promise‹[ModifyUserToChatResponse](../interfaces/types.modifyusertochatresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:359](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L359)*
+*Defined in [src/apis/Chat.ts:359](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L359)*
 
 机器人移除用户出群
 **权限说明 ：** 需要启用机器人能力；机器人必须在群里
@@ -313,7 +313,7 @@ ___
 
 ▸ **updateChatInfo**(`params`: object): *Promise‹[UpdateChatResponse](../interfaces/types.updatechatresponse.md)›*
 
-*Defined in [src/apis/Chat.ts:226](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Chat.ts#L226)*
+*Defined in [src/apis/Chat.ts:226](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Chat.ts#L226)*
 
 更新群名称、群配置、转让群主等
 > **权限说明 ：** 需要启用机器人能力

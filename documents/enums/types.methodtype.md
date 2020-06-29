@@ -16,7 +16,7 @@
 
 • **GET**: = "get"
 
-*Defined in [src/types/Enum.ts:44](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L44)*
+*Defined in [src/types/Enum.ts:44](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L44)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **JUMP**: = "jump"
 
-*Defined in [src/types/Enum.ts:47](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L47)*
+*Defined in [src/types/Enum.ts:47](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L47)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **POST**: = "post"
 
-*Defined in [src/types/Enum.ts:45](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L45)*
+*Defined in [src/types/Enum.ts:45](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L45)*

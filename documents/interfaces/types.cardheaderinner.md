@@ -21,7 +21,7 @@
 
 • **template**? : *[TemplateColor](../modules/types.md#templatecolor)*
 
-*Defined in [src/types/CardMessage.ts:232](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L232)*
+*Defined in [src/types/CardMessage.ts:232](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L232)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 *Inherited from [CardHeader](types.cardheader.md).[title](types.cardheader.md#title)*
 
-*Defined in [src/types/CardMessage.ts:214](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L214)*
+*Defined in [src/types/CardMessage.ts:214](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L214)*

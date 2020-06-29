@@ -18,7 +18,7 @@
 
 • **AND_SIGN**: = "AND"
 
-*Defined in [src/types/Enum.ts:183](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L183)*
+*Defined in [src/types/Enum.ts:183](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L183)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **AUTO_PASS**: = "AUTO_PASS"
 
-*Defined in [src/types/Enum.ts:185](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L185)*
+*Defined in [src/types/Enum.ts:185](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L185)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **AUTO_REJECT**: = "AUTO_REJECT"
 
-*Defined in [src/types/Enum.ts:187](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L187)*
+*Defined in [src/types/Enum.ts:187](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L187)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **OR_SIGN**: = "OR"
 
-*Defined in [src/types/Enum.ts:181](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L181)*
+*Defined in [src/types/Enum.ts:181](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L181)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **SEQUENTIAL**: = "SEQUENTIAL"
 
-*Defined in [src/types/Enum.ts:189](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L189)*
+*Defined in [src/types/Enum.ts:189](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L189)*

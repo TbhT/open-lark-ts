@@ -20,7 +20,7 @@
 
 • **open_id**: *string*
 
-*Defined in [src/types/Response.ts:183](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L183)*
+*Defined in [src/types/Response.ts:183](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L183)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **timestamp**: *string*
 
-*Defined in [src/types/Response.ts:184](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L184)*
+*Defined in [src/types/Response.ts:184](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L184)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Response.ts:185](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L185)*
+*Defined in [src/types/Response.ts:185](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L185)*

@@ -21,7 +21,7 @@
 
 • **display_name**: *string*
 
-*Defined in [src/types/Calendar.ts:17](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L17)*
+*Defined in [src/types/Calendar.ts:17](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L17)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **employee_id**: *string*
 
-*Defined in [src/types/Calendar.ts:15](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L15)*
+*Defined in [src/types/Calendar.ts:15](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L15)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **open_id**: *string*
 
-*Defined in [src/types/Calendar.ts:14](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L14)*
+*Defined in [src/types/Calendar.ts:14](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L14)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **optional**: *boolean*
 
-*Defined in [src/types/Calendar.ts:16](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L16)*
+*Defined in [src/types/Calendar.ts:16](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L16)*

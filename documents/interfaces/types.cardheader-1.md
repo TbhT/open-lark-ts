@@ -23,7 +23,7 @@
 
 • **en_us**: *string*
 
-*Defined in [src/types/Message.ts:75](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L75)*
+*Defined in [src/types/Message.ts:75](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L75)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **image_color**: *[ImageColor](../enums/types.imagecolor.md)*
 
-*Defined in [src/types/Message.ts:78](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L78)*
+*Defined in [src/types/Message.ts:78](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L78)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **ja_jp**: *string*
 
-*Defined in [src/types/Message.ts:76](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L76)*
+*Defined in [src/types/Message.ts:76](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L76)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **lines**: *number*
 
-*Defined in [src/types/Message.ts:80](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L80)*
+*Defined in [src/types/Message.ts:80](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L80)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/types/Message.ts:73](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L73)*
+*Defined in [src/types/Message.ts:73](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L73)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **zh_ch**: *string*
 
-*Defined in [src/types/Message.ts:74](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L74)*
+*Defined in [src/types/Message.ts:74](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L74)*

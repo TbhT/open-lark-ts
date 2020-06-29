@@ -24,7 +24,7 @@
 
 • **chatId**? : *undefined | string*
 
-*Defined in [src/Sayable.ts:19](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L19)*
+*Defined in [src/Sayable.ts:19](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L19)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/Sayable.ts:18](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L18)*
+*Defined in [src/Sayable.ts:18](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L18)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **openId**? : *undefined | string*
 
-*Defined in [src/Sayable.ts:16](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L16)*
+*Defined in [src/Sayable.ts:16](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L16)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **rooId**? : *undefined | string*
 
-*Defined in [src/Sayable.ts:20](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L20)*
+*Defined in [src/Sayable.ts:20](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L20)*
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 • **userId**? : *undefined | string*
 
-*Defined in [src/Sayable.ts:17](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L17)*
+*Defined in [src/Sayable.ts:17](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L17)*

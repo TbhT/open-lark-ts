@@ -22,7 +22,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:197](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L197)*
+*Defined in [src/types/CallbackEvent.ts:197](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L197)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **applicants**: *[EventAppOpenUser](types.eventappopenuser.md)[]*
 
-*Defined in [src/types/CallbackEvent.ts:203](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L203)*
+*Defined in [src/types/CallbackEvent.ts:203](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L203)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **installer**: *[EventAppOpenUser](types.eventappopenuser.md)*
 
-*Defined in [src/types/CallbackEvent.ts:205](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L205)*
+*Defined in [src/types/CallbackEvent.ts:205](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L205)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:199](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L199)*
+*Defined in [src/types/CallbackEvent.ts:199](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L199)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:201](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L201)*
+*Defined in [src/types/CallbackEvent.ts:201](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L201)*

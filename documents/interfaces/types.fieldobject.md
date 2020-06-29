@@ -21,7 +21,7 @@ field 对象
 
 • **is_short**: *boolean*
 
-*Defined in [src/types/CardMessage.ts:94](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L94)*
+*Defined in [src/types/CardMessage.ts:94](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L94)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **text**: *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:95](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L95)*
+*Defined in [src/types/CardMessage.ts:95](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L95)*

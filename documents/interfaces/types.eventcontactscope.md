@@ -20,7 +20,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:238](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L238)*
+*Defined in [src/types/CallbackEvent.ts:238](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L238)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:240](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L240)*
+*Defined in [src/types/CallbackEvent.ts:240](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L240)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:237](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L237)*
+*Defined in [src/types/CallbackEvent.ts:237](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L237)*

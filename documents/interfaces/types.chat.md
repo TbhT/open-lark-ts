@@ -27,7 +27,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/types/Code.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L66)*
+*Defined in [src/types/Code.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L66)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **chat_id**: *string*
 
-*Defined in [src/types/Code.ts:73](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L73)*
+*Defined in [src/types/Code.ts:73](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L73)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **description**: *string*
 
-*Defined in [src/types/Code.ts:69](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L69)*
+*Defined in [src/types/Code.ts:69](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L69)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **i18n_names**: *[I18NTitle](../enums/types.i18ntitle.md)*
 
-*Defined in [src/types/Code.ts:76](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L76)*
+*Defined in [src/types/Code.ts:76](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L76)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **members**: *[User](types.user.md)[]*
 
-*Defined in [src/types/Code.ts:78](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L78)*
+*Defined in [src/types/Code.ts:78](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L78)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/Code.ts:81](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L81)*
+*Defined in [src/types/Code.ts:81](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L81)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **open_chat_id**? : *undefined | string*
 
-*Defined in [src/types/Code.ts:71](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L71)*
+*Defined in [src/types/Code.ts:71](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L71)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **owner_open_id**: *string*
 
-*Defined in [src/types/Code.ts:90](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L90)*
+*Defined in [src/types/Code.ts:90](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L90)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **owner_user_id**: *string*
 
-*Defined in [src/types/Code.ts:87](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L87)*
+*Defined in [src/types/Code.ts:87](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L87)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/Code.ts:84](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L84)*
+*Defined in [src/types/Code.ts:84](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L84)*

@@ -14,7 +14,7 @@
 
 ▸ **Headers**(`tenantAccessToken`: string, `accessToken`: boolean): *object*
 
-*Defined in [src/utils/headers.ts:1](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/utils/headers.ts#L1)*
+*Defined in [src/utils/headers.ts:1](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/utils/headers.ts#L1)*
 
 **Parameters:**
 

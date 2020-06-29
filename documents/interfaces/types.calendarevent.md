@@ -24,7 +24,7 @@
 
 • **attendees**: *[CalendarAttendee](types.calendarattendee.md)[]*
 
-*Defined in [src/types/Calendar.ts:28](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L28)*
+*Defined in [src/types/Calendar.ts:28](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L28)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **description**: *string*
 
-*Defined in [src/types/Calendar.ts:23](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L23)*
+*Defined in [src/types/Calendar.ts:23](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L23)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **end**: *number*
 
-*Defined in [src/types/Calendar.ts:25](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L25)*
+*Defined in [src/types/Calendar.ts:25](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L25)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/Calendar.ts:22](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L22)*
+*Defined in [src/types/Calendar.ts:22](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L22)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **start**: *number*
 
-*Defined in [src/types/Calendar.ts:24](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L24)*
+*Defined in [src/types/Calendar.ts:24](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L24)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **summary**: *string*
 
-*Defined in [src/types/Calendar.ts:27](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L27)*
+*Defined in [src/types/Calendar.ts:27](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L27)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **visibility**: *[CalendarEventVisibility](../enums/types.calendareventvisibility.md)*
 
-*Defined in [src/types/Calendar.ts:26](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Calendar.ts#L26)*
+*Defined in [src/types/Calendar.ts:26](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Calendar.ts#L26)*

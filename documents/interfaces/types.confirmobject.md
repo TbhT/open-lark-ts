@@ -21,7 +21,7 @@ confirm 对象
 
 • **text**: *[PlainTextObject](types.plaintextobject.md)*
 
-*Defined in [src/types/CardMessage.ts:130](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L130)*
+*Defined in [src/types/CardMessage.ts:130](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L130)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **title**: *[PlainTextObject](types.plaintextobject.md)*
 
-*Defined in [src/types/CardMessage.ts:129](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L129)*
+*Defined in [src/types/CardMessage.ts:129](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L129)*

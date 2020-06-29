@@ -24,4 +24,4 @@ text 对象
 
 • **content**: *string*
 
-*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L66)*
+*Defined in [src/types/CardMessage.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L66)*

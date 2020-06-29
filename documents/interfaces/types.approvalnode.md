@@ -21,7 +21,7 @@
 
 • **name**: *string*
 
-*Defined in [src/types/Approval.ts:12](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L12)*
+*Defined in [src/types/Approval.ts:12](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L12)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **need_approver**: *boolean*
 
-*Defined in [src/types/Approval.ts:13](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L13)*
+*Defined in [src/types/Approval.ts:13](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L13)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **node_id**: *string*
 
-*Defined in [src/types/Approval.ts:14](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L14)*
+*Defined in [src/types/Approval.ts:14](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L14)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **node_type**: *number*
 
-*Defined in [src/types/Approval.ts:15](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L15)*
+*Defined in [src/types/Approval.ts:15](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L15)*

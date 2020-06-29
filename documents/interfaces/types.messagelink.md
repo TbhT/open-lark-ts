@@ -26,7 +26,7 @@
 
 • **android_href**: *string*
 
-*Defined in [src/types/Message.ts:57](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L57)*
+*Defined in [src/types/Message.ts:57](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L57)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **en_us**: *string*
 
-*Defined in [src/types/Message.ts:50](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L50)*
+*Defined in [src/types/Message.ts:50](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L50)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **href**: *string*
 
-*Defined in [src/types/Message.ts:45](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L45)*
+*Defined in [src/types/Message.ts:45](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L45)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **ios_href**: *string*
 
-*Defined in [src/types/Message.ts:55](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L55)*
+*Defined in [src/types/Message.ts:55](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L55)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **ja_jp**: *string*
 
-*Defined in [src/types/Message.ts:51](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L51)*
+*Defined in [src/types/Message.ts:51](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L51)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **pc_href**: *string*
 
-*Defined in [src/types/Message.ts:53](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L53)*
+*Defined in [src/types/Message.ts:53](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L53)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [src/types/Message.ts:43](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L43)*
+*Defined in [src/types/Message.ts:43](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L43)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **un_escape**: *boolean*
 
-*Defined in [src/types/Message.ts:46](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L46)*
+*Defined in [src/types/Message.ts:46](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L46)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **zh_cn**: *string*
 
-*Defined in [src/types/Message.ts:49](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L49)*
+*Defined in [src/types/Message.ts:49](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L49)*

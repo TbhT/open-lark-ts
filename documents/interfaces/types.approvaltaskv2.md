@@ -23,7 +23,7 @@
 
 • **employee_id**: *string*
 
-*Defined in [src/types/Approval.ts:89](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L89)*
+*Defined in [src/types/Approval.ts:89](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L89)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **end_time**: *number*
 
-*Defined in [src/types/Approval.ts:97](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L97)*
+*Defined in [src/types/Approval.ts:97](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L97)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/types/Approval.ts:87](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L87)*
+*Defined in [src/types/Approval.ts:87](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L87)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **start_time**: *number*
 
-*Defined in [src/types/Approval.ts:95](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L95)*
+*Defined in [src/types/Approval.ts:95](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L95)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **status**: *[ApprovalTaskStatusV2](../enums/types.approvaltaskstatusv2.md)*
 
-*Defined in [src/types/Approval.ts:93](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L93)*
+*Defined in [src/types/Approval.ts:93](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L93)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **type**: *[ApprovalTaskTypeStatusV2](../enums/types.approvaltasktypestatusv2.md)*
 
-*Defined in [src/types/Approval.ts:91](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L91)*
+*Defined in [src/types/Approval.ts:91](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L91)*

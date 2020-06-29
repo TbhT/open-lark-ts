@@ -35,7 +35,7 @@
 
 • **instance**: *AxiosInstance | undefined*
 
-*Defined in [src/Sayable.ts:59](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L59)*
+*Defined in [src/Sayable.ts:59](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L59)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **tenantAccessToken**: *string | undefined*
 
-*Defined in [src/Sayable.ts:58](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L58)*
+*Defined in [src/Sayable.ts:58](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L58)*
 
 ## Methods
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **readMessage**(`params`: object): *Promise‹[ReadMessageResponse](types.readmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:67](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L67)*
+*Defined in [src/Sayable.ts:67](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L67)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **recallMessage**(`params`: object): *Promise‹[CommonResponse](types.commonresponse.md)›*
 
-*Defined in [src/Sayable.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L66)*
+*Defined in [src/Sayable.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L66)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **sayCardMessage**(`params`: [CardMessageParams](../modules/reflection-1716.reflection-437.md#cardmessageparams)): *Promise‹[SendMessageResponse](types.sendmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:73](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L73)*
+*Defined in [src/Sayable.ts:73](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L73)*
 
 **Parameters:**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **sayChatCard**(`params`: [ShareChatCardParams](../modules/reflection-1716.reflection-437.md#sharechatcardparams)): *Promise‹[SendMessageResponse](types.sendmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:65](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L65)*
+*Defined in [src/Sayable.ts:65](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L65)*
 
 **Parameters:**
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **sayImageMessage**(`params`: [ImageMessageParams](../modules/reflection-1716.reflection-437.md#imagemessageparams)): *Promise‹[SendMessageResponse](types.sendmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:61](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L61)*
+*Defined in [src/Sayable.ts:61](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L61)*
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **sayRichTextMessage**(`params`: [RichTextMessageParams](../modules/reflection-1716.reflection-437.md#richtextmessageparams)): *Promise‹[SendMessageResponse](types.sendmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:62](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L62)*
+*Defined in [src/Sayable.ts:62](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L62)*
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **sayTextMessage**(`params`: [TextMessageParams](../modules/reflection-1716.reflection-437.md#textmessageparams)): *Promise‹[SendMessageResponse](types.sendmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:60](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L60)*
+*Defined in [src/Sayable.ts:60](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L60)*
 
 **Parameters:**
 
@@ -167,7 +167,7 @@ ___
 
 ▸ **sayUrgentMessage**(`params`: object): *Promise‹[UrgentMessageResponse](types.urgentmessageresponse.md)›*
 
-*Defined in [src/Sayable.ts:68](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Sayable.ts#L68)*
+*Defined in [src/Sayable.ts:68](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Sayable.ts#L68)*
 
 **Parameters:**
 

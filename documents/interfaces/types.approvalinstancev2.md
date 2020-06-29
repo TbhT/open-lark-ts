@@ -27,7 +27,7 @@
 
 • **approval_code**: *string*
 
-*Defined in [src/types/Approval.ts:125](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L125)*
+*Defined in [src/types/Approval.ts:125](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L125)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **approval_name**: *string*
 
-*Defined in [src/types/Approval.ts:127](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L127)*
+*Defined in [src/types/Approval.ts:127](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L127)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **comment_list**: *[ApprovalComment](types.approvalcomment.md)[]*
 
-*Defined in [src/types/Approval.ts:141](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L141)*
+*Defined in [src/types/Approval.ts:141](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L141)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **department_id**: *string*
 
-*Defined in [src/types/Approval.ts:135](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L135)*
+*Defined in [src/types/Approval.ts:135](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L135)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **end_time**: *number*
 
-*Defined in [src/types/Approval.ts:131](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L131)*
+*Defined in [src/types/Approval.ts:131](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L131)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **form_list**: *[ApprovalFormField](types.approvalformfield.md)[]*
 
-*Defined in [src/types/Approval.ts:143](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L143)*
+*Defined in [src/types/Approval.ts:143](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L143)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **start_time**: *number*
 
-*Defined in [src/types/Approval.ts:129](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L129)*
+*Defined in [src/types/Approval.ts:129](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L129)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **status**: *[ApprovalInstanceStatusV2](../enums/types.approvalinstancestatusv2.md)*
 
-*Defined in [src/types/Approval.ts:137](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L137)*
+*Defined in [src/types/Approval.ts:137](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L137)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **task_list**: *[ApprovalTaskV2](types.approvaltaskv2.md)[]*
 
-*Defined in [src/types/Approval.ts:139](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L139)*
+*Defined in [src/types/Approval.ts:139](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L139)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Approval.ts:133](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L133)*
+*Defined in [src/types/Approval.ts:133](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L133)*

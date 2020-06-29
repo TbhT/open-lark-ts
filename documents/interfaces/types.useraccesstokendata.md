@@ -27,7 +27,7 @@
 
 • **access_token**: *string*
 
-*Defined in [src/types/Code.ts:126](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L126)*
+*Defined in [src/types/Code.ts:126](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L126)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **avatar_url**: *string*
 
-*Defined in [src/types/Code.ts:129](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L129)*
+*Defined in [src/types/Code.ts:129](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L129)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **en_name**: *string*
 
-*Defined in [src/types/Code.ts:138](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L138)*
+*Defined in [src/types/Code.ts:138](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L138)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **expires_in**: *number*
 
-*Defined in [src/types/Code.ts:132](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L132)*
+*Defined in [src/types/Code.ts:132](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L132)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/Code.ts:135](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L135)*
+*Defined in [src/types/Code.ts:135](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L135)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **open_id**: *string*
 
-*Defined in [src/types/Code.ts:141](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L141)*
+*Defined in [src/types/Code.ts:141](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L141)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **refresh_expires_in**: *number*
 
-*Defined in [src/types/Code.ts:147](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L147)*
+*Defined in [src/types/Code.ts:147](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L147)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **refresh_token**: *string*
 
-*Defined in [src/types/Code.ts:150](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L150)*
+*Defined in [src/types/Code.ts:150](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L150)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/Code.ts:144](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L144)*
+*Defined in [src/types/Code.ts:144](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L144)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **token_type**: *string*
 
-*Defined in [src/types/Code.ts:153](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L153)*
+*Defined in [src/types/Code.ts:153](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L153)*

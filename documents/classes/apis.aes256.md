@@ -27,7 +27,7 @@
 
 \+ **new AES256**(`key`: string): *[AES256](apis.aes256.md)*
 
-*Defined in [src/apis/Callback.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Callback.ts#L11)*
+*Defined in [src/apis/Callback.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Callback.ts#L11)*
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ Name | Type |
 
 • **key**: *Buffer*
 
-*Defined in [src/apis/Callback.ts:11](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Callback.ts#L11)*
+*Defined in [src/apis/Callback.ts:11](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Callback.ts#L11)*
 
 ## Methods
 
@@ -51,7 +51,7 @@ Name | Type |
 
 ▸ **decrypt**(`encrypt`: string): *string*
 
-*Defined in [src/apis/Callback.ts:18](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Callback.ts#L18)*
+*Defined in [src/apis/Callback.ts:18](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Callback.ts#L18)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **encrypt**(`data`: string): *string*
 
-*Defined in [src/apis/Callback.ts:29](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Callback.ts#L29)*
+*Defined in [src/apis/Callback.ts:29](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Callback.ts#L29)*
 
 **Parameters:**
 

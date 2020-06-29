@@ -16,7 +16,7 @@
 
 • **EN_US**: = "en_us"
 
-*Defined in [src/types/Enum.ts:29](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L29)*
+*Defined in [src/types/Enum.ts:29](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L29)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **JA_JP**: = "ja_jp"
 
-*Defined in [src/types/Enum.ts:28](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L28)*
+*Defined in [src/types/Enum.ts:28](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L28)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **ZH_CN**: = "zh_cn"
 
-*Defined in [src/types/Enum.ts:27](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L27)*
+*Defined in [src/types/Enum.ts:27](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L27)*

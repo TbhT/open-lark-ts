@@ -19,7 +19,7 @@
 
 • **text**: *string*
 
-*Defined in [src/types/Message.ts:29](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L29)*
+*Defined in [src/types/Message.ts:29](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L29)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Message.ts:27](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L27)*
+*Defined in [src/types/Message.ts:27](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L27)*

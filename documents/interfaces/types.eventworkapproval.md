@@ -29,7 +29,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:101](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L101)*
+*Defined in [src/types/CallbackEvent.ts:101](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L101)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **employee_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:105](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L105)*
+*Defined in [src/types/CallbackEvent.ts:105](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L105)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **end_time**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:107](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L107)*
+*Defined in [src/types/CallbackEvent.ts:107](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L107)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **instance_code**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:104](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L104)*
+*Defined in [src/types/CallbackEvent.ts:104](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L104)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **start_time**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L106)*
+*Defined in [src/types/CallbackEvent.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L106)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:102](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L102)*
+*Defined in [src/types/CallbackEvent.ts:102](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L102)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:103](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L103)*
+*Defined in [src/types/CallbackEvent.ts:103](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L103)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **work_end_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:110](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L110)*
+*Defined in [src/types/CallbackEvent.ts:110](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L110)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **work_interval**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:111](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L111)*
+*Defined in [src/types/CallbackEvent.ts:111](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L111)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **work_reason**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:112](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L112)*
+*Defined in [src/types/CallbackEvent.ts:112](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L112)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **work_start_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:109](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L109)*
+*Defined in [src/types/CallbackEvent.ts:109](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L109)*
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 • **work_type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:108](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L108)*
+*Defined in [src/types/CallbackEvent.ts:108](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L108)*

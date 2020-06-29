@@ -150,7 +150,7 @@
 
 Ƭ **AllModules**: *[ContentModule](types.md#contentmodule) | [DividerModule](../interfaces/types.dividermodule.md) | [ImageModule](../interfaces/types.imagemodule.md) | [InteractiveModule](../interfaces/types.interactivemodule.md)*
 
-*Defined in [src/types/CardMessage.ts:56](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L56)*
+*Defined in [src/types/CardMessage.ts:56](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L56)*
 
 所有的模块
 
@@ -160,7 +160,7 @@ ___
 
 Ƭ **ContentModule**: *[TextContentModule](../interfaces/types.textcontentmodule.md) | [FieldContentModule](../interfaces/types.fieldcontentmodule.md)*
 
-*Defined in [src/types/CardMessage.ts:17](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L17)*
+*Defined in [src/types/CardMessage.ts:17](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L17)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 Ƭ **Element**: *[ImageElement](../interfaces/types.imageelement.md) | [OverflowElement](../interfaces/types.overflowelement.md) | [SelectMenuElement](../interfaces/types.selectmenuelement.md) | [ButtonElement](../interfaces/types.buttonelement.md) | [DatePickerElement](../interfaces/types.datepickerelement.md)*
 
-*Defined in [src/types/CardMessage.ts:206](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L206)*
+*Defined in [src/types/CardMessage.ts:206](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L206)*
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 Ƭ **ErrorCode**: *0 | 10002 | 10003 | 10004 | 10005 | 10009 | 10010 | 10012 | 10013 | 10014 | 10015 | 10016 | 10019 | 10020 | 10023 | 10029 | 10030 | 10032 | 10034 | 10037 | 11000 | 11001 | 11100 | 11101 | 11102 | 11103 | 11104 | 11105 | 11106 | 11200 | 11201 | 11208 | 11202 | 11203 | 11204 | 11205 | 11206 | 11207 | 11209 | 11210 | 11211 | 11212 | 11213 | 11214 | 11215 | 11216 | 11217 | 11218 | 11219 | 11220 | 11221 | 11222 | 11223 | 11224 | 11225 | 11226 | 11227 | 11228 | 11229 | 11230 | 11231 | 11232 | 11233 | 11234 | 11235 | 11236 | 11237 | 11238 | 11239 | 99991400 | 99991663 | 99991664 | 99991665 | 99991666 | number*
 
-*Defined in [src/types/Response.ts:199](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L199)*
+*Defined in [src/types/Response.ts:199](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L199)*
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 Ƭ **OptionObject**: *[BaseOptionObject](../interfaces/types.baseoptionobject.md) | [OverflowOptionObject](../interfaces/types.overflowoptionobject.md)*
 
-*Defined in [src/types/CardMessage.ts:123](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L123)*
+*Defined in [src/types/CardMessage.ts:123](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L123)*
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 Ƭ **TemplateColor**: *"blue" | "wathet" | "turquoise" | "green" | "yellow" | "orange" | "red" | "carmine" | "violet" | "purple" | "indigo" | "grey"*
 
-*Defined in [src/types/CardMessage.ts:217](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L217)*
+*Defined in [src/types/CardMessage.ts:217](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L217)*
 
 ___
 
@@ -200,4 +200,4 @@ ___
 
 Ƭ **TextObject**: *[PlainTextObject](../interfaces/types.plaintextobject.md) | [LarkMdObject](../interfaces/types.larkmdobject.md)*
 
-*Defined in [src/types/CardMessage.ts:88](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L88)*
+*Defined in [src/types/CardMessage.ts:88](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L88)*

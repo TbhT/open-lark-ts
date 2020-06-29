@@ -18,7 +18,7 @@
 
 • **APPROVED**: = "APPROVED"
 
-*Defined in [src/types/Enum.ts:145](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L145)*
+*Defined in [src/types/Enum.ts:145](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L145)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **CANCELED**: = "CANCELED"
 
-*Defined in [src/types/Enum.ts:147](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L147)*
+*Defined in [src/types/Enum.ts:147](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L147)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **DELETED**: = "DELETED"
 
-*Defined in [src/types/Enum.ts:148](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L148)*
+*Defined in [src/types/Enum.ts:148](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L148)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **PENDING**: = "PENDING"
 
-*Defined in [src/types/Enum.ts:144](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L144)*
+*Defined in [src/types/Enum.ts:144](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L144)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **REJECTED**: = "REJECTED"
 
-*Defined in [src/types/Enum.ts:146](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L146)*
+*Defined in [src/types/Enum.ts:146](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L146)*

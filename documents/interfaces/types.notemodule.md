@@ -21,7 +21,7 @@
 
 • **elements**: *[ImageElement](types.imageelement.md) | [PlainTextObject](types.plaintextobject.md) | [LarkMdObject](types.larkmdobject.md)[]*
 
-*Defined in [src/types/CardMessage.ts:50](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L50)*
+*Defined in [src/types/CardMessage.ts:50](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L50)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **tag**: *"note"*
 
-*Defined in [src/types/CardMessage.ts:49](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L49)*
+*Defined in [src/types/CardMessage.ts:49](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L49)*

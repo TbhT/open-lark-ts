@@ -23,7 +23,7 @@ overflow 元素
 
 • **confirm**? : *[ConfirmObject](types.confirmobject.md)*
 
-*Defined in [src/types/CardMessage.ts:187](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L187)*
+*Defined in [src/types/CardMessage.ts:187](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L187)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **options**: *[OptionObject](../modules/types.md#optionobject)[]*
 
-*Defined in [src/types/CardMessage.ts:185](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L185)*
+*Defined in [src/types/CardMessage.ts:185](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L185)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **tag**: *"overflow"*
 
-*Defined in [src/types/CardMessage.ts:184](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L184)*
+*Defined in [src/types/CardMessage.ts:184](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L184)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **value**? : *Record‹string, string›*
 
-*Defined in [src/types/CardMessage.ts:186](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L186)*
+*Defined in [src/types/CardMessage.ts:186](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L186)*

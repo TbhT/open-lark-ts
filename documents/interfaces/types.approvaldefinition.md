@@ -20,7 +20,7 @@
 
 • **definition_name**: *string*
 
-*Defined in [src/types/Approval.ts:52](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L52)*
+*Defined in [src/types/Approval.ts:52](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L52)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **form**: *[ApprovalForm](types.approvalform.md)*
 
-*Defined in [src/types/Approval.ts:54](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L54)*
+*Defined in [src/types/Approval.ts:54](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L54)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **nodes**: *[ApprovalNode](types.approvalnode.md)[]*
 
-*Defined in [src/types/Approval.ts:53](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Approval.ts#L53)*
+*Defined in [src/types/Approval.ts:53](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Approval.ts#L53)*

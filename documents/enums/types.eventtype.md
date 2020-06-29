@@ -44,7 +44,7 @@
 
 • **ADD_BOT**: = "add_bot"
 
-*Defined in [src/types/Enum.ts:110](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L110)*
+*Defined in [src/types/Enum.ts:110](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L110)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **ADD_USER_TO_CHAT**: = "add_user_to_chat"
 
-*Defined in [src/types/Enum.ts:114](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L114)*
+*Defined in [src/types/Enum.ts:114](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L114)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **APPROVAL**: = "approval"
 
-*Defined in [src/types/Enum.ts:96](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L96)*
+*Defined in [src/types/Enum.ts:96](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L96)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **APP_OPEN**: = "app_open"
 
-*Defined in [src/types/Enum.ts:78](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L78)*
+*Defined in [src/types/Enum.ts:78](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L78)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **APP_STATUS_CHANGE**: = "app_status_change"
 
-*Defined in [src/types/Enum.ts:80](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L80)*
+*Defined in [src/types/Enum.ts:80](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L80)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **APP_TICKET**: = "app_ticket"
 
-*Defined in [src/types/Enum.ts:76](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L76)*
+*Defined in [src/types/Enum.ts:76](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L76)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **CHAT_DISBAND**: = "chat_disband"
 
-*Defined in [src/types/Enum.ts:120](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L120)*
+*Defined in [src/types/Enum.ts:120](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L120)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **CONTACT_SCOPE_CHANGE**: = "contact_scope_change"
 
-*Defined in [src/types/Enum.ts:92](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L92)*
+*Defined in [src/types/Enum.ts:92](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L92)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **CREATE_WIDGET_INSTANCE**: = "create_widget_instance"
 
-*Defined in [src/types/Enum.ts:124](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L124)*
+*Defined in [src/types/Enum.ts:124](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L124)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **DELETE_WIDGET_INSTANCE**: = "delete_widget_instance"
 
-*Defined in [src/types/Enum.ts:126](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L126)*
+*Defined in [src/types/Enum.ts:126](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L126)*
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 • **DEPT_ADD**: = "dept_add"
 
-*Defined in [src/types/Enum.ts:89](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L89)*
+*Defined in [src/types/Enum.ts:89](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L89)*
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • **DEPT_DELETE**: = "dept_delete"
 
-*Defined in [src/types/Enum.ts:91](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L91)*
+*Defined in [src/types/Enum.ts:91](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L91)*
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • **DEPT_UPDATE**: = "dept_update"
 
-*Defined in [src/types/Enum.ts:90](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L90)*
+*Defined in [src/types/Enum.ts:90](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L90)*
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 • **GROUP_SETTING_UPDATE**: = "group_setting_update"
 
-*Defined in [src/types/Enum.ts:122](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L122)*
+*Defined in [src/types/Enum.ts:122](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L122)*
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 • **LEAVE_APPROVAL**: = "leave_approval"
 
-*Defined in [src/types/Enum.ts:98](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L98)*
+*Defined in [src/types/Enum.ts:98](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L98)*
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 • **MESSAGE**: = "message"
 
-*Defined in [src/types/Enum.ts:82](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L82)*
+*Defined in [src/types/Enum.ts:82](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L82)*
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 • **MESSAGE_READ**: = "message_read"
 
-*Defined in [src/types/Enum.ts:84](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L84)*
+*Defined in [src/types/Enum.ts:84](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L84)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 • **P2P_CHAT_CREATE**: = "p2p_chat_create"
 
-*Defined in [src/types/Enum.ts:112](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L112)*
+*Defined in [src/types/Enum.ts:112](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L112)*
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 • **REMEDY_APPROVAL**: = "remedy_approval"
 
-*Defined in [src/types/Enum.ts:104](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L104)*
+*Defined in [src/types/Enum.ts:104](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L104)*
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 • **REMOVE_BOT**: = "remove_bot"
 
-*Defined in [src/types/Enum.ts:108](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L108)*
+*Defined in [src/types/Enum.ts:108](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L108)*
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 • **REMOVE_USER_FROM_CHAT**: = "remove_user_from_chat"
 
-*Defined in [src/types/Enum.ts:116](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L116)*
+*Defined in [src/types/Enum.ts:116](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L116)*
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 • **REVOKE_ADD_USER_FROM_CHAT**: = "revoke_add_user_from_chat"
 
-*Defined in [src/types/Enum.ts:118](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L118)*
+*Defined in [src/types/Enum.ts:118](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L118)*
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 • **SHIFT_APPROVAL**: = "shift_approval"
 
-*Defined in [src/types/Enum.ts:102](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L102)*
+*Defined in [src/types/Enum.ts:102](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L102)*
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 • **TRIP_APPROVAL**: = "trip_approval"
 
-*Defined in [src/types/Enum.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L106)*
+*Defined in [src/types/Enum.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L106)*
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 • **UNKNOWN**: = "unknown"
 
-*Defined in [src/types/Enum.ts:127](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L127)*
+*Defined in [src/types/Enum.ts:127](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L127)*
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 • **URL_VERIFICATION**: = "url_verification"
 
-*Defined in [src/types/Enum.ts:74](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L74)*
+*Defined in [src/types/Enum.ts:74](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L74)*
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 • **USER_ADD**: = "user_add"
 
-*Defined in [src/types/Enum.ts:86](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L86)*
+*Defined in [src/types/Enum.ts:86](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L86)*
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 • **USER_LEAVE**: = "user_leave"
 
-*Defined in [src/types/Enum.ts:88](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L88)*
+*Defined in [src/types/Enum.ts:88](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L88)*
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 • **USER_STATUS_CHANGE**: = "user_status_change"
 
-*Defined in [src/types/Enum.ts:94](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L94)*
+*Defined in [src/types/Enum.ts:94](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L94)*
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 • **USER_UPDATE**: = "user_update"
 
-*Defined in [src/types/Enum.ts:87](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L87)*
+*Defined in [src/types/Enum.ts:87](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L87)*
 
 ___
 
@@ -284,4 +284,4 @@ ___
 
 • **WORK_APPROVAL**: = "work_approval"
 
-*Defined in [src/types/Enum.ts:100](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L100)*
+*Defined in [src/types/Enum.ts:100](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L100)*

@@ -19,7 +19,7 @@
 
 • **tag**: *"at"*
 
-*Defined in [src/apis/Message.ts:201](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L201)*
+*Defined in [src/apis/Message.ts:272](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L272)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/apis/Message.ts:202](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L202)*
+*Defined in [src/apis/Message.ts:273](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L273)*

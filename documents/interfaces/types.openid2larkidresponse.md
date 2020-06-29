@@ -24,7 +24,7 @@
 
 *Inherited from [CommonResponse](types.commonresponse.md).[code](types.commonresponse.md#code)*
 
-*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L4)*
+*Defined in [src/types/Response.ts:4](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L4)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 *Inherited from [CommonResponse](types.commonresponse.md).[msg](types.commonresponse.md#msg)*
 
-*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L5)*
+*Defined in [src/types/Response.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L5)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Response.ts:46](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L46)*
+*Defined in [src/types/Response.ts:46](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L46)*

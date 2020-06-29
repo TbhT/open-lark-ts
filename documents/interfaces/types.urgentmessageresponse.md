@@ -19,7 +19,7 @@
 
 • **code**: *[ErrorCode](../modules/types.md#errorcode)*
 
-*Defined in [src/types/Response.ts:195](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L195)*
+*Defined in [src/types/Response.ts:195](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L195)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **invalid_open_ids**: *string[]*
 
-*Defined in [src/types/Response.ts:196](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L196)*
+*Defined in [src/types/Response.ts:196](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L196)*

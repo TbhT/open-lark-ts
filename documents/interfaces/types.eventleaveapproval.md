@@ -30,7 +30,7 @@
 
 • **app_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:53](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L53)*
+*Defined in [src/types/CallbackEvent.ts:53](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L53)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **employee_id**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:59](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L59)*
+*Defined in [src/types/CallbackEvent.ts:59](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L59)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **end_time**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:63](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L63)*
+*Defined in [src/types/CallbackEvent.ts:63](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L63)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **instance_code**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:57](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L57)*
+*Defined in [src/types/CallbackEvent.ts:57](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L57)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **leave_end_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:71](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L71)*
+*Defined in [src/types/CallbackEvent.ts:71](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L71)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **leave_interval**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:73](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L73)*
+*Defined in [src/types/CallbackEvent.ts:73](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L73)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **leave_reason**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:75](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L75)*
+*Defined in [src/types/CallbackEvent.ts:75](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L75)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **leave_start_time**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:69](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L69)*
+*Defined in [src/types/CallbackEvent.ts:69](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L69)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **leave_type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:65](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L65)*
+*Defined in [src/types/CallbackEvent.ts:65](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L65)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **leave_unit**: *1 | 2*
 
-*Defined in [src/types/CallbackEvent.ts:67](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L67)*
+*Defined in [src/types/CallbackEvent.ts:67](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L67)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **start_time**: *number*
 
-*Defined in [src/types/CallbackEvent.ts:61](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L61)*
+*Defined in [src/types/CallbackEvent.ts:61](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L61)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **tenant_key**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:54](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L54)*
+*Defined in [src/types/CallbackEvent.ts:54](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L54)*
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:55](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L55)*
+*Defined in [src/types/CallbackEvent.ts:55](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L55)*

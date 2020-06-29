@@ -19,7 +19,7 @@
 
 • **code**: *string*
 
-*Defined in [src/types/Response.ts:29](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L29)*
+*Defined in [src/types/Response.ts:29](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L29)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **state**: *string*
 
-*Defined in [src/types/Response.ts:30](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L30)*
+*Defined in [src/types/Response.ts:30](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L30)*

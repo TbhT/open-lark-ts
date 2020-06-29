@@ -22,7 +22,7 @@
 
 • **actions**: *[Element](../modules/types.md#element)[]*
 
-*Defined in [src/types/CardMessage.ts:41](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L41)*
+*Defined in [src/types/CardMessage.ts:41](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L41)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **layout**? : *"bisected" | "trisection" | "flow"*
 
-*Defined in [src/types/CardMessage.ts:42](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L42)*
+*Defined in [src/types/CardMessage.ts:42](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L42)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **tag**: *"action"*
 
-*Defined in [src/types/CardMessage.ts:40](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L40)*
+*Defined in [src/types/CardMessage.ts:40](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L40)*

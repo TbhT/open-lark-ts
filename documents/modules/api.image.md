@@ -20,7 +20,7 @@ Image 模块有以下功能：
 
 ▸ **getImage**(`__namedParameters`: object): *Promise‹any›*
 
-*Defined in [src/apis/Image.ts:56](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Image.ts#L56)*
+*Defined in [src/apis/Image.ts:56](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Image.ts#L56)*
 
 **Parameters:**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **uploadImage**(`__namedParameters`: object): *Promise‹[UploadImageResponse](../interfaces/types.uploadimageresponse.md)›*
 
-*Defined in [src/apis/Image.ts:21](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Image.ts#L21)*
+*Defined in [src/apis/Image.ts:21](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Image.ts#L21)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **uploadLocalImage**(`__namedParameters`: object): *Promise‹[UploadImageResponse](../interfaces/types.uploadimageresponse.md)[]›*
 
-*Defined in [src/apis/Image.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Image.ts#L106)*
+*Defined in [src/apis/Image.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Image.ts#L106)*
 
 ```typescript
  import { Api: { getTenantAccessToken, uploadImage  } } from "@lark-sdk";

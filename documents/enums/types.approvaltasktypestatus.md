@@ -15,7 +15,7 @@
 
 • **AND_SIGN**:
 
-*Defined in [src/types/Enum.ts:176](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L176)*
+*Defined in [src/types/Enum.ts:176](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L176)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **OR_SIGN**: = 1
 
-*Defined in [src/types/Enum.ts:174](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L174)*
+*Defined in [src/types/Enum.ts:174](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L174)*

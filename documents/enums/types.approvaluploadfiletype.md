@@ -15,7 +15,7 @@
 
 • **ATTACHMENT**: = "attachment"
 
-*Defined in [src/types/Enum.ts:67](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L67)*
+*Defined in [src/types/Enum.ts:67](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L67)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **IMAGE**: = "image"
 
-*Defined in [src/types/Enum.ts:66](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L66)*
+*Defined in [src/types/Enum.ts:66](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L66)*

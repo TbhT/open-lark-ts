@@ -19,7 +19,7 @@
 
 • **content**: *[ATag](apis.atag.md) | [AtTag](apis.attag.md) | [TextTag](apis.texttag.md) | [ImgTag](apis.imgtag.md)[][]*
 
-*Defined in [src/apis/Message.ts:214](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L214)*
+*Defined in [src/apis/Message.ts:285](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L285)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/apis/Message.ts:213](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Message.ts#L213)*
+*Defined in [src/apis/Message.ts:284](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Message.ts#L284)*

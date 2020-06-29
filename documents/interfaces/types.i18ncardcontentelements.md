@@ -18,7 +18,7 @@
 
 • **i18n_elements**: *object*
 
-*Defined in [src/types/CardMessage.ts:240](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L240)*
+*Defined in [src/types/CardMessage.ts:240](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L240)*
 
 #### Type declaration:
 

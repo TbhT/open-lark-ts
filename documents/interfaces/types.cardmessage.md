@@ -23,7 +23,7 @@
 
 • **card_link**? : *[CardLink](types.cardlink.md)*
 
-*Defined in [src/types/CardMessage.ts:254](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L254)*
+*Defined in [src/types/CardMessage.ts:254](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L254)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **config**? : *undefined | object*
 
-*Defined in [src/types/CardMessage.ts:251](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L251)*
+*Defined in [src/types/CardMessage.ts:251](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L251)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **elements**? : *[CardContentElements](types.cardcontentelements.md) | [I18NCardContentElements](types.i18ncardcontentelements.md)*
 
-*Defined in [src/types/CardMessage.ts:256](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L256)*
+*Defined in [src/types/CardMessage.ts:256](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L256)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **header**? : *[CardHeader](types.cardheader.md) | [CardHeaderInner](types.cardheaderinner.md)*
 
-*Defined in [src/types/CardMessage.ts:255](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L255)*
+*Defined in [src/types/CardMessage.ts:255](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L255)*

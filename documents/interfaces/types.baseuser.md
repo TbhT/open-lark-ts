@@ -22,7 +22,7 @@
 
 • **name**: *string*
 
-*Defined in [src/types/Code.ts:8](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L8)*
+*Defined in [src/types/Code.ts:8](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L8)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **open_id**: *string*
 
-*Defined in [src/types/Code.ts:10](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L10)*
+*Defined in [src/types/Code.ts:10](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L10)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Code.ts:13](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L13)*
+*Defined in [src/types/Code.ts:13](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L13)*

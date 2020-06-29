@@ -12,7 +12,7 @@
 >  lark sdk有两种使用方式，一种是直接使用api，也即简单的http请求；另一种是使用sdk分装好的bot。
 
 ## document
- [](documents/)
+ - [api详细文档](documents/modules/api.md)
 
 ## 功能介绍
 

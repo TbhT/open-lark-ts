@@ -25,7 +25,7 @@
 
 • **extra**? : *[Element](../modules/types.md#element)*
 
-*Defined in [src/types/CardMessage.ts:6](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L6)*
+*Defined in [src/types/CardMessage.ts:6](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L6)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 • **tag**: *"div"*
 
-*Defined in [src/types/CardMessage.ts:5](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L5)*
+*Defined in [src/types/CardMessage.ts:5](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L5)*

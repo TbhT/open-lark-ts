@@ -18,4 +18,4 @@
 
 • **elements**: *[AllModules](../modules/types.md#allmodules)[]*
 
-*Defined in [src/types/CardMessage.ts:236](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L236)*
+*Defined in [src/types/CardMessage.ts:236](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L236)*

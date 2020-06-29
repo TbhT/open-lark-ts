@@ -27,7 +27,7 @@
 
 • **hide_others**: *boolean*
 
-*Defined in [src/types/Message.ts:102](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L102)*
+*Defined in [src/types/Message.ts:102](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L102)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **method**: *string*
 
-*Defined in [src/types/Message.ts:86](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L86)*
+*Defined in [src/types/Message.ts:86](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L86)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **need_message_info**: *boolean*
 
-*Defined in [src/types/Message.ts:96](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L96)*
+*Defined in [src/types/Message.ts:96](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L96)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **need_user_info**: *boolean*
 
-*Defined in [src/types/Message.ts:94](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L94)*
+*Defined in [src/types/Message.ts:94](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L94)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **open_url**: *[CardURL](types.cardurl.md)*
 
-*Defined in [src/types/Message.ts:100](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L100)*
+*Defined in [src/types/Message.ts:100](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L100)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **parameter**: *unknown*
 
-*Defined in [src/types/Message.ts:98](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L98)*
+*Defined in [src/types/Message.ts:98](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L98)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [src/types/Message.ts:84](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L84)*
+*Defined in [src/types/Message.ts:84](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L84)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **text_i18n**: *[I18nText](types.i18ntext.md)*
 
-*Defined in [src/types/Message.ts:90](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L90)*
+*Defined in [src/types/Message.ts:90](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L90)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **triggered_text**: *string*
 
-*Defined in [src/types/Message.ts:92](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L92)*
+*Defined in [src/types/Message.ts:92](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L92)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/types/Message.ts:88](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L88)*
+*Defined in [src/types/Message.ts:88](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L88)*

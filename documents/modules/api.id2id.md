@@ -36,7 +36,7 @@ Id2Id模块的api有以下功能：
 
 ▸ **Headers**(`tenantAccessToken`: string): *object*
 
-*Defined in [src/apis/Id2Id.ts:45](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L45)*
+*Defined in [src/apis/Id2Id.ts:45](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L45)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **chatId2OpenChatId**(`__namedParameters`: object): *Promise‹[ChatId2OpenIdResponse](../interfaces/types.chatid2openidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:243](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L243)*
+*Defined in [src/apis/Id2Id.ts:243](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L243)*
 
 **Parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **departmentId2OpenDepartmentId**(`__namedParameters`: object): *Promise‹[DepartmentId2OpenIdResponse](../interfaces/types.departmentid2openidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:193](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L193)*
+*Defined in [src/apis/Id2Id.ts:193](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L193)*
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **employeeId2LarkId**(`__namedParameters`: object): *Promise‹[EmployeeId2LarkIdResponse](../interfaces/types.employeeid2larkidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:318](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L318)*
+*Defined in [src/apis/Id2Id.ts:318](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L318)*
 
 **Parameters:**
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **larkId2EmployeeId**(`__namedParameters`: object): *Promise‹[LarkId2EmployeeIdResponse](../interfaces/types.larkid2employeeidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:293](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L293)*
+*Defined in [src/apis/Id2Id.ts:293](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L293)*
 
 **Parameters:**
 
@@ -132,7 +132,7 @@ ___
 
 ▸ **larkId2OpenId**(`__namedParameters`: object): *Promise‹[LarkId2OpenIdResponse](../interfaces/types.larkid2openidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:118](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L118)*
+*Defined in [src/apis/Id2Id.ts:118](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L118)*
 
 lark_id 转 open_id
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **messageId2OpenMessageId**(`__namedParameters`: object): *Promise‹[MessageId2OpenIdResponse](../interfaces/types.messageid2openidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:143](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L143)*
+*Defined in [src/apis/Id2Id.ts:143](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L143)*
 
 **Parameters:**
 
@@ -189,7 +189,7 @@ ___
 
 ▸ **openChatId2ChatId**(`__namedParameters`: object): *Promise‹[OpenId2ChatIdResponse](../interfaces/types.openid2chatidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:268](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L268)*
+*Defined in [src/apis/Id2Id.ts:268](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L268)*
 
 **Parameters:**
 
@@ -209,7 +209,7 @@ ___
 
 ▸ **openDepartmentId2DepartmentId**(`__namedParameters`: object): *Promise‹[OpenId2DepartmentIdResponse](../interfaces/types.openid2departmentidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:218](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L218)*
+*Defined in [src/apis/Id2Id.ts:218](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L218)*
 
 **Parameters:**
 
@@ -229,7 +229,7 @@ ___
 
 ▸ **openId2LarkId**(`__namedParameters`: object): *Promise‹[OpenId2LarkIdResponse](../interfaces/types.openid2larkidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:72](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L72)*
+*Defined in [src/apis/Id2Id.ts:72](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L72)*
 
 open_id 转 lark_id
 
@@ -265,7 +265,7 @@ ___
 
 ▸ **openMessageId2MessageId**(`__namedParameters`: object): *Promise‹[OpenId2MessageIdResponse](../interfaces/types.openid2messageidresponse.md)›*
 
-*Defined in [src/apis/Id2Id.ts:168](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/apis/Id2Id.ts#L168)*
+*Defined in [src/apis/Id2Id.ts:168](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/apis/Id2Id.ts#L168)*
 
 **Parameters:**
 

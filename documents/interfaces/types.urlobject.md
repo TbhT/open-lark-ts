@@ -24,7 +24,7 @@ todo: 互斥类型
 
 • **android_url**: *string*
 
-*Defined in [src/types/CardMessage.ts:104](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L104)*
+*Defined in [src/types/CardMessage.ts:104](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L104)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **ios_url**: *string*
 
-*Defined in [src/types/CardMessage.ts:105](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L105)*
+*Defined in [src/types/CardMessage.ts:105](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L105)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **pc_url**: *string*
 
-*Defined in [src/types/CardMessage.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L106)*
+*Defined in [src/types/CardMessage.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L106)*
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/types/CardMessage.ts:103](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L103)*
+*Defined in [src/types/CardMessage.ts:103](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L103)*

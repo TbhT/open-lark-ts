@@ -26,7 +26,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/types/Code.ts:17](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L17)*
+*Defined in [src/types/Code.ts:17](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L17)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/types/Code.ts:20](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L20)*
+*Defined in [src/types/Code.ts:20](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L20)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **employee_id**: *string*
 
-*Defined in [src/types/Code.ts:23](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L23)*
+*Defined in [src/types/Code.ts:23](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L23)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 *Inherited from [BaseUser](types.baseuser.md).[name](types.baseuser.md#name)*
 
-*Defined in [src/types/Code.ts:8](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L8)*
+*Defined in [src/types/Code.ts:8](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L8)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 *Inherited from [BaseUser](types.baseuser.md).[open_id](types.baseuser.md#open_id)*
 
-*Defined in [src/types/Code.ts:10](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L10)*
+*Defined in [src/types/Code.ts:10](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L10)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **status**: *number*
 
-*Defined in [src/types/Code.ts:25](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L25)*
+*Defined in [src/types/Code.ts:25](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L25)*
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 *Inherited from [BaseUser](types.baseuser.md).[user_id](types.baseuser.md#user_id)*
 
-*Defined in [src/types/Code.ts:13](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L13)*
+*Defined in [src/types/Code.ts:13](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L13)*

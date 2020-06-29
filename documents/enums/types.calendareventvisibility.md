@@ -16,7 +16,7 @@
 
 • **DEFAULT**: = "default"
 
-*Defined in [src/types/Enum.ts:60](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L60)*
+*Defined in [src/types/Enum.ts:60](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L60)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **PRIVATE**: = "private"
 
-*Defined in [src/types/Enum.ts:62](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L62)*
+*Defined in [src/types/Enum.ts:62](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L62)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **PUBLIC**: = "public"
 
-*Defined in [src/types/Enum.ts:61](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Enum.ts#L61)*
+*Defined in [src/types/Enum.ts:61](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Enum.ts#L61)*

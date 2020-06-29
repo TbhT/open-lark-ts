@@ -26,7 +26,7 @@ date picker 元素
 
 • **confirm**? : *[ConfirmObject](types.confirmobject.md)*
 
-*Defined in [src/types/CardMessage.ts:203](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L203)*
+*Defined in [src/types/CardMessage.ts:203](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L203)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **initial_date**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:196](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L196)*
+*Defined in [src/types/CardMessage.ts:196](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L196)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **initial_datetime**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:200](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L200)*
+*Defined in [src/types/CardMessage.ts:200](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L200)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **initial_time**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:198](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L198)*
+*Defined in [src/types/CardMessage.ts:198](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L198)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **placeholder**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:201](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L201)*
+*Defined in [src/types/CardMessage.ts:201](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L201)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **tag**: *"date_picker" | "picker_time " | "picker_datetime"*
 
-*Defined in [src/types/CardMessage.ts:194](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L194)*
+*Defined in [src/types/CardMessage.ts:194](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L194)*
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 • **value**? : *Record‹string, string›*
 
-*Defined in [src/types/CardMessage.ts:202](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L202)*
+*Defined in [src/types/CardMessage.ts:202](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L202)*

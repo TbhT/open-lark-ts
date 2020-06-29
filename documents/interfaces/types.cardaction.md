@@ -19,7 +19,7 @@
 
 • **buttons**: *[CardButton](types.cardbutton.md)[]*
 
-*Defined in [src/types/Message.ts:106](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L106)*
+*Defined in [src/types/Message.ts:106](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L106)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **changeable**: *boolean*
 
-*Defined in [src/types/Message.ts:107](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Message.ts#L107)*
+*Defined in [src/types/Message.ts:107](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Message.ts#L107)*

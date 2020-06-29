@@ -25,7 +25,7 @@ selectMenu 元素
 
 • **confirm**? : *[ConfirmObject](types.confirmobject.md)*
 
-*Defined in [src/types/CardMessage.ts:177](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L177)*
+*Defined in [src/types/CardMessage.ts:177](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L177)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **initial_option**? : *undefined | string*
 
-*Defined in [src/types/CardMessage.ts:174](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L174)*
+*Defined in [src/types/CardMessage.ts:174](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L174)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **options**? : *[OptionObject](../modules/types.md#optionobject)[]*
 
-*Defined in [src/types/CardMessage.ts:175](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L175)*
+*Defined in [src/types/CardMessage.ts:175](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L175)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **placeholder**? : *[TextObject](../modules/types.md#textobject)*
 
-*Defined in [src/types/CardMessage.ts:173](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L173)*
+*Defined in [src/types/CardMessage.ts:173](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L173)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **tag**: *"select_static" | "select_person"*
 
-*Defined in [src/types/CardMessage.ts:172](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L172)*
+*Defined in [src/types/CardMessage.ts:172](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L172)*
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 • **value**? : *Record‹string, string›*
 
-*Defined in [src/types/CardMessage.ts:176](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CardMessage.ts#L176)*
+*Defined in [src/types/CardMessage.ts:176](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CardMessage.ts#L176)*

@@ -23,7 +23,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/types/Response.ts:94](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L94)*
+*Defined in [src/types/Response.ts:94](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L94)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **chat_id**: *string*
 
-*Defined in [src/types/Response.ts:96](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L96)*
+*Defined in [src/types/Response.ts:96](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L96)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **description**: *string*
 
-*Defined in [src/types/Response.ts:95](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L95)*
+*Defined in [src/types/Response.ts:95](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L95)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/Response.ts:97](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L97)*
+*Defined in [src/types/Response.ts:97](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L97)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **owner_open_id**: *string*
 
-*Defined in [src/types/Response.ts:98](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L98)*
+*Defined in [src/types/Response.ts:98](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L98)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **owner_user_id**? : *undefined | string*
 
-*Defined in [src/types/Response.ts:99](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Response.ts#L99)*
+*Defined in [src/types/Response.ts:99](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Response.ts#L99)*

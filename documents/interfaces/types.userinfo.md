@@ -22,7 +22,7 @@
 
 • **avatar_url**: *string*
 
-*Defined in [src/types/Code.ts:33](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L33)*
+*Defined in [src/types/Code.ts:33](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L33)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/types/Code.ts:36](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L36)*
+*Defined in [src/types/Code.ts:36](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L36)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **mobile**: *string*
 
-*Defined in [src/types/Code.ts:42](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L42)*
+*Defined in [src/types/Code.ts:42](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L42)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/types/Code.ts:30](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L30)*
+*Defined in [src/types/Code.ts:30](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L30)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/types/Code.ts:39](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/Code.ts#L39)*
+*Defined in [src/types/Code.ts:39](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/Code.ts#L39)*

@@ -63,7 +63,7 @@
 
 *Overrides [Botable](reflection-1716.reflection-437.botable.md).[constructor](reflection-1716.reflection-437.botable.md#constructor)*
 
-*Defined in [src/Bot.ts:12](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L12)*
+*Defined in [src/Bot.ts:12](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L12)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ Name | Type |
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[appId](reflection-1716.reflection-437.botable.md#protected-readonly-appid)*
 
-*Defined in [src/Botable.ts:51](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L51)*
+*Defined in [src/Botable.ts:51](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L51)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[appSecret](reflection-1716.reflection-437.botable.md#protected-readonly-appsecret)*
 
-*Defined in [src/Botable.ts:53](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L53)*
+*Defined in [src/Botable.ts:53](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L53)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[initFlag](reflection-1716.reflection-437.botable.md#protected-initflag)*
 
-*Defined in [src/Botable.ts:55](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L55)*
+*Defined in [src/Botable.ts:55](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L55)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 *Overrides [Botable](reflection-1716.reflection-437.botable.md).[instance](reflection-1716.reflection-437.botable.md#instance)*
 
-*Defined in [src/Bot.ts:12](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L12)*
+*Defined in [src/Bot.ts:12](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L12)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 *Overrides [Botable](reflection-1716.reflection-437.botable.md).[tenantAccessToken](reflection-1716.reflection-437.botable.md#tenantaccesstoken)*
 
-*Defined in [src/Bot.ts:10](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L10)*
+*Defined in [src/Bot.ts:10](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L10)*
 
 ## Methods
 
@@ -164,7 +164,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[beforeSay](reflection-1716.reflection-437.botable.md#protected-beforesay)*
 
-*Defined in [src/Botable.ts:65](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L65)*
+*Defined in [src/Botable.ts:65](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L65)*
 
 **Returns:** *void*
 
@@ -219,7 +219,7 @@ ___
 
 *Overrides [Botable](reflection-1716.reflection-437.botable.md).[init](reflection-1716.reflection-437.botable.md#abstract-init)*
 
-*Defined in [src/Bot.ts:18](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L18)*
+*Defined in [src/Bot.ts:18](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L18)*
 
 **Returns:** *Promise‹boolean›*
 
@@ -295,7 +295,7 @@ ___
 
 *Overrides void*
 
-*Defined in [src/Botable.ts:170](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L170)*
+*Defined in [src/Botable.ts:170](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L170)*
 
 回调事件
 
@@ -321,7 +321,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [src/Botable.ts:171](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L171)*
+*Defined in [src/Botable.ts:171](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L171)*
 
 **Parameters:**
 
@@ -345,7 +345,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [src/Botable.ts:172](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L172)*
+*Defined in [src/Botable.ts:172](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L172)*
 
 **Parameters:**
 
@@ -369,7 +369,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [src/Botable.ts:176](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L176)*
+*Defined in [src/Botable.ts:176](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L176)*
 
 **Parameters:**
 
@@ -393,7 +393,7 @@ Name | Type |
 
 *Overrides void*
 
-*Defined in [src/Botable.ts:180](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L180)*
+*Defined in [src/Botable.ts:180](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L180)*
 
 **Parameters:**
 
@@ -515,7 +515,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[readMessage](reflection-1716.reflection-437.botable.md#readmessage)*
 
-*Defined in [src/Botable.ts:127](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L127)*
+*Defined in [src/Botable.ts:127](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L127)*
 
 **Parameters:**
 
@@ -535,7 +535,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[recallMessage](reflection-1716.reflection-437.botable.md#recallmessage)*
 
-*Defined in [src/Botable.ts:117](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L117)*
+*Defined in [src/Botable.ts:117](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L117)*
 
 **Parameters:**
 
@@ -601,7 +601,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayCardMessage](reflection-1716.reflection-437.botable.md#saycardmessage)*
 
-*Defined in [src/Botable.ts:153](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L153)*
+*Defined in [src/Botable.ts:153](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L153)*
 
 **Parameters:**
 
@@ -621,7 +621,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayChatCard](reflection-1716.reflection-437.botable.md#saychatcard)*
 
-*Defined in [src/Botable.ts:107](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L107)*
+*Defined in [src/Botable.ts:107](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L107)*
 
 **Parameters:**
 
@@ -641,7 +641,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayImageMessage](reflection-1716.reflection-437.botable.md#sayimagemessage)*
 
-*Defined in [src/Botable.ts:83](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L83)*
+*Defined in [src/Botable.ts:83](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L83)*
 
 **Parameters:**
 
@@ -661,7 +661,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayRichTextMessage](reflection-1716.reflection-437.botable.md#sayrichtextmessage)*
 
-*Defined in [src/Botable.ts:95](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L95)*
+*Defined in [src/Botable.ts:95](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L95)*
 
 **Parameters:**
 
@@ -681,7 +681,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayTextMessage](reflection-1716.reflection-437.botable.md#saytextmessage)*
 
-*Defined in [src/Botable.ts:71](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L71)*
+*Defined in [src/Botable.ts:71](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L71)*
 
 **Parameters:**
 
@@ -699,7 +699,7 @@ ___
 
 *Inherited from [Botable](reflection-1716.reflection-437.botable.md).[sayUrgentMessage](reflection-1716.reflection-437.botable.md#sayurgentmessage)*
 
-*Defined in [src/Botable.ts:139](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Botable.ts#L139)*
+*Defined in [src/Botable.ts:139](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Botable.ts#L139)*
 
 **Parameters:**
 
@@ -737,7 +737,7 @@ ___
 
 ▸ **cacheToken**(`key`: string, `value`: string, `ttl?`: undefined | number): *void*
 
-*Defined in [src/Bot.ts:40](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/Bot.ts#L40)*
+*Defined in [src/Bot.ts:40](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/Bot.ts#L40)*
 
 **Parameters:**
 

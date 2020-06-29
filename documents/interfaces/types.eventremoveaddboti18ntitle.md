@@ -19,7 +19,7 @@
 
 • **en_us**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:244](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L244)*
+*Defined in [src/types/CallbackEvent.ts:244](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L244)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **zh_cn**: *string*
 
-*Defined in [src/types/CallbackEvent.ts:245](https://github.com/TbhT/lark-sdk/blob/e3605bb/src/types/CallbackEvent.ts#L245)*
+*Defined in [src/types/CallbackEvent.ts:245](https://github.com/TbhT/lark-sdk/blob/5ecb791/src/types/CallbackEvent.ts#L245)*
