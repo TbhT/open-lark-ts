@@ -196,6 +196,42 @@ export interface UrgentMessageResponse {
   invalid_open_ids: string[]
 }
 
+/**
+ * 云文档
+ */
+export interface CreateDriveDirResponse extends CommonResponse {
+  data: {
+    url: string
+    revision: number
+    token: string
+  }
+}
+
+export interface GetDriveDirInfoResponse extends CommonResponse {
+  data: {
+    id: string
+    name: string
+    token: string
+    createUid: string
+    editUid: string
+    parentId: string
+    ownUid: string
+  }
+}
+
+export interface GetDriveDirFilesInfoResponse extends CommonResponse {
+  data: {
+    parentToken: string
+    children: {
+      [key: string]: {
+        token: string
+        name: string
+        type: 'doc' | 'sheet' | 'folder'
+      }
+    }
+  }
+}
+
 export type ErrorCode =
   | 0
   | 10002

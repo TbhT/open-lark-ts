@@ -126,3 +126,6 @@ export const URGENT_MESSAGE = `${baseURI}/message/v4/urgent/`
 
 /** @internal */
 export const REFRESH_CARD_MESSAGE = `${baseURI}/interactive/v1/card/update/`
+
+/** @internal */
+export const CREATE_DRIVE_DIR = `${baseURI}/drive/explorer/v2/folder/`
