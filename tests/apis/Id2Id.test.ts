@@ -29,7 +29,7 @@ describe('内部id转换', () => {
       openId: Config.development.open_id
     })
 
-    D('open_id to lark_id: %s %s', code, msg)
+    D('open_id to lark_id: %s %s | %s', code, msg, user_id)
 
     expect(user_id).toBe(Config.development.lark_id)
   })
