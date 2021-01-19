@@ -14,7 +14,7 @@ export function getBotInfo({
 }: {
   tenantAccessToken: string
 }) {
-  return new Observable<BotInfoResponse>(subscriber => {
+  return new Observable<BotInfoResponse>(subscriber =>
     get<BotInfoResponse>(GET_BOT_INFO, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
@@ -30,7 +30,7 @@ export function getBotInfo({
         subscriber.complete()
       }
     )
-  })
+  )
 }
 
 export function addBotToChat({
@@ -40,7 +40,7 @@ export function addBotToChat({
   chatId: string
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber => {
+  return new Observable(subscriber =>
     post<CommonResponse>(ADD_BOT_TO_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
@@ -60,7 +60,7 @@ export function addBotToChat({
         subscriber.complete()
       }
     )
-  })
+  )
 }
 
 export function removeBotFromChat({
@@ -70,7 +70,7 @@ export function removeBotFromChat({
   chatId: string
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber => {
+  return new Observable(subscriber =>
     post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
@@ -90,5 +90,5 @@ export function removeBotFromChat({
         subscriber.complete()
       }
     )
-  })
+  )
 }
