@@ -27,7 +27,7 @@ export function getAppAccessToken({
   appId: string
   appSecret: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<AppAccessTokenResponse>(subscriber =>
     post<AppAccessTokenResponse>(GET_APP_ACCESS_TOKEN, {
       json: true,
       body: {
@@ -36,7 +36,7 @@ export function getAppAccessToken({
       }
     }).subscribe(
       data => {
-        subscriber.next(data)
+        subscriber.next(data.body)
       },
       error => {
         subscriber.error(error)
@@ -55,7 +55,7 @@ export function getTenantAccessToken({
   appId: string
   appSecret: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<TenantAccessTokenResponse>(subscriber =>
     post<TenantAccessTokenResponse>(GET_TENANT_ACCESS_TOKEN, {
       json: true,
       body: {
@@ -79,7 +79,7 @@ export function getAppTicket({
   appId: string
   appSecret: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<CommonResponse>(subscriber =>
     post<CommonResponse>(GET_APP_TICKET, {
       json: true,
       body: {
@@ -105,7 +105,7 @@ export function getAuth({
   redirectURI: string
   state?: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<AuthResponse>(subscriber =>
     get<AuthResponse>(GET_AUTH, {
       json: true,
       body: {
@@ -114,7 +114,7 @@ export function getAuth({
         state
       }
     }).subscribe(
-      data => subscriber.next(data),
+      data => subscriber.next(data.body),
       error => subscriber.error(error),
       () => subscriber.complete()
     )
@@ -128,7 +128,7 @@ export function getUserAccessToken({
   appAccessToken: string
   code: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<UserAccessTokenResponse>(subscriber =>
     post<UserAccessTokenResponse>(GET_USER_ACCESS_TOKEN, {
       json: true,
       body: {
@@ -137,7 +137,7 @@ export function getUserAccessToken({
         grant_type: 'authorization_code'
       }
     }).subscribe(
-      data => subscriber.next(data),
+      data => subscriber.next(data.body),
       error => subscriber.error(error),
       () => subscriber.complete()
     )
@@ -151,7 +151,7 @@ export function refreshUserAccessToken({
   appAccessToken: string
   refreshToken: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<UserAccessTokenResponse>(subscriber =>
     post<UserAccessTokenResponse>(REFRESH_USER_ACCESS_TOKEN, {
       json: true,
       body: {
@@ -160,7 +160,7 @@ export function refreshUserAccessToken({
         grant_type: 'refresh_token'
       }
     }).subscribe(
-      data => subscriber.next(data),
+      data => subscriber.next(data.body),
       error => subscriber.error(error),
       () => subscriber.complete()
     )
@@ -168,14 +168,14 @@ export function refreshUserAccessToken({
 }
 
 export function getUserInfo({ userAccessToken }: { userAccessToken: string }) {
-  return new Observable(subscriber =>
+  return new Observable<UserInfoResponse>(subscriber =>
     get<UserInfoResponse>(GET_USER_INFO, {
       json: true,
       body: {
         user_access_token: userAccessToken
       }
     }).subscribe(
-      data => subscriber.next(data),
+      data => subscriber.next(data.body),
       error => subscriber.error(error),
       () => subscriber.complete()
     )

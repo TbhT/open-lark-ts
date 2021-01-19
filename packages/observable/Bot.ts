@@ -40,7 +40,7 @@ export function addBotToChat({
   chatId: string
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<CommonResponse>(subscriber =>
     post<CommonResponse>(ADD_BOT_TO_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
@@ -70,7 +70,7 @@ export function removeBotFromChat({
   chatId: string
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<CommonResponse>(subscriber =>
     post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
