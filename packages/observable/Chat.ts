@@ -78,7 +78,7 @@ export function getChatList({
         Authorization: `Bearer ${tenantAccessToken}`
       },
       json: true,
-      body: {
+      qs: {
         page_size: pageSize,
         page_token: pageToken
       }
@@ -103,7 +103,7 @@ export function getChatInfo({
         Authorization: `Bearer ${tenantAccessToken}`
       },
       json: true,
-      body: {
+      qs: {
         chat_id: chatId
       }
     }).subscribe(
