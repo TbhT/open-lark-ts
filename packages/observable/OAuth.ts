@@ -108,7 +108,7 @@ export function getAuth({
   return new Observable<AuthResponse>(subscriber =>
     get<AuthResponse>(GET_AUTH, {
       json: true,
-      body: {
+      qs: {
         app_id: appId,
         redirect_uri: redirectURI,
         state
@@ -171,7 +171,7 @@ export function getUserInfo({ userAccessToken }: { userAccessToken: string }) {
   return new Observable<UserInfoResponse>(subscriber =>
     get<UserInfoResponse>(GET_USER_INFO, {
       json: true,
-      body: {
+      qs: {
         user_access_token: userAccessToken
       }
     }).subscribe(
