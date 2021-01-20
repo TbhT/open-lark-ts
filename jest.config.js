@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
+const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { compilerOptions } = require('./tsconfig.json')
 
 module.exports = {
   testMatch: [
@@ -14,5 +16,8 @@ module.exports = {
   rootDir: path.resolve('.'),
   //   ?@link https://github.com/axios/axios/issues/1418
   testEnvironment: 'node',
-  coverageReporters: ['json-summary', 'text', 'lcov']
+  coverageReporters: ['json-summary', 'text', 'lcov'],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/'
+  })
 }

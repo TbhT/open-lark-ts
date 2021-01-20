@@ -7,7 +7,7 @@ import {
   CreateChatResponse,
   ModifyUserToChatResponse,
   UpdateChatResponse
-} from 'src/types/Response'
+} from '@/types/Response'
 import {
   ADD_USER_TO_CHAT,
   CHAT_INFO,

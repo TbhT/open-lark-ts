@@ -11,7 +11,7 @@ const ALGORITHM = 'aes-256-cbc'
 export type AES_KEY = string
 
 export function generateKey() {
-  return function(ob: Observable<AES_KEY>) {
+  return function (ob: Observable<AES_KEY>) {
     return new Observable<Buffer>(subscriber =>
       ob.subscribe(
         value => {
@@ -32,7 +32,7 @@ export function generateKey() {
 const iv = randomBytes(16)
 
 export function encrypt(key: Buffer) {
-  return function(ob: Observable<string>) {
+  return function (ob: Observable<string>) {
     return new Observable(subscriber => {
       ob.subscribe(
         data => {
@@ -51,7 +51,7 @@ export function encrypt(key: Buffer) {
 }
 
 export function decrypt(data: string) {
-  return function(ob: Observable<Buffer>) {
+  return function (ob: Observable<Buffer>) {
     return new Observable(subscriber => {
       ob.subscribe(
         key => {

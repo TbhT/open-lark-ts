@@ -2,10 +2,10 @@ import { RxHR } from '@akanass/rx-http-request'
 import { Stream } from 'stream'
 import * as FormData from 'form-data'
 import { forkJoin, Observable, of } from 'rxjs'
-import { UploadImageResponse } from 'src/types/Response'
+import { UploadImageResponse } from '@/types/Response'
 import { UPLOAD_PATH, GET_IMAGE_PATH } from '@/Constants'
 import { createReadStream } from 'fs'
-import { concatMap, map } from 'rxjs/operators'
+import { catchError, concatMap, map } from 'rxjs/operators'
 
 const { get, post } = RxHR
 
@@ -93,7 +93,10 @@ export function uploadLocalImage({
     }
 
     of(fileArray)
-      .pipe(concatMap(f => forkJoin(f)))
+      .pipe(
+        concatMap(f => forkJoin(f)),
+        catchError(error => of(error))
+      )
       .subscribe(
         data => {
           subscriber.next(data)

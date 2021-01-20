@@ -4,7 +4,7 @@ import {
   CreateDriveDirResponse,
   GetDriveDirFilesInfoResponse,
   GetDriveDirInfoResponse
-} from 'src/types/Response'
+} from '@/types/Response'
 import { CREATE_DRIVE_DIR } from '@/Constants'
 
 const { get, post } = RxHR
