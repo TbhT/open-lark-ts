@@ -4,8 +4,8 @@ import {
   ADD_BOT_TO_CHAT,
   GET_BOT_INFO,
   REMOVE_BOT_FROM_CHAT
-} from '../Constants'
-import { BotInfoResponse, CommonResponse } from '../../src/types/Response'
+} from '@/Constants'
+import { BotInfoResponse, CommonResponse } from '@/types/Response'
 
 const { get, post } = RxHR
 

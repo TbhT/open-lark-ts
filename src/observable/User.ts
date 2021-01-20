@@ -4,12 +4,8 @@ import {
   BasicUserInfoResponse,
   UserChatIdResponse,
   UserIdResponse
-} from 'src/types/Response'
-import {
-  GET_USER_BASE_INFO,
-  GET_USER_CHAT_ID,
-  GET_USER_ID
-} from 'packages/Constants'
+} from '@/types/Response'
+import { GET_USER_BASE_INFO, GET_USER_CHAT_ID, GET_USER_ID } from '@/Constants'
 
 const { get, post } = RxHR
 

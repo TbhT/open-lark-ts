@@ -14,11 +14,12 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./packages/*"]
+      "@/*": ["./src/*"],
+      "@test": ["./test"]
     }
   },
   "exclude": ["node_modules/", "dist/"],
-  "include": ["src/"],
+  "include": ["src/", "packages"],
   "typedocOptions": {
     "mode": "modules",
     "out": "./documents",

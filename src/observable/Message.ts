@@ -5,7 +5,7 @@ import {
   SendMessageBatchResponse,
   SendMessageResponse,
   UrgentMessageResponse
-} from 'src/types/Response'
+} from '@/types/Response'
 import {
   RECALL_MESSAGE,
   REFRESH_CARD_MESSAGE,
@@ -13,8 +13,8 @@ import {
   SEND_MESSAGE_BATCH,
   URGENT_MESSAGE
 } from '@/Constants'
-import { UrgentType } from 'src/types/Enum'
-import { CardContentElements, CardMessage } from 'src/types/CardMessage'
+import { UrgentType } from '@/types/Enum'
+import { CardContentElements, CardMessage } from '@/types/CardMessage'
 
 const { get, post } = RxHR
 

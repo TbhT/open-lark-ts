@@ -7,7 +7,7 @@ import {
   TenantAccessTokenResponse,
   UserAccessTokenResponse,
   UserInfoResponse
-} from 'src/types/Response'
+} from '@/types/Response'
 import {
   GET_APP_ACCESS_TOKEN,
   GET_APP_TICKET,
@@ -16,7 +16,7 @@ import {
   GET_USER_ACCESS_TOKEN,
   GET_USER_INFO
 } from '@/Constants'
-import { REFRESH_USER_ACCESS_TOKEN } from 'src/Constants'
+import { REFRESH_USER_ACCESS_TOKEN } from '@/Constants'
 
 const { get, post } = RxHR
 

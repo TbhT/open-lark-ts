@@ -10,7 +10,7 @@ import {
   OpenId2DepartmentIdResponse,
   OpenId2LarkIdResponse,
   OpenId2MessageIdResponse
-} from 'src/types/Response'
+} from '@/types/Response'
 import { ID_LARK_TO_OPEN, ID_OPEN_TO_LARK } from '@/Constants'
 
 const { get, post } = RxHR
