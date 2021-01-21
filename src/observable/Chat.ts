@@ -20,7 +20,7 @@ import {
 
 const { get, post } = RxHR
 
-type createChatParams = {
+export type createChatParams = {
   name?: string
   description?: string
   i18nNames?: { [key: string]: string }
@@ -114,7 +114,7 @@ export function getChatInfo({
   )
 }
 
-export function updateChatInfo(params: {
+export type UpdateChatInfo = {
   chatId: string
   ownerOpenId?: string
   ownerUserId?: string
@@ -125,7 +125,9 @@ export function updateChatInfo(params: {
   onlyOwnerAtAll?: boolean
   onlyOwnerEdit?: boolean
   tenantAccessToken: string
-}) {
+}
+
+export function updateChatInfo(params: UpdateChatInfo) {
   const {
     tenantAccessToken,
     chatId,
@@ -160,7 +162,7 @@ export function updateChatInfo(params: {
   )
 }
 
-type ModifyUserInChat = {
+export type ModifyUserInChat = {
   chatId: string
   tenantAccessToken: string
   userIds?: string[]

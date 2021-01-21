@@ -33,7 +33,7 @@ const iv = randomBytes(16)
 
 export function encrypt(key: Buffer) {
   return function (ob: Observable<string>) {
-    return new Observable(subscriber => {
+    return new Observable(subscriber =>
       ob.subscribe(
         data => {
           const cipher = createCipheriv(ALGORITHM, Buffer.from(key), iv)
@@ -46,13 +46,13 @@ export function encrypt(key: Buffer) {
         error => subscriber.error(error),
         () => subscriber.complete()
       )
-    })
+    )
   }
 }
 
 export function decrypt(data: string) {
   return function (ob: Observable<Buffer>) {
-    return new Observable(subscriber => {
+    return new Observable(subscriber =>
       ob.subscribe(
         key => {
           const decodeString = Buffer.from(data, 'base64')
@@ -63,12 +63,12 @@ export function decrypt(data: string) {
             'utf8'
           )
           decrypted += decipher.final('utf8')
-          return decrypted
+          subscriber.next(decrypted)
         },
         error => subscriber.error(error),
         () => subscriber.complete()
       )
-    })
+    )
   }
 }
 
