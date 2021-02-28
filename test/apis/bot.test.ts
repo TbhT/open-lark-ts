@@ -1,9 +1,10 @@
 import debug from 'debug'
-import { getBotInfo } from '@/observable/Bot'
+import { getBotInfo, addBotToChat, removeBotFromChat } from '@/observable/Bot'
 import * as Config from '../config.json'
 import { getTenantAccessToken } from '@/observable/OAuth'
 import { forkJoin, of } from 'rxjs'
-import { catchError } from 'rxjs/operators'
+import { catchError, mergeMap, map } from 'rxjs/operators'
+import { createChat } from '@/observable/Chat'
 
 if (process.env.NODE_ENV === 'development') {
   debug.enable('test*')
@@ -54,5 +55,34 @@ describe('获取机器人的信息', () => {
       expect(bot).toHaveProperty('ip_white_list')
       expect(bot).toHaveProperty('open_id')
     })
+  })
+
+  test('should add a bot to a chat and remove a bot from chat', () => {
+    createChat({
+      tenantAccessToken,
+      name: 'jest unit test for chat rxjs',
+      openIds: [Config.development.open_id]
+    })
+      .pipe(
+        mergeMap(({ data }) =>
+          addBotToChat({
+            tenantAccessToken: wingmanAccessToken,
+            chatId: data.chat_id
+          }).pipe(map(({ code }) => ({ code, data })))
+        )
+      )
+      .pipe(
+        mergeMap(({ data, code: code1 }) =>
+          removeBotFromChat({
+            tenantAccessToken: wingmanAccessToken,
+            chatId: data.chat_id
+          }).pipe(map(({ code: code }) => ({ data, code1, code2: code })))
+        )
+      )
+      .subscribe(({ data, code1, code2 }) => {
+        expect(code1).toBe(0)
+        expect(code2).toBe(0)
+        logger('chat info %o ', data)
+      })
   })
 })
