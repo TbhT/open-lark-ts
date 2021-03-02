@@ -1,6 +1,6 @@
 import debug from 'debug'
 import { getBotInfo, addBotToChat, removeBotFromChat } from '@/observable/Bot'
-import * as Config from '../config.json'
+import * as Config from '@test/config.json'
 import { getTenantAccessToken } from '@/observable/OAuth'
 import { forkJoin, of } from 'rxjs'
 import { catchError, mergeMap, map } from 'rxjs/operators'
@@ -38,26 +38,30 @@ async function getAccessToken() {
 
 beforeAll(async () => {
   return getAccessToken().then(value => {
-    tenantAccessToken = value[0]
-    wingmanAccessToken = value[1]
+    tenantAccessToken = value[0].tenant_access_token
+    wingmanAccessToken = value[1].tenant_access_token
   })
 })
 
 describe('获取机器人的信息', () => {
-  test('will return bot info', () => {
+  test('will return bot info', done => {
     getBotInfo({
       tenantAccessToken
-    }).subscribe(({ bot }) => {
-      logger('bot info %o', bot)
-      expect(bot).toHaveProperty('activate_status')
-      expect(bot).toHaveProperty('app_name')
-      expect(bot).toHaveProperty('avatar_url')
-      expect(bot).toHaveProperty('ip_white_list')
-      expect(bot).toHaveProperty('open_id')
-    })
+    }).subscribe(
+      ({ bot }) => {
+        logger('bot info %o', bot)
+        expect(bot).toHaveProperty('activate_status')
+        expect(bot).toHaveProperty('app_name')
+        expect(bot).toHaveProperty('avatar_url')
+        expect(bot).toHaveProperty('ip_white_list')
+        expect(bot).toHaveProperty('open_id')
+      },
+      error => done.fail(error),
+      () => done()
+    )
   })
 
-  test('should add a bot to a chat and remove a bot from chat', () => {
+  test('should add a bot to a chat and remove a bot from chat', done => {
     createChat({
       tenantAccessToken,
       name: 'jest unit test for chat rxjs',
@@ -79,10 +83,14 @@ describe('获取机器人的信息', () => {
           }).pipe(map(({ code: code }) => ({ data, code1, code2: code })))
         )
       )
-      .subscribe(({ data, code1, code2 }) => {
-        expect(code1).toBe(0)
-        expect(code2).toBe(0)
-        logger('chat info %o ', data)
-      })
+      .subscribe(
+        ({ data, code1, code2 }) => {
+          expect(code1).toBe(0)
+          expect(code2).toBe(0)
+          logger('chat info %o ', data)
+        },
+        error => done.fail(error),
+        () => done()
+      )
   })
 })

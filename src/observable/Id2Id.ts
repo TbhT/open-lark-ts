@@ -13,8 +13,6 @@ import {
 } from '@/types/Response'
 import { ID_LARK_TO_OPEN, ID_OPEN_TO_LARK } from '@/Constants'
 
-const { get, post } = RxHR
-
 export function openId2LarkId({
   openId,
   tenantAccessToken
@@ -23,7 +21,7 @@ export function openId2LarkId({
   tenantAccessToken: string
 }) {
   return new Observable<OpenId2LarkIdResponse>(subscriber =>
-    post<OpenId2LarkIdResponse>(ID_OPEN_TO_LARK, {
+    RxHR.post<OpenId2LarkIdResponse>(ID_OPEN_TO_LARK, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -47,7 +45,7 @@ export function larkId2OpenId({
   tenantAccessToken: string
 }) {
   return new Observable<LarkId2OpenIdResponse>(subscriber =>
-    post<LarkId2OpenIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<LarkId2OpenIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -71,7 +69,7 @@ export function messageId2OpenMessageId({
   tenantAccessToken: string
 }) {
   return new Observable<LarkId2OpenIdResponse>(subscriber =>
-    post<LarkId2OpenIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<LarkId2OpenIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -95,7 +93,7 @@ export function openMessageId2MessageId({
   tenantAccessToken: string
 }) {
   return new Observable<OpenId2MessageIdResponse>(subscriber =>
-    post<OpenId2MessageIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<OpenId2MessageIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -119,7 +117,7 @@ export function departmentId2OpenDepartmentId({
   tenantAccessToken: string
 }) {
   return new Observable<DepartmentId2OpenIdResponse>(subscriber =>
-    post<DepartmentId2OpenIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<DepartmentId2OpenIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -143,7 +141,7 @@ export function openDepartmentId2DepartmentId({
   tenantAccessToken: string
 }) {
   return new Observable<OpenId2DepartmentIdResponse>(subscriber =>
-    post<OpenId2DepartmentIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<OpenId2DepartmentIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -167,7 +165,7 @@ export function chatId2OpenChatId({
   tenantAccessToken: string
 }) {
   return new Observable<ChatId2OpenIdResponse>(subscriber =>
-    post<ChatId2OpenIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<ChatId2OpenIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -191,7 +189,7 @@ export function openChatId2ChatId({
   tenantAccessToken: string
 }) {
   return new Observable<OpenId2ChatIdResponse>(subscriber =>
-    post<OpenId2ChatIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<OpenId2ChatIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -215,7 +213,7 @@ export function larkId2EmployeeId({
   tenantAccessToken: string
 }) {
   return new Observable<LarkId2EmployeeIdResponse>(subscriber =>
-    post<LarkId2EmployeeIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<LarkId2EmployeeIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -239,7 +237,7 @@ export function employeeId2LarkId({
   tenantAccessToken: string
 }) {
   return new Observable<EmployeeId2LarkIdResponse>(subscriber =>
-    post<EmployeeId2LarkIdResponse>(ID_LARK_TO_OPEN, {
+    RxHR.post<EmployeeId2LarkIdResponse>(ID_LARK_TO_OPEN, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },

@@ -18,8 +18,6 @@ import {
 } from '@/Constants'
 import { REFRESH_USER_ACCESS_TOKEN } from '@/Constants'
 
-const { get, post } = RxHR
-
 export function getAppAccessToken({
   appId,
   appSecret
@@ -28,7 +26,7 @@ export function getAppAccessToken({
   appSecret: string
 }) {
   return new Observable<AppAccessTokenResponse>(subscriber =>
-    post<AppAccessTokenResponse>(GET_APP_ACCESS_TOKEN, {
+    RxHR.post<AppAccessTokenResponse>(GET_APP_ACCESS_TOKEN, {
       json: true,
       body: {
         app_id: appId,
@@ -56,7 +54,7 @@ export function getTenantAccessToken({
   appSecret: string
 }) {
   return new Observable<TenantAccessTokenResponse>(subscriber =>
-    post<TenantAccessTokenResponse>(GET_TENANT_ACCESS_TOKEN, {
+    RxHR.post<TenantAccessTokenResponse>(GET_TENANT_ACCESS_TOKEN, {
       json: true,
       body: {
         app_id: appId,
@@ -80,7 +78,7 @@ export function getAppTicket({
   appSecret: string
 }) {
   return new Observable<CommonResponse>(subscriber =>
-    post<CommonResponse>(GET_APP_TICKET, {
+    RxHR.post<CommonResponse>(GET_APP_TICKET, {
       json: true,
       body: {
         app_id: appId,
@@ -106,7 +104,7 @@ export function getAuth({
   state?: string
 }) {
   return new Observable<AuthResponse>(subscriber =>
-    get<AuthResponse>(GET_AUTH, {
+    RxHR.get<AuthResponse>(GET_AUTH, {
       json: true,
       qs: {
         app_id: appId,
@@ -129,7 +127,7 @@ export function getUserAccessToken({
   code: string
 }) {
   return new Observable<UserAccessTokenResponse>(subscriber =>
-    post<UserAccessTokenResponse>(GET_USER_ACCESS_TOKEN, {
+    RxHR.post<UserAccessTokenResponse>(GET_USER_ACCESS_TOKEN, {
       json: true,
       body: {
         app_access_token: appAccessToken,
@@ -152,7 +150,7 @@ export function refreshUserAccessToken({
   refreshToken: string
 }) {
   return new Observable<UserAccessTokenResponse>(subscriber =>
-    post<UserAccessTokenResponse>(REFRESH_USER_ACCESS_TOKEN, {
+    RxHR.post<UserAccessTokenResponse>(REFRESH_USER_ACCESS_TOKEN, {
       json: true,
       body: {
         app_access_token: appAccessToken,
@@ -169,7 +167,7 @@ export function refreshUserAccessToken({
 
 export function getUserInfo({ userAccessToken }: { userAccessToken: string }) {
   return new Observable<UserInfoResponse>(subscriber =>
-    get<UserInfoResponse>(GET_USER_INFO, {
+    RxHR.get<UserInfoResponse>(GET_USER_INFO, {
       json: true,
       qs: {
         user_access_token: userAccessToken

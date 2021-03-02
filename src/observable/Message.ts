@@ -16,8 +16,6 @@ import {
 import { UrgentType } from '@/types/Enum'
 import { CardContentElements, CardMessage } from '@/types/CardMessage'
 
-const { get, post } = RxHR
-
 export interface MessageParamCommon {
   tenantAccessToken: string
   openId?: string
@@ -43,7 +41,7 @@ export function sendMessageBatch({
   tenantAccessToken: string
 }) {
   return new Observable<SendMessageBatchResponse>(subscriber =>
-    post<SendMessageBatchResponse>(SEND_MESSAGE_BATCH, {
+    RxHR.post<SendMessageBatchResponse>(SEND_MESSAGE_BATCH, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -77,7 +75,7 @@ export function sendMessage({
   content: string
 }) {
   return new Observable<SendMessageResponse>(subscriber =>
-    post<SendMessageResponse>(SEND_MESSAGE, {
+    RxHR.post<SendMessageResponse>(SEND_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -115,7 +113,7 @@ export function forwardRichTextMessage({
   title: string
 }) {
   return new Observable<SendMessageResponse>(subscriber =>
-    post<SendMessageResponse>(SEND_MESSAGE, {
+    RxHR.post<SendMessageResponse>(SEND_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -152,7 +150,7 @@ export function sendImageMessage({
   imageKey: string
 }) {
   return new Observable<SendMessageResponse>(subscriber =>
-    post<SendMessageResponse>(SEND_MESSAGE, {
+    RxHR.post<SendMessageResponse>(SEND_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -261,7 +259,7 @@ export function shareChatCard({
   shareChatId: string
 }) {
   return new Observable<SendMessageResponse>(subscriber =>
-    post<SendMessageResponse>(SEND_MESSAGE, {
+    RxHR.post<SendMessageResponse>(SEND_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -293,7 +291,7 @@ export function recallMessage({
   tenantAccessToken: string
 }) {
   return new Observable<CommonResponse>(subscriber =>
-    post<CommonResponse>(RECALL_MESSAGE, {
+    RxHR.post<CommonResponse>(RECALL_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -321,7 +319,7 @@ export function urgentMessage({
   tenantAccessToken: string
 }) {
   return new Observable<UrgentMessageResponse>(subscriber =>
-    post<UrgentMessageResponse>(URGENT_MESSAGE, {
+    RxHR.post<UrgentMessageResponse>(URGENT_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -359,7 +357,7 @@ export function sendCardMessage({
   card: CardMessage
 }) {
   return new Observable<SendMessageResponse>(subscriber =>
-    post<SendMessageResponse>(SEND_MESSAGE, {
+    RxHR.post<SendMessageResponse>(SEND_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -394,7 +392,7 @@ export function refreshCardMessage({
   cardContent: CardContentElements
 }) {
   return new Observable<any>(subscriber =>
-    post<any>(REFRESH_CARD_MESSAGE, {
+    RxHR.post<any>(REFRESH_CARD_MESSAGE, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },

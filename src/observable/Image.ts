@@ -5,9 +5,7 @@ import { forkJoin, Observable, of } from 'rxjs'
 import { UploadImageResponse } from '@/types/Response'
 import { UPLOAD_PATH, GET_IMAGE_PATH } from '@/Constants'
 import { createReadStream } from 'fs'
-import { catchError, concatMap, map } from 'rxjs/operators'
-
-const { get, post } = RxHR
+import { catchError, concatMap } from 'rxjs/operators'
 
 export function uploadImage({
   file,
@@ -23,7 +21,7 @@ export function uploadImage({
     formData.append('image', file)
     formData.append('image_type', imageType)
 
-    return post<UploadImageResponse>(UPLOAD_PATH, {
+    return RxHR.post<UploadImageResponse>(UPLOAD_PATH, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`,
         ...formData.getHeaders()
@@ -46,7 +44,7 @@ export function getImage({
   tenantAccessToken: string
 }) {
   return new Observable(subscriber =>
-    get(GET_IMAGE_PATH, {
+    RxHR.get(GET_IMAGE_PATH, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },

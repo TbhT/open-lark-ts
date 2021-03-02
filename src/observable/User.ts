@@ -7,8 +7,6 @@ import {
 } from '@/types/Response'
 import { GET_USER_BASE_INFO, GET_USER_CHAT_ID, GET_USER_ID } from '@/Constants'
 
-const { get, post } = RxHR
-
 export function getUserChatId({
   tenantAccessToken,
   userId,
@@ -19,7 +17,7 @@ export function getUserChatId({
   openId?: string
 }) {
   return new Observable<UserChatIdResponse>(subscriber =>
-    get<UserChatIdResponse>(GET_USER_CHAT_ID, {
+    RxHR.get<UserChatIdResponse>(GET_USER_CHAT_ID, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -44,7 +42,7 @@ export function getUserId({
   email: string
 }) {
   return new Observable<UserIdResponse>(subscriber =>
-    post<UserIdResponse>(GET_USER_ID, {
+    RxHR.post<UserIdResponse>(GET_USER_ID, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -70,7 +68,7 @@ export function getBasicUserInfo({
   userId?: string
 }) {
   return new Observable<BasicUserInfoResponse>(subscriber =>
-    get<BasicUserInfoResponse>(GET_USER_BASE_INFO, {
+    RxHR.get<BasicUserInfoResponse>(GET_USER_BASE_INFO, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
