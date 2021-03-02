@@ -7,18 +7,17 @@ import {
 } from '@/Constants'
 import { BotInfoResponse, CommonResponse } from '@/types/Response'
 
-const { get, post } = RxHR
-
 export function getBotInfo({
   tenantAccessToken
 }: {
   tenantAccessToken: string
 }) {
   return new Observable<BotInfoResponse>(subscriber =>
-    get<BotInfoResponse>(GET_BOT_INFO, {
+    RxHR.get<BotInfoResponse>(GET_BOT_INFO, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
-      }
+      },
+      json: true
     }).subscribe(
       data => {
         subscriber.next(data.body)
@@ -41,7 +40,7 @@ export function addBotToChat({
   tenantAccessToken: string
 }) {
   return new Observable<CommonResponse>(subscriber =>
-    post<CommonResponse>(ADD_BOT_TO_CHAT, {
+    RxHR.post<CommonResponse>(ADD_BOT_TO_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -71,7 +70,7 @@ export function removeBotFromChat({
   tenantAccessToken: string
 }) {
   return new Observable<CommonResponse>(subscriber =>
-    post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
+    RxHR.post<CommonResponse>(REMOVE_BOT_FROM_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },

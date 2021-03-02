@@ -18,8 +18,6 @@ import {
   UPDATE_CHAT
 } from '@/Constants'
 
-const { get, post } = RxHR
-
 export type createChatParams = {
   name?: string
   description?: string
@@ -35,7 +33,7 @@ export type createChatParams = {
 
 export function createChat(params: createChatParams) {
   return new Observable<CreateChatResponse>(subscriber =>
-    post<CreateChatResponse>(CREATE_CHAT, {
+    RxHR.post<CreateChatResponse>(CREATE_CHAT, {
       headers: {
         Authorization: `Bearer ${params.tenantAccessToken}`
       },
@@ -73,7 +71,7 @@ export function getChatList({
   tenantAccessToken: string
 }) {
   return new Observable<ChatListResponse>(subscriber =>
-    get<ChatListResponse>(CHAT_LIST, {
+    RxHR.get<ChatListResponse>(CHAT_LIST, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -98,7 +96,7 @@ export function getChatInfo({
   tenantAccessToken: string
 }) {
   return new Observable<ChatInfoResponse>(subscriber =>
-    get<ChatInfoResponse>(CHAT_INFO, {
+    RxHR.get<ChatInfoResponse>(CHAT_INFO, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -142,7 +140,7 @@ export function updateChatInfo(params: UpdateChatInfo) {
   } = params
 
   return new Observable<UpdateChatResponse>(subscriber =>
-    post<UpdateChatResponse>(UPDATE_CHAT, {
+    RxHR.post<UpdateChatResponse>(UPDATE_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -176,7 +174,7 @@ export function addUserToChat({
   userIds
 }: ModifyUserInChat) {
   return new Observable<ModifyUserToChatResponse>(subscriber =>
-    post<ModifyUserToChatResponse>(ADD_USER_TO_CHAT, {
+    RxHR.post<ModifyUserToChatResponse>(ADD_USER_TO_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -201,7 +199,7 @@ export function removeUserFromChat({
   userIds
 }: ModifyUserInChat) {
   return new Observable<ModifyUserToChatResponse>(subscriber =>
-    post<ModifyUserToChatResponse>(REMOVE_USER_FROM_CHAT, {
+    RxHR.post<ModifyUserToChatResponse>(REMOVE_USER_FROM_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },
@@ -227,7 +225,7 @@ export function discardChat({
   tenantAccessToken: string
 }) {
   return new Observable<CommonResponse>(subscriber =>
-    post<CommonResponse>(DISCARD_CHAT, {
+    RxHR.post<CommonResponse>(DISCARD_CHAT, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
       },

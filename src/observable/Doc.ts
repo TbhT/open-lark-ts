@@ -7,8 +7,6 @@ import {
 } from '@/types/Response'
 import { CREATE_DRIVE_DIR } from '@/Constants'
 
-const { get, post } = RxHR
-
 export function createDriveDir({
   userAccessToken,
   folderToken,
@@ -19,7 +17,7 @@ export function createDriveDir({
   title: string
 }) {
   return new Observable<CreateDriveDirResponse>(subscriber =>
-    post<CreateDriveDirResponse>(`${CREATE_DRIVE_DIR}/${folderToken}`, {
+    RxHR.post<CreateDriveDirResponse>(`${CREATE_DRIVE_DIR}/${folderToken}`, {
       headers: {
         Authorization: `Bearer ${userAccessToken}`
       },
@@ -43,12 +41,15 @@ export function getDriveDirInfo({
   folderToken: string
 }) {
   return new Observable<GetDriveDirInfoResponse>(subscriber =>
-    get<GetDriveDirInfoResponse>(`${CREATE_DRIVE_DIR}/${folderToken}/meta`, {
-      headers: {
-        Authorization: `Bearer ${userAccessToken}`
-      },
-      json: true
-    }).subscribe(
+    RxHR.get<GetDriveDirInfoResponse>(
+      `${CREATE_DRIVE_DIR}/${folderToken}/meta`,
+      {
+        headers: {
+          Authorization: `Bearer ${userAccessToken}`
+        },
+        json: true
+      }
+    ).subscribe(
       data => subscriber.next(data.body),
       error => subscriber.error(error),
       () => subscriber.complete()
@@ -66,7 +67,7 @@ export function getDriveDirFilesInfo({
   types?: string | string[]
 }) {
   return new Observable<GetDriveDirFilesInfoResponse>(subscriber =>
-    get<GetDriveDirFilesInfoResponse>(
+    RxHR.get<GetDriveDirFilesInfoResponse>(
       `${CREATE_DRIVE_DIR}/${folderToken}/children`,
       {
         headers: {
