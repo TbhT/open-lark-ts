@@ -156,7 +156,11 @@ export function updateChatInfo(params: UpdateChatInfo) {
         share_allowed: shareAllowed,
         only_owner_edit: onlyOwnerEdit
       }
-    }).subscribe(data => subscriber.next(data.body))
+    }).subscribe(
+      data => subscriber.next(data.body),
+      error => subscriber.error(error),
+      () => subscriber.complete()
+    )
   )
 }
 
