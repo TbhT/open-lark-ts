@@ -5,6 +5,7 @@ import {
   createHash,
   randomBytes
 } from 'crypto'
+import { mergeMap } from 'rxjs/operators'
 
 const ALGORITHM = 'aes-256-cbc'
 
@@ -33,7 +34,7 @@ const iv = randomBytes(16)
 
 export function encrypt(key: Buffer) {
   return function (ob: Observable<string>) {
-    return new Observable(subscriber =>
+    return new Observable<string>(subscriber =>
       ob.subscribe(
         data => {
           const cipher = createCipheriv(ALGORITHM, Buffer.from(key), iv)
@@ -50,11 +51,11 @@ export function encrypt(key: Buffer) {
   }
 }
 
-export function decrypt(data: string) {
-  return function (ob: Observable<Buffer>) {
-    return new Observable(subscriber =>
+export function decrypt(key: string) {
+  return function (ob: Observable<string>) {
+    return new Observable<string>(subscriber =>
       ob.subscribe(
-        key => {
+        data => {
           const decodeString = Buffer.from(data, 'base64')
           const decipher = createDecipheriv(ALGORITHM, Buffer.from(key), iv)
           let decrypted = decipher.update(
@@ -74,19 +75,18 @@ export function decrypt(data: string) {
 
 export default function aes256(key: string) {
   return (ob: Observable<string>) => {
-    return new Observable(subscriber =>
+    return new Observable<string>(subscriber =>
       of(key)
-        .pipe(generateKey())
+        .pipe(
+          generateKey(),
+          mergeMap($key => ob.pipe(encrypt($key)))
+        )
         .subscribe(
-          $key =>
-            ob.pipe(encrypt($key)).subscribe(
-              encryptData => {
-                subscriber.next(encryptData)
-              },
-              error => subscriber.error(error),
-              () => subscriber.complete()
-            ),
-          error => subscriber.error(error)
+          encryptData => {
+            subscriber.next(encryptData)
+          },
+          error => subscriber.error(error),
+          () => subscriber.complete()
         )
     )
   }
