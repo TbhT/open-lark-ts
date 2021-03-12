@@ -5,7 +5,7 @@ import { forkJoin, Observable, of } from 'rxjs'
 import { UploadImageResponse } from '@/types/Response'
 import { UPLOAD_PATH, GET_IMAGE_PATH } from '@/Constants'
 import { createReadStream } from 'fs'
-import { catchError, concatMap } from 'rxjs/operators'
+import { catchError, concatMap, mergeMap } from 'rxjs/operators'
 
 export function uploadImage({
   file,
@@ -90,17 +90,12 @@ export function uploadLocalImage({
       )
     }
 
-    of(fileArray)
-      .pipe(
-        concatMap(f => forkJoin(f)),
-        catchError(error => of(error))
-      )
-      .subscribe(
-        data => {
-          subscriber.next(data)
-        },
-        error => subscriber.error(error),
-        () => subscriber.complete()
-      )
+    forkJoin(...fileArray).subscribe(
+      (data: UploadImageResponse[]) => {
+        subscriber.next(data)
+      },
+      error => subscriber.error(error),
+      () => subscriber.complete()
+    )
   })
 }

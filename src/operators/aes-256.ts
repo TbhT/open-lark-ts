@@ -5,6 +5,7 @@ import {
   createHash,
   randomBytes
 } from 'crypto'
+import { mergeMap, map } from 'rxjs/operators'
 
 const ALGORITHM = 'aes-256-cbc'
 
@@ -16,7 +17,8 @@ export function generateKey() {
       ob.subscribe(
         value => {
           const HASH_SHA_256 = createHash('sha256')
-          subscriber.next(HASH_SHA_256.update(value).digest())
+          const k = HASH_SHA_256.update(value).digest()
+          subscriber.next(k)
         },
         error => {
           subscriber.error(error)
@@ -33,7 +35,7 @@ const iv = randomBytes(16)
 
 export function encrypt(key: Buffer) {
   return function (ob: Observable<string>) {
-    return new Observable(subscriber =>
+    return new Observable<string>(subscriber =>
       ob.subscribe(
         data => {
           const cipher = createCipheriv(ALGORITHM, Buffer.from(key), iv)
@@ -50,13 +52,17 @@ export function encrypt(key: Buffer) {
   }
 }
 
-export function decrypt(data: string) {
-  return function (ob: Observable<Buffer>) {
-    return new Observable(subscriber =>
+export function decrypt() {
+  return function (ob: Observable<AESData>) {
+    return new Observable<string>(subscriber =>
       ob.subscribe(
-        key => {
-          const decodeString = Buffer.from(data, 'base64')
-          const decipher = createDecipheriv(ALGORITHM, Buffer.from(key), iv)
+        data => {
+          const decodeString = Buffer.from(data.data, 'base64')
+          const decipher = createDecipheriv(
+            ALGORITHM,
+            Buffer.from(data.aesKey),
+            iv
+          )
           let decrypted = decipher.update(
             decodeString.slice(16),
             undefined,
@@ -72,21 +78,33 @@ export function decrypt(data: string) {
   }
 }
 
+export interface AESData {
+  data: string
+  aesKey: Buffer
+}
+
 export default function aes256(key: string) {
   return (ob: Observable<string>) => {
-    return new Observable(subscriber =>
+    return new Observable<AESData>(subscriber =>
       of(key)
-        .pipe(generateKey())
+        .pipe(
+          generateKey(),
+          mergeMap($key => {
+            return ob.pipe(
+              encrypt($key),
+              map(data => ({
+                data,
+                aesKey: $key
+              }))
+            )
+          })
+        )
         .subscribe(
-          $key =>
-            ob.pipe(encrypt($key)).subscribe(
-              encryptData => {
-                subscriber.next(encryptData)
-              },
-              error => subscriber.error(error),
-              () => subscriber.complete()
-            ),
-          error => subscriber.error(error)
+          encryptData => {
+            subscriber.next(encryptData)
+          },
+          error => subscriber.error(error),
+          () => subscriber.complete()
         )
     )
   }
