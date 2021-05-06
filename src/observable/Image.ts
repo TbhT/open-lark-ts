@@ -17,17 +17,15 @@ export function uploadImage({
   tenantAccessToken: string
 }) {
   return new Observable<UploadImageResponse>(subscriber => {
-    const formData = new FormData()
-    formData.append('image', file)
-    formData.append('image_type', imageType)
-
     return RxHR.post<UploadImageResponse>(UPLOAD_PATH, {
       headers: {
-        Authorization: `Bearer ${tenantAccessToken}`,
-        ...formData.getHeaders()
+        Authorization: `Bearer ${tenantAccessToken}`
       },
       json: true,
-      formData
+      formData: {
+        image: file,
+        image_type: imageType
+      }
     }).subscribe(
       data => subscriber.next(data.body),
       error => subscriber.error(error),
@@ -43,7 +41,7 @@ export function getImage({
   imageKey: string
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber =>
+  return new Observable<any>(subscriber =>
     RxHR.get(GET_IMAGE_PATH, {
       headers: {
         Authorization: `Bearer ${tenantAccessToken}`
@@ -69,7 +67,7 @@ export function uploadLocalImage({
   imageType: 'message' | 'avatar'
   tenantAccessToken: string
 }) {
-  return new Observable(subscriber => {
+  return new Observable<UploadImageResponse[]>(subscriber => {
     let file: Stream[]
 
     if (Array.isArray(filePath)) {
