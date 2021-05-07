@@ -16,13 +16,15 @@ import * as UserObservable from '@/observable/User'
 
 import * as Aes from '@/operators/aes-256'
 
-import * as Bot from '@/operators/Bot'
+import * as BotOperator from '@/operators/Bot'
 
 import * as Chat from '@/operators/Chat'
 
+import { Bot } from '@/Bot'
+
 import { Cache } from '@/Cache'
 
-export default {
+export const observable = {
   Bot: BotObservable,
   Doc: DocObservable,
   Id2Id: Id2IdObservable,
@@ -36,6 +38,10 @@ export default {
 
 export const operators = {
   aes: Aes,
-  bot: Bot,
+  bot: BotOperator,
   chat: Chat
+}
+
+export default {
+  Bot
 }

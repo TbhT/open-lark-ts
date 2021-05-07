@@ -1,4 +1,4 @@
-import { Cache } from '../src/Cache'
+import { Cache } from '@/Cache'
 
 let cache: Cache
 
