@@ -6,9 +6,7 @@ import { forkJoin, of } from 'rxjs'
 import { catchError, mergeMap, map } from 'rxjs/operators'
 import { createChat } from '@/observable/Chat'
 
-if (process.env.NODE_ENV === 'development') {
-  debug.enable('test*')
-}
+debug.enable('test*')
 
 const logger = debug('test:bot')
 let tenantAccessToken: string
