@@ -1,26 +1,27 @@
-import { Bot } from '../src/Bot'
-import * as Config from './config.json'
-import { UrgentType } from '../src/types/Enum'
+import debug from 'debug'
+import { Bot, BotEventType } from '@/Bot'
+import * as Config from '@test/config.json'
+import { UrgentType } from '@/types/Enum'
+
+debug.enable('test*')
+
+const logger = debug('test:bot')
 
 let botInstance: Bot
-let initFlag: boolean
 
-beforeAll(async () => {
+beforeAll(done => {
   botInstance = new Bot({
     appId: Config.bot.appId,
     appSecret: Config.bot.appSecret
   })
 
-  initFlag = await botInstance.init()
+  botInstance.on(BotEventType.INITIAL_COMPLETE, () => {
+    logger('机器人初始化完成')
+    done()
+  })
 })
 
 describe('机器人发消息', () => {
-  it('should be init', async () => {
-    expect(initFlag).toBe(true)
-    expect(botInstance.tenantAccessToken).not.toBeUndefined()
-    expect(botInstance.instance).not.toBeUndefined()
-  })
-
   it('should send a text message', async () => {
     const { data, code, msg } = await botInstance.sayTextMessage({
       userId: Config.development.user_id,
@@ -45,17 +46,6 @@ describe('机器人发消息', () => {
         r()
       }, 1000)
     })
-
-    {
-      // read message status
-      const { data: readData } = await botInstance.readMessage({
-        messageId: data.message_id
-      })
-
-      expect(code).toBe(0)
-      expect(readData).toHaveProperty('read_users')
-      expect(readData.read_users.length).toBeLessThanOrEqual(1)
-    }
 
     {
       // recall message
@@ -119,16 +109,6 @@ describe('机器人发消息', () => {
     expect(data).toHaveProperty('message_id')
   })
 
-  it('should send a chat card', async () => {
-    const { code, data } = await botInstance.sayChatCard({
-      shareChatId: Config.development.chat_id,
-      userId: Config.development.user_id
-    })
-
-    expect(code).toBe(0)
-    expect(data).toHaveProperty('message_id')
-  })
-
   it('should send a urgent message', async () => {
     const { code, data } = await botInstance.sayImageMessage({
       userId: Config.development.user_id,
@@ -145,8 +125,4 @@ describe('机器人发消息', () => {
       expect(code).toBe(0)
     }
   })
-})
-
-describe.only('机器人收到监听事件', () => {
-  // todo:
 })
