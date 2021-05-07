@@ -20,6 +20,8 @@ import * as Bot from '@/operators/Bot'
 
 import * as Chat from '@/operators/Chat'
 
+import { Cache } from '@/Cache'
+
 export default {
   Bot: BotObservable,
   Doc: DocObservable,
@@ -28,7 +30,8 @@ export default {
   Image: ImageObservable,
   Message: MessageObservable,
   OAuth: OAuthObservable,
-  User: UserObservable
+  User: UserObservable,
+  Cache
 }
 
 export const operators = {
