@@ -1,6 +1,6 @@
 {
   "name": "@tbht/lark-sdk",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "lark bot sdk",
   "main": "dist/index.js",
   "types": "types",
@@ -78,8 +78,7 @@
   },
   "homepage": "https://github.com/TbhT/lark-sdk#readme",
   "directories": {
-    "example": "examples",
-    "test": "tests"
+    "test": "test"
   },
   "keywords": [
     "lark",
