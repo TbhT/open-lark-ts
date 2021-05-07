@@ -16,13 +16,20 @@
     "paths": {
       "@/*": ["./src/*"],
       "@test/*": ["./test/*"]
-    }
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true,
+        "useRootDirs": true
+      }
+    ]
   },
   "exclude": ["node_modules/", "dist/"],
-  "include": ["src/", "packages"],
-  "typedocOptions": {
-    "mode": "modules",
-    "out": "./documents",
-    "readme": "readme"
-  }
+  "include": [
+    "./src/observable",
+    "./src/operators",
+    "./src/index.ts",
+    "./src/Constants.ts"
+  ]
 }
