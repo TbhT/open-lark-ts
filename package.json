@@ -1,12 +1,12 @@
 {
-  "name": "@tbht/lark-sdk",
-  "version": "0.4.1",
+  "name": "@tbht/lark-sdk-rxjs",
+  "version": "0.4.3",
   "description": "lark bot sdk",
   "main": "dist/index.js",
   "types": "types",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/TbhT/lark-sdk.git"
+    "url": "git+ssh://git@github.com/TbhT/open-lark-rxjs.git"
   },
   "publishConfig": {
     "registry":"https://npm.pkg.github.com"
@@ -74,9 +74,9 @@
     "rxjs": "^6.6.3"
   },
   "bugs": {
-    "url": "https://github.com/TbhT/lark-sdk/issues"
+    "url": "https://github.com/TbhT/open-lark-rxjs/issues"
   },
-  "homepage": "https://github.com/TbhT/lark-sdk#readme",
+  "homepage": "https://github.com/TbhT/open-lark-rxjs#readme",
   "directories": {
     "test": "test"
   },
