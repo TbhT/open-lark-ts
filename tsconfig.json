@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "strict": true,
+    "charset": "utf8",
+    "declaration": true,
+    "declarationDir": "types/",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true,
+        "useRootDirs": true
+      }
+    ]
+  },
+  "exclude": ["node_modules/", "dist/"],
+  "include": [
+    "./src/observable",
+    "./src/operators",
+    "./src/index.ts",
+    "./src/Constants.ts"
+  ]
+}
