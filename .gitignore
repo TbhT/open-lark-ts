@@ -3,4 +3,5 @@ node_modules
 .idea/*
 coverage/Icov-report/*
 dist
-types
+types/**
+!src/**
