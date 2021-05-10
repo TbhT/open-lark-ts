@@ -1,6 +1,6 @@
 {
   "name": "@tbht/lark-sdk-rxjs",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "lark bot sdk",
   "main": "dist/index.js",
   "types": "types",
