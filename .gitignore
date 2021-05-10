@@ -1,0 +1,7 @@
+node_modules
+*.log
+.idea/*
+coverage/Icov-report/*
+dist
+types/**
+!src/**

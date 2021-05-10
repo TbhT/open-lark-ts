@@ -1,0 +1,89 @@
+{
+  "name": "@tbht/lark-sdk-rxjs",
+  "version": "0.4.3",
+  "description": "lark bot sdk",
+  "main": "dist/index.js",
+  "types": "types",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TbhT/open-lark-ts.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "author": "TbhT <hustapple132@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "doc-server": "cd ./website && yarn run start",
+    "doc": "echo \"to be supported !!!\"",
+    "build": "ttsc && babel dist -d dist"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^25.2.1",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "jest-coverage-badges": "^1.1.2",
+    "lint-staged": "^10.1.3",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.8.2",
+    "ttypescript": "^1.5.12",
+    "typedoc": "^0.17.7",
+    "typedoc-plugin-external-module-name": "^4.0.3",
+    "typedoc-plugin-markdown": "^2.3.1",
+    "typescript": "^3.8.3",
+    "typescript-transform-paths": "^2.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix --color"
+    ]
+  },
+  "dependencies": {
+    "@akanass/rx-http-request": "^3.3.0",
+    "@marblejs/core": "^3.4.7",
+    "fp-ts": "^2.9.1",
+    "rxjs": "^6.6.3"
+  },
+  "bugs": {
+    "url": "https://github.com/TbhT/open-lark-ts/issues"
+  },
+  "homepage": "https://github.com/TbhT/open-lark-ts#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "lark",
+    "sdk",
+    "for",
+    "ts"
+  ]
+}

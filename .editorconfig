@@ -1,0 +1,16 @@
+[*]
+end_of_line = lf
+
+[*.{js, py, php}]
+charset = utf-8
+
+[*.js]
+indent_size = 4
+indent_style = space
+
+[*.py]
+indent_size = 4
+indent_style = space
+
+
+root = false
