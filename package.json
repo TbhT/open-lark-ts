@@ -15,7 +15,7 @@
   "license": "MIT",
   "scripts": {
     "doc-server": "cd ./website && yarn run start",
-    "doc": "echo \"to be supported !!!\"",
+    "doc": "cd ./website && yarn build",
     "build": "ttsc && babel dist -d dist"
   },
   "files": [
