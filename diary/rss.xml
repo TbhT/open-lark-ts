@@ -2,14 +2,14 @@
 <rss version="2.0">
     <channel>
         <title>open-lark Blog</title>
-        <link>https://github.com/TbhT/open-lark-ts/diary</link>
+        <link>https://tbht.github.io/diary</link>
         <description>open-lark Blog</description>
         <lastBuildDate>Mon, 10 May 2021 16:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Hello]]></title>
-            <link>https://github.com/TbhT/open-lark-ts/diary/open-lark-first-prerelease</link>
+            <link>https://tbht.github.io/open-lark-ts/diary/open-lark-first-prerelease</link>
             <guid>open-lark-first-prerelease</guid>
             <pubDate>Mon, 10 May 2021 16:00:00 GMT</pubDate>
             <description><![CDATA[这是 open-lark-sdk 的第一个发布版本，更新随缘！]]></description>

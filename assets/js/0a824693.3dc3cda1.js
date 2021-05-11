@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[141],{4549:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/open-lark-ts/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/open-lark-ts/blog/tags/hello"}')}}]);

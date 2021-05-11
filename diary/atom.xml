@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://github.com/TbhT/open-lark-ts/diary</id>
+    <id>https://tbht.github.io/diary</id>
     <title>open-lark Blog</title>
     <updated>2021-05-10T16:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://github.com/TbhT/open-lark-ts/diary"/>
+    <link rel="alternate" href="https://tbht.github.io/diary"/>
     <subtitle>open-lark Blog</subtitle>
-    <icon>https://github.com/TbhT/open-lark-ts/https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae</icon>
+    <icon>https://tbht.github.io/https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae</icon>
     <entry>
         <title type="html"><![CDATA[Hello]]></title>
         <id>open-lark-first-prerelease</id>
-        <link href="https://github.com/TbhT/open-lark-ts/diary/open-lark-first-prerelease"/>
+        <link href="https://tbht.github.io/open-lark-ts/diary/open-lark-first-prerelease"/>
         <updated>2021-05-10T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[这是 open-lark-sdk 的第一个发布版本，更新随缘！]]></summary>
     </entry>

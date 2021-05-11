@@ -1,0 +1,1 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[378],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/open-lark-ts/blog/welcome"},{"title":"Hello","permalink":"/open-lark-ts/blog/hello-world"},{"title":"Hola","permalink":"/open-lark-ts/blog/hola"}]}')}}]);
