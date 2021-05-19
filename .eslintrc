@@ -22,7 +22,8 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["warn", "single"],
     "semi": ["warn", "never"],
-    "@typescript-eslint/camelcase": "off"
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
   "overrides": [
     {
