@@ -1,20 +1,22 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'open-lark',
+  tagline: '',
+  url: 'https://github.com/TbhT/lark-sdk',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  favicon:
+    'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
+  organizationName: 'tbht', // Usually your GitHub org/user name.
+  projectName: 'lark-sdk', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'open lark sdk',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg'
+        alt: 'open lark sdk for typescript',
+        src:
+          'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
       },
       items: [
         {
@@ -25,7 +27,7 @@ module.exports = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/TbhT/lark-sdk',
           label: 'GitHub',
           position: 'right'
         }
@@ -44,23 +46,6 @@ module.exports = {
           ]
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus'
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus'
-            }
-          ]
-        },
-        {
           title: 'More',
           items: [
             {
@@ -69,12 +54,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus'
+              href: 'https://github.com/TbhT/lark-sdk'
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} , Inc. Built with Docusaurus.`
     }
   },
   presets: [
@@ -84,13 +69,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
+          editUrl: 'https://github.com/TbhT/lark-sdk/edit/master/website/docs'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/'
+          editUrl: 'https://github.com/TbhT/lark-sdk/edit/master/website/blog'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')

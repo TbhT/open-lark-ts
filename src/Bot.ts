@@ -18,13 +18,20 @@ import {
   SendMessageResponse,
   UrgentMessageResponse
 } from '@/types/Response'
+import { catchError, map } from 'rxjs/operators'
+import { of } from 'rxjs'
 
 const tokenCache = new Cache(10, 3600 * 1.9)
 
 export enum BotEventType {
   INITIATING = 'initiating',
   INITIAL_COMPLETE = 'initial_complete',
-  ERROR = 'error'
+  ERROR = 'error',
+  RECEIVE_MESSAGE = 'receive_message',
+  RECEIVE_TEXT_MESSAGE = 'receive_text_message',
+  RECEIVE_IMAGE_MESSAGE = 'receive_image_message',
+  RECEIVE_RICH_TEXT_MESSAGE = 'receive_rich_text_message',
+  MESSAGE_ERROR = 'message_error'
 }
 
 /**
@@ -79,7 +86,13 @@ export class Bot {
 
   constructor({ appId, appSecret }: { appId: string; appSecret: string }) {
     this.initToken({ appId, appSecret })
-    this.emitter.emit(BotEventType.INITIATING)
+    this.emit(BotEventType.INITIATING)
+  }
+
+  public emit(event: BotEventType, ...args: unknown[]) {
+    if (event in BotEventType) {
+      this.emitter.emit(event, ...args)
+    }
   }
 
   public on(event: BotEventType, listener: (...args: any[]) => void) {
@@ -90,72 +103,126 @@ export class Bot {
     this.emitter.once(event, listener)
   }
 
-  sayTextMessageRx(params: TextMessageParams) {
+  $sayTextMessage(params: TextMessageParams) {
     return sendMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        this.emit(BotEventType.RECEIVE_TEXT_MESSAGE, m)
+        return m
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   sayTextMessage(params: TextMessageParams) {
     return new Promise<SendMessageResponse>((resolve, reject) => {
-      this.sayTextMessageRx(params).subscribe(resolve, reject)
+      this.$sayTextMessage(params).subscribe(resolve, reject)
     })
   }
 
-  sayImageMessageRx(params: ImageMessageParams) {
+  $sayImageMessage(params: ImageMessageParams) {
     return sendImageMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        this.emit(BotEventType.RECEIVE_IMAGE_MESSAGE, m)
+        return m
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   sayImageMessage(params: ImageMessageParams) {
     return new Promise<SendMessageResponse>((resolve, reject) => {
-      this.sayImageMessageRx(params).subscribe(resolve, reject)
+      this.$sayImageMessage(params).subscribe(resolve, reject)
     })
   }
 
-  sayRichTextMessageRx(params: RichTextMessageParams) {
+  $sayRichTextMessage(params: RichTextMessageParams) {
     return sendRichTextMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        this.emit(BotEventType.RECEIVE_RICH_TEXT_MESSAGE, m)
+        return of(m)
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   sayRichTextMessage(params: RichTextMessageParams) {
     return new Promise<SendMessageResponse>((resolve, reject) => {
-      this.sayRichTextMessageRx(params).subscribe(resolve, reject)
+      this.$sayRichTextMessage(params).subscribe(resolve, reject)
     })
   }
 
-  sayChatCardRx(params: CardMessageParams) {
+  $sayChatCard(params: CardMessageParams) {
     return sendCardMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        return of(m)
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   sayChatCard(params: CardMessageParams) {
     return new Promise<SendMessageResponse>((resolve, reject) => {
-      this.sayChatCardRx(params).subscribe(resolve, reject)
+      this.$sayChatCard(params).subscribe(resolve, reject)
     })
   }
 
-  recallMessageRx(params: { messageId: string }) {
+  $recallMessage(params: { messageId: string }) {
     return recallMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        this.emit(BotEventType.RECEIVE_TEXT_MESSAGE, m)
+        return m
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   recallMessage(params: { messageId: string }) {
     return new Promise<CommonResponse>((resolve, reject) => {
-      this.recallMessageRx(params).subscribe(resolve, reject)
+      this.$recallMessage(params).subscribe(resolve, reject)
     })
   }
 
-  sayUrgentMessageRx(params: {
+  $sayUrgentMessage(params: {
     messageId: string
     urgentType: UrgentType
     openIds: string[]
@@ -163,7 +230,17 @@ export class Bot {
     return urgentMessage({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        return m
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   sayUrgentMessage(params: {
@@ -172,20 +249,30 @@ export class Bot {
     openIds: string[]
   }) {
     return new Promise<UrgentMessageResponse>((resolve, reject) => {
-      this.sayUrgentMessageRx(params).subscribe(resolve, reject)
+      this.$sayUrgentMessage(params).subscribe(resolve, reject)
     })
   }
 
-  shareCardMessageRx(params: ShareChatCardParams) {
+  $shareCardMessage(params: ShareChatCardParams) {
     return shareChatCard({
       ...params,
       tenantAccessToken: this.tokenCache.get('tenantAccessToken') as string
-    })
+    }).pipe(
+      map(m => {
+        this.emit(BotEventType.RECEIVE_MESSAGE, m)
+        return m
+      }),
+      catchError(e => {
+        this.emit(BotEventType.ERROR, e)
+        this.emit(BotEventType.MESSAGE_ERROR, e)
+        return of(e)
+      })
+    )
   }
 
   shareCardMessage(params: ShareChatCardParams) {
     return new Promise<SendMessageResponse>((resolve, reject) => {
-      this.shareCardMessageRx(params).subscribe(resolve, reject)
+      this.$shareCardMessage(params).subscribe(resolve, reject)
     })
   }
 
@@ -204,10 +291,10 @@ export class Bot {
         this.tokenCache.add('tenantAccessToken', data.tenant_access_token)
       },
       error => {
-        this.emitter.emit(BotEventType.ERROR, error)
+        this.emit(BotEventType.ERROR, error)
       },
       () => {
-        this.emitter.emit(BotEventType.INITIAL_COMPLETE)
+        this.emit(BotEventType.INITIAL_COMPLETE)
       }
     )
   }
