@@ -1,0 +1,9 @@
+{
+  "bot": {
+    "appId": "your config appId",
+    "appSecret": "your config appSecret"
+  },
+  "developer": {
+
+  }
+}

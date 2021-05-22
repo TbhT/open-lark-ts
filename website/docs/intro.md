@@ -2,34 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+#  Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **open-lark-rxjs in less than 5 minutes**.
 
-## Getting Started
+## Install
 
-Get started by **creating a new site**.
+Install this package from `yarn` or `npm`
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+### yarn
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
+```md
+yarn add @tbht/lark-sdk-rxjs
 ```
 
-## Start your site
+### npm
 
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
+```md
+npm install @tbht/lark-sdk-rxjs
 ```
 
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+## Start your first bot

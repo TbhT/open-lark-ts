@@ -2,14 +2,14 @@
 module.exports = {
   title: 'open-lark',
   tagline: '',
-  url: 'https://github.com/TbhT/lark-sdk',
-  baseUrl: '/',
+  url: 'https://tbht.github.io/',
+  baseUrl: '/open-lark-ts/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon:
     'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
   organizationName: 'tbht', // Usually your GitHub org/user name.
-  projectName: 'lark-sdk', // Usually your repo name.
+  projectName: 'open-lark-ts', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'open lark sdk',
@@ -26,8 +26,9 @@ module.exports = {
           label: 'Tutorial'
         },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/diary', label: 'Diary', position: 'left' },
         {
-          href: 'https://github.com/TbhT/lark-sdk',
+          href: 'https://github.com/TbhT/open-lark-ts',
           label: 'GitHub',
           position: 'right'
         }
@@ -54,7 +55,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/TbhT/lark-sdk'
+              href: 'https://github.com/TbhT/open-lark-ts'
             }
           ]
         }
@@ -69,16 +70,38 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/TbhT/lark-sdk/edit/master/website/docs'
+          editUrl:
+            'https://github.com/TbhT/open-lark-ts/edit/master/website/docs'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/TbhT/lark-sdk/edit/master/website/blog'
+          editUrl:
+            'https://github.com/TbhT/open-lark-ts/edit/master/website/blog'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
         }
+      }
+    ]
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * 多实例插件必填。
+         */
+        id: 'diary',
+        /**
+         * 您网站上博客的 URL 路由。
+         * *请务必不要*添加斜杠。
+         */
+        routeBasePath: 'diary',
+        /**
+         * 相对于站点目录的文件系统数据路径。
+         */
+        path: './diary'
       }
     ]
   ]

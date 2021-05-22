@@ -1,6 +1,6 @@
 node_modules
 *.log
-.idea/*
+.idea
 coverage/Icov-report/*
 dist
 types/**
